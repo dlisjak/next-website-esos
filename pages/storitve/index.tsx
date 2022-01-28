@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import HeaderImage from '../../components/HeaderImage';
+
 const Storitve = () => {
   return (
     <>
@@ -13,12 +15,10 @@ const Storitve = () => {
         exit={{ opacity: 0 }}
       >
         <div className="flex relative h-full">
-          <Image
+          <HeaderImage
             src="/images/headers/1920/ABSTRACT_5.jpeg"
             layout="fill"
-            quality={100}
             objectFit="cover"
-            objectPosition="left center"
             priority
           />
         </div>
@@ -58,7 +58,7 @@ const Storitve = () => {
       >
         <div className="container mx-auto flex flex-col items-center">
           <motion.div
-            className="flex items-center py-12"
+            className="flex items-center mr-auto py-12"
             transition={{ duration: 1.5, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ const Storitve = () => {
             </div>
           </motion.div>
           <motion.div
-            className="flex items-center py-12"
+            className="flex items-center ml-auto py-12"
             transition={{ duration: 1.5, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -116,7 +116,7 @@ const Storitve = () => {
             </div>
           </motion.div>
           <motion.div
-            className="flex items-center py-12"
+            className="flex items-center mr-auto py-12"
             transition={{ duration: 1.5, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +141,7 @@ const Storitve = () => {
             </div>
           </motion.div>
           <motion.div
-            className="flex items-center py-12"
+            className="flex items-center ml-auto py-12"
             transition={{ duration: 1.5, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}

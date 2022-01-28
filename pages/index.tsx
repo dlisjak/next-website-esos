@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import HeaderImage from '../components/HeaderImage';
+
 const Index = () => {
   return (
     <>
@@ -12,11 +14,10 @@ const Index = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <div className="flex relative h-full">
-          <Image
+        <div className="relative h-full">
+          <HeaderImage
             src="/images/headers/1920/ABSTRACT_22.jpeg"
             layout="fill"
-            quality={100}
             objectFit="cover"
             priority
           />
@@ -52,7 +53,7 @@ const Index = () => {
       >
         <div className="container mx-auto flex flex-col items-center">
           <motion.div
-            className="flex items-center py-12"
+            className="flex items-center mr-auto py-12"
             transition={{ duration: 1.5, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,8 +72,8 @@ const Index = () => {
                 okolje nenehno spreminja in so potrebne velike zmožnosti prilagoditve poslovanja.
               </p>
               <div className="mt-4">
-                <Link href="#ekipa">
-                  <span className="button -dark">Spoznaj ekipo</span>
+                <Link href="/kontakt">
+                  <span className="button -dark">Kontaktirajte nas</span>
                 </Link>
               </div>
             </div>
