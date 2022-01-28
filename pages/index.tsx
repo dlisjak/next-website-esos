@@ -1,10 +1,11 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 import HeaderImage from '../components/HeaderImage';
 
 import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
+import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
 
 const Index = () => {
   return (
@@ -64,7 +65,7 @@ const Index = () => {
             exit={{ opacity: 0 }}
           >
             <div className="spletneResitve__image hidden sm:flex relative w-auto overflow-hidden">
-              <Image src="/images/vstop/CITY_AERIAL_OFFICE.jpeg" width={450} height={675} />
+              <Image src={CITY_AERIAL_OFFICE} width={450} height={675} placeholder="blur" />
             </div>
             <div className="sm:w-2/3 flex flex-col sm:ml-8 items-start sm:max-w-3xl relative z-10">
               <h2 className="relative text-left mt-0">ESOS Digital</h2>

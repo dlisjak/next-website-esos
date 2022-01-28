@@ -1,10 +1,14 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 import HeaderImage from '../../components/HeaderImage';
 
-import ABSTRACT_5 from '../../public/images/headers/1920/ABSTRACT_5.jpeg';
+import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
+import SPLETNE_RESITVE from '../../public/images/storitve/SPLETNE_RESITVE.jpeg';
+import IZDELAVA_APLIKACIJ from '../../public/images/storitve/IZDELAVA_APLIKACIJ.jpeg';
+import DIGITALNI_MARKETING from '../../public/images/storitve/DIGITALNI_MARKETING.jpeg';
+import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
 
 const Storitve = () => {
   return (
@@ -18,9 +22,10 @@ const Storitve = () => {
       >
         <div className="flex relative h-full">
           <HeaderImage
-            src={ABSTRACT_5}
+            src={BUILDING_BRIDGE}
             layout="fill"
             objectFit="cover"
+            objectPosition="right"
             palceholder="blur"
             priority
           />
@@ -69,7 +74,7 @@ const Storitve = () => {
             exit={{ opacity: 0 }}
           >
             <div className="spletneResitve__image hidden sm:flex relative w-auto overflow-hidden">
-              <Image src="/images/storitve/SPLETNE_RESITVE.jpeg" width={450} height={675} />
+              <Image src={SPLETNE_RESITVE} width={450} height={675} placeholder="blur" />
             </div>
             <div className="sm:w-2/3 flex flex-col sm:ml-8 items-start sm:max-w-3xl relative z-10">
               <h2 className="relative text-left mt-0">
@@ -115,7 +120,7 @@ const Storitve = () => {
               </div>
             </div>
             <div className="izdelavaAplikacij__image hidden sm:flex relative w-auto overflow-hidden">
-              <Image src="/images/storitve/IZDELAVA_APLIKACIJ.jpeg" width={450} height={675} />
+              <Image src={IZDELAVA_APLIKACIJ} width={450} height={675} placeholder="blur" />
             </div>
           </motion.div>
           <motion.div
@@ -127,7 +132,7 @@ const Storitve = () => {
             exit={{ opacity: 0 }}
           >
             <div className="digitalniMarketing__image hidden sm:flex relative w-auto overflow-hidden">
-              <Image src="/images/storitve/DIGITALNI_MARKETING.jpeg" width={450} height={675} />
+              <Image src={DIGITALNI_MARKETING} width={450} height={675} placeholder="blur" />
             </div>
             <div className="sm:w-2/3 flex flex-col sm:ml-8 items-start sm:max-w-3xl relative z-10">
               <h2 className="relative mt-0 z-10">Digitalni Marketing</h2>
@@ -167,7 +172,7 @@ const Storitve = () => {
               </div>
             </div>
             <div className="izdelavaAplikacij__image hidden sm:flex relative w-auto overflow-hidden">
-              <Image src="/images/storitve/3D_ANIMACIJE.jpeg" width={450} height={675} />
+              <Image src={ANIMACIJE} width={450} height={675} placeholder="blur" />
             </div>
           </motion.div>
         </div>
