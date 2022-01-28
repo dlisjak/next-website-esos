@@ -16,6 +16,7 @@
 
 html {
   font-family: 'Open Sans';
+  --scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
@@ -143,6 +144,12 @@ a.button {
   100% {
     transform: rotateZ(60deg) translate(0, -9em);
   }
+}
+
+.spletneResitve__image,
+.digitalniMarketing__image,
+.izdelavaAplikacij__image {
+  display: none;
 }
 
 .spletneResitve__image,

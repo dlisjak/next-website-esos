@@ -31,7 +31,7 @@ const Index = () => {
           <h1 className="relative text-white text-sm underline underline-offset-1 mb-2 left-0.5">
             ESOS Digital
           </h1>
-          <h2 className="text-white	text-5xl">
+          <h2 className="text-white	text-4xl sm:text-5xl">
             Edinstvena Rešitev
             <br />
             Nove Dobe
