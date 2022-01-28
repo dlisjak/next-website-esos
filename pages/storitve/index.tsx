@@ -33,15 +33,10 @@ const Storitve = () => {
             <h1 className="relative text-white text-sm underline underline-offset-1 mb-2 left-0.5">
               Storitve
             </h1>
-            <h2 className="CopperplateGothic text-white text-3xl sm:text-5xl mb-2">
-              Optimizacija Spletnih Rešitev
-            </h2>
-            <h2 className="CopperplateGothic text-white	text-3xl sm:text-5xl mb-2">
-              Izdelava Mobilnih Aplikacij
-            </h2>
-            <h2 className="CopperplateGothic text-white	text-3xl sm:text-5xl">
-              Digitalni Marketing
-            </h2>
+            <h2 className="text-white text-3xl sm:text-5xl mb-2">Spletne Rešitve</h2>
+            <h2 className="text-white	text-3xl sm:text-5xl mb-2">Mobilne Aplikacije</h2>
+            <h2 className="text-white	text-3xl sm:text-5xl mb-2">Marketing</h2>
+            <h2 className="text-white	text-3xl sm:text-5xl">3D</h2>
             <div className="flex">
               <div className="mr-4">
                 <Link href="#storitve">
@@ -74,13 +69,16 @@ const Storitve = () => {
               <Image src="/images/storitve/SPLETNE_RESITVE.jpeg" width={450} height={675} />
             </div>
             <div className="sm:w-2/3 flex flex-col sm:ml-8 items-start sm:max-w-3xl relative z-10">
-              <h2 className="relative text-left mt-0">Optimizacija spletnih rešitev</h2>
+              <h2 className="relative text-left mt-0">
+                Optimizacija
+                <br />
+                Spletnih Rešitev
+              </h2>
               <p className="text-left">
                 Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki
                 vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S tem
-                boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
-                izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so potrebne
-                velike zmožnosti prilagoditve poslovanja.
+                boste dobili možnost, da jo v prihodnje nadgradite ali prilagodite, saj se poslovno
+                okolje nenehno spreminja in so potrebne velike zmožnosti prilagoditve poslovanja.
               </p>
               <div className="mt-4">
                 <Link href="/storitve/optimizacija-spletnih-resitev">
@@ -98,7 +96,11 @@ const Storitve = () => {
             exit={{ opacity: 0 }}
           >
             <div className="sm:w-2/3 flex flex-col sm:mr-8 items-end sm:max-w-3xl relative z-10">
-              <h2 className="relative text-right mt-0 z-10">Izdelava mobilnih aplikacij</h2>
+              <h2 className="relative text-right mt-0 z-10">
+                Izdelava Mobilnih
+                <br />
+                Aplikacij
+              </h2>
               <p className="text-right">
                 Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
                 ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
@@ -125,7 +127,7 @@ const Storitve = () => {
               <Image src="/images/storitve/DIGITALNI_MARKETING.jpeg" width={450} height={675} />
             </div>
             <div className="sm:w-2/3 flex flex-col sm:ml-8 items-start sm:max-w-3xl relative z-10">
-              <h2 className="relative mt-0 z-10">Digitalni marketing</h2>
+              <h2 className="relative mt-0 z-10">Digitalni Marketing</h2>
               <p className="text-left">
                 Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
                 strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
@@ -136,6 +138,33 @@ const Storitve = () => {
                   <span className="button -dark">Poglej podrobneje</span>
                 </Link>
               </div>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flex items-center py-12"
+            transition={{ duration: 1.5, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            exit={{ opacity: 0 }}
+          >
+            <div className="sm:w-2/3 flex flex-col sm:mr-8 items-end sm:max-w-3xl relative z-10">
+              <h2 className="relative text-right mt-0 z-10">
+                3D Modeliranje
+                <br />& Animiranje
+              </h2>
+              <p className="text-right">
+                Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
+                ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
+              </p>
+              <div className="ml-auto mt-4">
+                <Link href="/storitve/3d-modeliranje-animiranje">
+                  <span className="button -dark">Poglej podrobneje</span>
+                </Link>
+              </div>
+            </div>
+            <div className="izdelavaAplikacij__image hidden sm:flex relative w-auto overflow-hidden">
+              <Image src="/images/storitve/3D_ANIMACIJE.jpeg" width={450} height={675} />
             </div>
           </motion.div>
         </div>
