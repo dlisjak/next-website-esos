@@ -22,9 +22,8 @@ const Storitve = () => {
             priority
           />
         </div>
-        <div className="flex container mx-auto absolute flex-col items-start justify-center h-full top-0 right-0 left-0">
+        <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-8">
           <motion.div
-            className="flex flex-col items-start"
             transition={{ duration: 1.5, ease: 'easeOut', delay: 0.5 }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
