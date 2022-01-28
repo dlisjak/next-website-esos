@@ -12,13 +12,18 @@
 
 .CopperplateGothic {
   font-family: 'Copperplate-Gothic';
-  font-size: 4rem;
-  line-height: 1;
 }
 
 html {
   font-family: 'Open Sans';
   scroll-behavior: smooth;
+}
+
+html,
+body,
+#__next,
+#__next > .bg-black {
+  height: 100%;
 }
 
 h1,
@@ -27,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display';
+  font-family: 'Copperplate-Gothic';
 }
 
 h1 {
@@ -37,12 +42,11 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 1.2;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 h3 {
   font-size: 1.2rem;
   line-height: 1.2;
-  margin-top: 2rem;
   margin-bottom: 1.3rem;
 }
 
@@ -59,12 +63,11 @@ p {
   h2 {
     font-size: 2.5rem;
     line-height: 1.2;
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
   h3 {
     font-size: 2rem;
     line-height: 1.2;
-    margin-top: 2rem;
     margin-bottom: 1.3rem;
   }
 }
@@ -77,12 +80,11 @@ p {
   h2 {
     font-size: 3rem;
     line-height: 1.2;
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
   h3 {
     font-size: 2.5rem;
     line-height: 1.2;
-    margin-top: 2rem;
     margin-bottom: 1.3rem;
   }
 }
@@ -106,12 +108,13 @@ a.button {
   font-size: 1rem;
 }
 .button.-dark {
-  color: black;
+  color: white;
   border: 1px solid rgb(51, 50, 50);
+  background: black;
 }
 .button.-dark:hover {
   color: white;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid black;
 }
 
@@ -144,21 +147,21 @@ a.button {
 
 .spletneResitve__image,
 .digitalniMarketing__image {
-  border-top-left-radius: 150px;
-  border-bottom-right-radius: 150px;
-}
-.izdelavaAplikacij__image {
   border-top-right-radius: 150px;
   border-bottom-left-radius: 150px;
+}
+.izdelavaAplikacij__image {
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
 }
 @media screen and (min-width: 1920px) {
   .spletneResitve__image,
   .digitalniMarketing__image {
-    border-top-left-radius: 225px;
-    border-bottom-right-radius: 225px;
-  }
-  .izdelavaAplikacij__image {
     border-top-right-radius: 225px;
     border-bottom-left-radius: 225px;
+  }
+  .izdelavaAplikacij__image {
+    border-top-left-radius: 225px;
+    border-bottom-right-radius: 225px;
   }
 }

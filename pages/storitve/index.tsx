@@ -6,36 +6,41 @@ const Storitve = () => {
   return (
     <>
       <motion.div
-        className="bg-[#0c66c2] h-auto relative"
+        className="h-full relative"
         transition={{ duration: 1, ease: 'easeOut' }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        style={{ height: 'calc(100vw / 3840 * 2140 - 1px)' }}
       >
-        <div className="video relative h-auto">
-          <video className="relative h-auto" autoPlay muted>
-            <source src="/videos/BLUE_1920.mp4" type="video/mp4" />
-          </video>
+        <div className="flex relative h-full">
+          <Image
+            src="/images/headers/1920/ABSTRACT_5.jpeg"
+            layout="fill"
+            quality={100}
+            objectFit="cover"
+            objectPosition="left center"
+            priority
+          />
         </div>
-        <div className="flex container mx-auto absolute flex-col items-end justify-center h-full top-0 right-0 left-0">
+        <div className="flex container mx-auto absolute flex-col items-start justify-center h-full top-0 right-0 left-0">
           <motion.div
-            className="flex flex-col items-end"
+            className="flex flex-col items-start"
             transition={{ duration: 1.5, ease: 'easeOut', delay: 0.5 }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             exit={{ opacity: 0 }}
           >
-            <h1 className="text-white mb-6 text-right">
-              Optimizacija spletnih rešitev
-              <br />
-              Izdelava mobilnih aplikacij
-              <br />
-              Digitalni marketing
-              <br />
-              3D animacije
+            <h1 className="relative text-white text-sm underline underline-offset-1 mb-2 left-0.5">
+              Storitve
             </h1>
+            <h2 className="CopperplateGothic text-white	text-5xl mb-2">
+              Optimizacija Spletnih Rešitev
+            </h2>
+            <h2 className="CopperplateGothic text-white	text-5xl mb-2">
+              Izdelava Mobilnih Aplikacij
+            </h2>
+            <h2 className="CopperplateGothic text-white	text-5xl">Digitalni Marketing</h2>
             <div className="flex">
               <div className="mr-4">
                 <Link href="#storitve">
@@ -65,10 +70,10 @@ const Storitve = () => {
             exit={{ opacity: 0 }}
           >
             <div className="spletneResitve__image flex relative w-auto overflow-hidden">
-              <Image src="/images/SPLETNE_RESITVE.jpeg" width={450} height={675} />
+              <Image src="/images/storitve/SPLETNE_RESITVE.jpeg" width={450} height={675} />
             </div>
-            <div className="w-2/3 flex flex-col ml-4 items-start max-w-3xl relative z-10">
-              <h2 className="CopperplateGothic relative  text-left mt-0">
+            <div className="w-2/3 flex flex-col ml-8 items-start max-w-3xl relative z-10">
+              <h2 className="CopperplateGothic relative text-left mt-0">
                 Optimizacija spletnih rešitev
               </h2>
               <p className="text-left">
@@ -93,14 +98,13 @@ const Storitve = () => {
             viewport={{ once: true }}
             exit={{ opacity: 0 }}
           >
-            <div className="w-2/3 flex flex-col mr-4 max-w-3xl items-end">
+            <div className="w-2/3 flex flex-col mr-8 max-w-3xl items-end">
               <h2 className="CopperplateGothic relative text-right mt-0 z-10">
                 Izdelava mobilnih aplikacij
               </h2>
               <p className="text-right">
-                Za vas izdelamo mobilne aplikacije na sisemih IOS in Android. Omogočimo vam celotno
-                ponudbo od izdelave, gostovanja na strežnikih na Cloud tehnologiji s podporo
-                kubernetes sistema.
+                Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
+                ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
               </p>
               <div className="ml-auto mt-4">
                 <Link href="/storitve/izdelava-mobilnih-aplikacij">
@@ -109,7 +113,7 @@ const Storitve = () => {
               </div>
             </div>
             <div className="flex relative w-auto overflow-hidden izdelavaAplikacij__image">
-              <Image src="/images/IZDELAVA_APLIKACIJ.jpeg" width={450} height={675} />
+              <Image src="/images/storitve/IZDELAVA_APLIKACIJ.jpeg" width={450} height={675} />
             </div>
           </motion.div>
           <motion.div
@@ -121,9 +125,9 @@ const Storitve = () => {
             exit={{ opacity: 0 }}
           >
             <div className="flex relative w-auto overflow-hidden digitalniMarketing__image">
-              <Image src="/images/DIGITALNI_MARKETING.jpeg" width={450} height={675} />
+              <Image src="/images/storitve/DIGITALNI_MARKETING.jpeg" width={450} height={675} />
             </div>
-            <div className="w-2/3 flex flex-col ml-4 max-w-3xl">
+            <div className="w-2/3 flex flex-col ml-8 max-w-3xl">
               <h2 className="CopperplateGothic relative mt-0 z-10">Digitalni marketing</h2>
               <p className="text-left">
                 Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
