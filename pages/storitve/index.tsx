@@ -4,6 +4,8 @@ import Image from 'next/image';
 
 import HeaderImage from '../../components/HeaderImage';
 
+import ABSTRACT_5 from '../../public/images/headers/1920/ABSTRACT_5.jpeg';
+
 const Storitve = () => {
   return (
     <>
@@ -16,9 +18,10 @@ const Storitve = () => {
       >
         <div className="flex relative h-full">
           <HeaderImage
-            src="/images/headers/1920/ABSTRACT_5.jpeg"
+            src={ABSTRACT_5}
             layout="fill"
             objectFit="cover"
+            palceholder="blur"
             priority
           />
         </div>
@@ -36,7 +39,7 @@ const Storitve = () => {
             <h2 className="text-white text-3xl sm:text-5xl mb-2">Spletne Rešitve</h2>
             <h2 className="text-white	text-3xl sm:text-5xl mb-2">Mobilne Aplikacije</h2>
             <h2 className="text-white	text-3xl sm:text-5xl mb-2">Marketing</h2>
-            <h2 className="text-white	text-3xl sm:text-5xl">3D</h2>
+            <h2 className="text-white	text-3xl sm:text-5xl">3D Animacije</h2>
             <div className="flex">
               <div className="mr-4">
                 <Link href="#storitve">

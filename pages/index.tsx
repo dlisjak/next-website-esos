@@ -4,6 +4,8 @@ import Link from 'next/link';
 
 import HeaderImage from '../components/HeaderImage';
 
+import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
+
 const Index = () => {
   return (
     <>
@@ -16,9 +18,10 @@ const Index = () => {
       >
         <div className="relative h-full">
           <HeaderImage
-            src="/images/headers/1920/ABSTRACT_22.jpeg"
+            src={ABSTRACT_22}
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
           />
         </div>
@@ -49,7 +52,7 @@ const Index = () => {
       </motion.div>
       <div
         id="onas"
-        className="bg-[#EfEfEf] flex relative flex-col justify-center text-black sm:py-4 lg:py-8 xl:12 2xl:py-20 px-4"
+        className="bg-[#EfEfEf] h-full flex relative flex-col justify-center text-black sm:py-4 lg:py-8 xl:12 2xl:py-20 px-4"
       >
         <div className="container mx-auto flex flex-col items-center">
           <motion.div
@@ -71,10 +74,17 @@ const Index = () => {
                 boste dobili možnost, da jo v prihodnje nadgradite ali prilagodite, saj se poslovno
                 okolje nenehno spreminja in so potrebne velike zmožnosti prilagoditve poslovanja.
               </p>
-              <div className="mt-4">
-                <Link href="/kontakt">
-                  <span className="button -dark">Kontaktirajte nas</span>
-                </Link>
+              <div className="flex mt-4">
+                <div className="mr-4">
+                  <Link href="/storitve">
+                    <span className="button -dark">Storitve</span>
+                  </Link>
+                </div>
+                <div className="mr-4">
+                  <Link href="/kontakt">
+                    <span className="button -dark">Kontaktirajte nas</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </motion.div>
