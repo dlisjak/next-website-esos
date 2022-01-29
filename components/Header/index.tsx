@@ -13,7 +13,6 @@ const Header = ({ image, objectPosition = 'center', title, subtitles, buttons })
     <div className="flex relative h-full">
       <HeaderImage
         src={image}
-        layout="fill"
         objectFit="cover"
         objectPosition={objectPosition}
         placeholder="blur"

@@ -12,12 +12,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
             rel="stylesheet"
           />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-        <footer>
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD" />
           <script
             dangerouslySetInnerHTML={{
@@ -30,7 +24,12 @@ class MyDocument extends Document {
               `,
             }}
           />
-        </footer>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+        <footer></footer>
       </Html>
     );
   }
