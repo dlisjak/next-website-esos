@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 
 import HeaderImage from '../components/HeaderImage';
 import SectionContainer from '../components/SectionContainer';
-import Section from '../components/Section';
 
 import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
 import KONTAKT from '../public/images/kontakt/KONTAKT.jpeg';
@@ -57,7 +56,7 @@ const Kontakt = () => {
       >
         <SectionContainer>
           <motion.div
-            className="section bg-white w-full lg:w-auto flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 lg:p-0"
+            className="section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 lg:p-0"
             transition={{ duration: 1.5, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}

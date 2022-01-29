@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Section = ({ image, title, text, right = false, children }) => {
   return (
     <motion.div
-      className={`section bg-white w-full md:w-auto flex items-center overflow-hidden m-auto my-12 p-4 sm:p-0 ${
+      className={`section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 sm:p-0 ${
         !right ? '' : 'justify-end'
       }`}
       transition={{ duration: 1.5, ease: 'easeOut' }}
