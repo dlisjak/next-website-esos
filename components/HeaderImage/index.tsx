@@ -1,20 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
-
-const HeaderImage = (props) => {
-  const { src, layout, objectFit, objectPosition = 'center center', priority } = props;
-
-  return (
-    <Image
-      src={src}
-      layout={layout}
-      objectFit={objectFit}
-      objectPosition={objectPosition}
-      quality={80}
-      priority={priority}
-      {...props}
-    />
-  );
-};
+const HeaderImage = ({ src, alt, objectPosition = 'center' }) => (
+  <img src={src} alt={alt} className={`w-full object-cover object-${objectPosition}`} />
+);
 
 export default HeaderImage;

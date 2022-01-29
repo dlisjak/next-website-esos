@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-import HeaderImage from '../../components/HeaderImage';
-
-import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
 import SPLETNE_RESITVE from '../../public/images/storitve/SPLETNE_RESITVE.jpeg';
 import IZDELAVA_APLIKACIJ from '../../public/images/storitve/IZDELAVA_APLIKACIJ.jpeg';
 import DIGITALNI_MARKETING from '../../public/images/storitve/DIGITALNI_MARKETING.jpeg';
@@ -11,6 +8,7 @@ import VIDEO_PRODUCTION from '../../public/images/storitve/VIDEO_PRODUCTION.jpeg
 import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
 import Section from '../../components/Section';
 import SectionContainer from '../../components/SectionContainer';
+import HeaderImage from '../../components/HeaderImage';
 
 const Storitve = () => {
   return (
@@ -24,12 +22,9 @@ const Storitve = () => {
       >
         <div className="flex relative h-full">
           <HeaderImage
-            src={BUILDING_BRIDGE}
-            layout="fill"
-            objectFit="cover"
+            src="/images/headers/1920/BUILDING_BRIDGE.jpeg"
+            alt="Majestic cathedral near a big bridge"
             objectPosition="right"
-            palceholder="blur"
-            priority
           />
         </div>
         <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">

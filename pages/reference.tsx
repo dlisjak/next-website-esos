@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import HeaderImage from '../components/HeaderImage';
 import Section from '../components/Section';
 
-import WOMAN_SITTING_CHRIST_MUSEUM from '../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
 import NA_ROBU_NAPREDKA from '../public/images/references/NA_ROBU_NAPREDKA.jpeg';
 import SectionContainer from '../components/SectionContainer';
 
@@ -20,11 +19,8 @@ const Reference = () => {
       >
         <div className="flex relative h-full">
           <HeaderImage
-            src={WOMAN_SITTING_CHRIST_MUSEUM}
-            layout="fill"
-            objectFit="cover"
-            palceholder="blur"
-            priority
+            alt="Silhouette of a woman sitting in a museum in front of images of Christ"
+            src="/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg"
           />
         </div>
         <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">

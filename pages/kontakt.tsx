@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import HeaderImage from '../components/HeaderImage';
 import SectionContainer from '../components/SectionContainer';
 
-import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
 import KONTAKT from '../public/images/kontakt/KONTAKT.jpeg';
 import Button from '../components/Button';
 
@@ -21,11 +20,8 @@ const Kontakt = () => {
       >
         <div className="flex relative h-full">
           <HeaderImage
-            src={HAND_FLOWERS}
-            layout="fill"
-            objectFit="cover"
-            palceholder="blur"
-            priority
+            src="/images/headers/1920/HAND_FLOWERS.jpeg"
+            alt="Extending hand of a person in the middle of orange flowers"
           />
         </div>
         <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">
