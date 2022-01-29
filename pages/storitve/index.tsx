@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-const Header = import('../../components/Header');
-const Section = import('../../components/Section');
-const SectionContainer = import('../../components/SectionContainer');
+import Header from '../../components/Header';
+import Section from '../../components/Section';
+import SectionContainer from '../../components/SectionContainer';
 
 import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
 import SPLETNE_RESITVE from '../../public/images/storitve/SPLETNE_RESITVE.jpeg';

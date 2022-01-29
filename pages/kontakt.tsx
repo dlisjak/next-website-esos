@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 
-const Header = import('../components/Header');
-const SectionContainer = import('../components/SectionContainer');
+import Header from '../components/Header';
+import SectionContainer from '../components/SectionContainer';
 
 import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
 import KONTAKT from '../public/images/kontakt/KONTAKT.jpeg';

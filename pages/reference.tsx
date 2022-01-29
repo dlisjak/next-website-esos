@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-const Header = import('../components/Header');
-const Section = import('../components/Section');
-const SectionContainer = import('../components/SectionContainer');
+import Header from '../components/Header';
+import Section from '../components/Section';
+import SectionContainer from '../components/SectionContainer';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
 import NA_ROBU_NAPREDKA from '../public/images/references/NA_ROBU_NAPREDKA.jpeg';
