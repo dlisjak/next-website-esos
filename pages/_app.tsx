@@ -9,7 +9,6 @@ import '../styles/main.css';
 const MyApp = ({ Component, pageProps, router }) => {
   const route = router.route;
   pageview(route);
-  console.log(route);
 
   return (
     <div className="bg-black">
