@@ -27,7 +27,7 @@ const Reference = () => {
         }
       />
       <div
-        id="#reference"
+        id="reference"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
