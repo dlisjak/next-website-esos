@@ -10,7 +10,7 @@ const HeaderImage = (props) => {
       layout={layout}
       objectFit={objectFit}
       objectPosition={objectPosition}
-      quality={100}
+      quality={80}
       priority={priority}
       {...props}
     />
