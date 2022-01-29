@@ -18,8 +18,10 @@ class MyDocument extends Document {
           <NextScript />
         </body>
         <footer>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD" />
+          <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD" />
           <script
+            async
+            defer
             dangerouslySetInnerHTML={{
               __html: `
                   window.dataLayer = window.dataLayer || [];
