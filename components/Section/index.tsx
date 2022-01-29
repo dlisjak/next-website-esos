@@ -7,7 +7,7 @@ const Section = ({ image, title, text, right = false, children }) => {
       className={`section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 sm:p-0 ${
         !right ? '' : 'justify-end'
       }`}
-      transition={{ duration: 1.5, ease: 'easeOut' }}
+      transition={{ duration: 1, ease: 'easeOut' }}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

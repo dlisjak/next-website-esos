@@ -30,7 +30,7 @@ const Kontakt = () => {
         </div>
         <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">
           <motion.div
-            transition={{ duration: 1.5, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -57,7 +57,7 @@ const Kontakt = () => {
         <SectionContainer>
           <motion.div
             className="section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 lg:p-0"
-            transition={{ duration: 1.5, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: 'easeOut' }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
