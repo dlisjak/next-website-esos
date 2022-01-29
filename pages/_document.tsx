@@ -18,7 +18,7 @@ class MyDocument extends Document {
           <NextScript />
         </body>
         <footer>
-          <script defer src="https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
