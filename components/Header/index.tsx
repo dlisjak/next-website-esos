@@ -17,7 +17,7 @@ const Header = ({ image, objectPosition = 'center', title, subtitles, buttons })
         objectFit="cover"
         objectPosition={objectPosition}
         placeholder="blur"
-        priority
+        priority={true}
       />
     </div>
     <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">
