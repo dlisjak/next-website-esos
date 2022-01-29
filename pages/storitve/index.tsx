@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 
-const Header = dynamic(() => import('../../components/Header'));
-const Section = dynamic(() => import('../../components/Section'));
-const SectionContainer = dynamic(() => import('../../components/SectionContainer'));
+const Header = import('../../components/Header');
+const Section = import('../../components/Section');
+const SectionContainer = import('../../components/SectionContainer');
 
 import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
 import SPLETNE_RESITVE from '../../public/images/storitve/SPLETNE_RESITVE.jpeg';
