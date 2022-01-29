@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Button = ({ onClick, animate = true, children }) => {
+const Button = (props) => {
+  const { onClick, className, dark = false, children } = props;
   return (
-    <button onClick={onClick} className={`button ${animate ? 'sheen' : ''}`}>
+    <button onClick={onClick} className={`button ${dark ? '-dark' : ''} ${className}`}>
       {children}
     </button>
   );
