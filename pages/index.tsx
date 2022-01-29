@@ -16,7 +16,7 @@ const Index = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <div className="relative h-full">
+        <div className="flex relative h-full">
           <HeaderImage
             src="/images/headers/1920/ABSTRACT_22.jpeg"
             alt="Greek statue looking out to the blue sky"
