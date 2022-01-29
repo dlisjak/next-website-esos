@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 
 import Header from '../components/Header';
-import Section from '../components/Section';
-import SectionContainer from '../components/SectionContainer';
+const Section = dynamic(() => import('../components/Section'));
+const SectionContainer = dynamic(() => import('../components/SectionContainer'));
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
 import NA_ROBU_NAPREDKA from '../public/images/references/NA_ROBU_NAPREDKA.jpeg';

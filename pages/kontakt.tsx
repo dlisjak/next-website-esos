@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 
 import Header from '../components/Header';
-import SectionContainer from '../components/SectionContainer';
+const SectionContainer = dynamic(() => import('../components/SectionContainer'));
 
 import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
 import KONTAKT from '../public/images/kontakt/KONTAKT.jpeg';
