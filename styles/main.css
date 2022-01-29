@@ -55,7 +55,7 @@ p {
 select,
 input,
 textarea {
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0.25rem;
   border-radius: 2px;
 }

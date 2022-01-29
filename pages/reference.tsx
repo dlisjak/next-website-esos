@@ -63,8 +63,7 @@ const Reference = () => {
             image={NA_ROBU_NAPREDKA}
             title="Dokazali Smo Ostalim, Naj Še Vam"
             text="Z večletnimi izkušnjami in konstantnim napredovanjem na kreativnem in tehnološkem
-            področju smo samozavestni in verjamemo, da imamo edinstveno
-            rešitev, ki govori sama zase."
+            področju verjamemo, da imamo edinstveno rešitev, ki govori sama zase."
           >
             <Link href="/reference/optimizacija-spletnih-resitev">
               <span className="button -dark">Poglej podrobneje</span>
