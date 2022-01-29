@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
+import HeaderImage from '../components/HeaderImage';
+
+import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
 import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
 import Section from '../components/Section';
 import SectionContainer from '../components/SectionContainer';
-import HeaderImage from '../components/HeaderImage';
 
 const Index = () => {
   return (
@@ -18,8 +20,11 @@ const Index = () => {
       >
         <div className="flex relative h-full">
           <HeaderImage
-            src="/images/headers/1920/ABSTRACT_22.jpeg"
-            alt="Greek statue looking out to the blue sky"
+            src={ABSTRACT_22}
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+            priority
           />
         </div>
         <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">
