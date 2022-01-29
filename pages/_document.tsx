@@ -17,6 +17,18 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <footer>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`,
+            }}
+          />
+        </footer>
       </Html>
     );
   }
