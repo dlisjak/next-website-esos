@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-import Header from '../../components/Header';
+const Header = dynamic(() => import('../../components/Header'));
 const Section = dynamic(() => import('../../components/Section'));
 const SectionContainer = dynamic(() => import('../../components/SectionContainer'));
 
