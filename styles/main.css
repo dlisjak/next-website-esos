@@ -64,6 +64,10 @@ textarea {
   background: white;
 }
 
+.pointer-events-none {
+  user-select: none;
+}
+
 a.button {
   padding: 0.28rem 1rem;
   margin-right: 1rem;
