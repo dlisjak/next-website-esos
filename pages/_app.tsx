@@ -5,10 +5,14 @@ import NavBar from '../components/NavBar';
 import { pageview } from '../utils/ga';
 
 import '../styles/main.css';
+import { useEffect } from 'react';
 
 const MyApp = ({ Component, pageProps, router }) => {
   const route = router.route;
-  pageview(route);
+
+  useEffect(() => {
+    pageview(route);
+  }, []);
 
   return (
     <div className="bg-black">
