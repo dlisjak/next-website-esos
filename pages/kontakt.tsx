@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 
-import Header from '../components/Header';
+const Header = dynamic(() => import('../components/Header'));
 const SectionContainer = dynamic(() => import('../components/SectionContainer'));
 
 import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
