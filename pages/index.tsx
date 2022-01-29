@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 
 import Header from '../components/Header';
-const Section = dynamic(() => import('../components/Section'));
-const SectionContainer = dynamic(() => import('../components/SectionContainer'));
+import Section from '../components/Section';
+import SectionContainer from '../components/SectionContainer';
 
 import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
 import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
