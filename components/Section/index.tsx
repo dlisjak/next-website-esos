@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Section = ({ image, title, text, right = false, aboveTitle = '', children }) => {
+const Section = ({ image, title, text, right = false, aboveTitle = <></>, children }) => {
   const imageEl = (
     <div className="section__image sm:w-1/3 sm:flex relative w-auto overflow-hidden hidden">
       <Image
