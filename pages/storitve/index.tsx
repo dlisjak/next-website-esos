@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
 
-import Header from '../components/Header';
-import Section from '../components/Section';
-import SectionContainer from '../components/SectionContainer';
+import Header from '../../components/Header';
+import Section from '../../components/Section';
+import SectionContainer from '../../components/SectionContainer';
 
 import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
 import SPLETNE_RESITVE from '../../public/images/storitve/SPLETNE_RESITVE.jpeg';
