@@ -15,6 +15,7 @@ const Kontakt = () => {
     watch,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data) => console.log(data);
 
   return (
@@ -44,7 +45,7 @@ const Kontakt = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 className="w-full lg:w-auto flex flex-col py-1"
               >
-                <div className="flex items-center mb-4 lg:mb-2 flex-wrap lg:flex-nowrap">
+                <div className="flex items-center mb-4 lg:mb-2 flex-wrap">
                   <label className="mr-2 whitespace-nowrap" htmlFor="zanimanje">
                     Pošiljam zanimanje za:<span className="text-red-500">*</span>
                   </label>
@@ -62,7 +63,7 @@ const Kontakt = () => {
                     <option>Video produkcija</option>
                   </select>
                 </div>
-                <div className="flex items-center mb-4 lg:mb-2 flex-wrap lg:flex-nowrap">
+                <div className="flex items-center mb-4 lg:mb-2 flex-wrap">
                   <label className="mr-2 whitespace-nowrap" htmlFor="storitev">
                     Ukvarjamo se z:<span className="text-red-500">*</span>
                   </label>
@@ -86,7 +87,7 @@ const Kontakt = () => {
                     {...register('url', { required: true })}
                   />
                 </div>
-                <div className="flex items-center mb-4 lg:mb-2 flex-wrap lg:flex-nowrap">
+                <div className="flex items-center mb-4 lg:mb-2 flex-wrap">
                   <label className="mr-2 whitespace-nowrap" htmlFor="contact">
                     Dosegljivi smo na: <span className="text-red-500">*</span>
                   </label>
@@ -97,7 +98,7 @@ const Kontakt = () => {
                     {...register('contact', { required: true })}
                   />
                 </div>
-                <div className="flex items-start mb-4 lg:mb-2 flex-wrap lg:flex-nowrap">
+                <div className="flex items-start mb-4 lg:mb-2 flex-wrap">
                   <label className="mr-2 whitespace-nowrap" htmlFor="moreinfo">
                     Podrobneje:
                   </label>
@@ -121,7 +122,7 @@ const Kontakt = () => {
                   />
                 </div>
                 <div className="flex w-full sm:w-auto sm:auto sm:ml-auto lg:ml-0">
-                  <input className="button -dark w-full" type="submit" />
+                  <input className="button -dark w-full" type="submit" value="Pošlji" />
                 </div>
               </form>
             </div>
