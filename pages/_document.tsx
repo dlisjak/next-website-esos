@@ -26,16 +26,21 @@ class MyDocument extends Document {
                   var element = document.createElement("script");
                   element.src = "https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD";
                   document.head.appendChild(element);
-
+                }
+                window.onload = () => {
+                  downloadGAOnload();
+                }
+              `,
+            }}
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
                   window.dataLayer = window.dataLayer || [];
 
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                   gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
-                }
-                window.onload = () => {
-                  downloadGAOnload();
-                }
               `,
             }}
           />
