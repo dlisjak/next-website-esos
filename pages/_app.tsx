@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps, router }) => {
 
   useEffect(() => {
     pageview(route);
-  }, []);
+  }, [route]);
 
   return (
     <>
