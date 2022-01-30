@@ -23,8 +23,9 @@ html {
 html,
 body,
 #__next,
-#__next > .bg-black {
+#__next {
   height: 100%;
+  background: black;
 }
 
 h1,

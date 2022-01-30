@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const Section = ({ image, title, text, right = false, children }) => {
   const imageEl = (
@@ -15,15 +14,10 @@ const Section = ({ image, title, text, right = false, children }) => {
   );
 
   return (
-    <motion.div
+    <div
       className={`section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 sm:p-0 ${
         !right ? '' : 'justify-end'
       }`}
-      transition={{ duration: 1, ease: 'easeOut' }}
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      exit={{ opacity: 0 }}
     >
       {!right && imageEl}
       <div
@@ -38,7 +32,7 @@ const Section = ({ image, title, text, right = false, children }) => {
         <div className="flex">{children}</div>
       </div>
       {right && imageEl}
-    </motion.div>
+    </div>
   );
 };
 

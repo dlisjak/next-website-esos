@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 
 import Header from '../components/Header';
@@ -35,14 +34,7 @@ const Kontakt = () => {
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
-          <motion.div
-            className="section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 lg:p-0"
-            transition={{ duration: 1, ease: 'easeOut' }}
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            exit={{ opacity: 0 }}
-          >
+          <div className="section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 lg:p-0">
             <div className="section__image pointer-events-none sm:w-1/3 lg:flex relative w-auto overflow-hidden hidden">
               <Image src={KONTAKT} width={450} height={675} placeholder="blur" />
             </div>
@@ -133,7 +125,7 @@ const Kontakt = () => {
                 </div>
               </form>
             </div>
-          </motion.div>
+          </div>
         </SectionContainer>
       </div>
     </>

@@ -9,7 +9,7 @@ import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
 
 const Index = () => {
   return (
-    <>
+    <div className="index h-full">
       <Header
         image={ABSTRACT_22}
         title="ESOS Digital"
@@ -58,7 +58,7 @@ const Index = () => {
           </Section>
         </SectionContainer>
       </div>
-    </>
+    </div>
   );
 };
 
