@@ -1,10 +1,11 @@
 import HeaderImage from '../../components/HeaderImage';
 
-const Header = ({ image, objectPosition = 'center', title, subtitles, buttons }) => (
+const Header = ({ image, alt, objectPosition = 'center', title, subtitles, buttons }) => (
   <header className="bg-black h-full w-full relative">
     <div className="flex relative h-full">
       <HeaderImage
         src={image}
+        alt={alt}
         objectFit="cover"
         objectPosition={objectPosition}
         placeholder="blur"

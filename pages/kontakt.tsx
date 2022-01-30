@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 
@@ -19,9 +20,25 @@ const Kontakt = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <>
+    <div className="kontakt h-full">
+      <Head>
+        <title>Kontakt | ESOS Digital</title>
+        <meta property="title" content="Kontakt | ESOS Digital" key="title" />
+        <meta property="og:title" content="Kontakt | ESOS Digital" key="og:title" />
+        <meta
+          name="description"
+          content="Odzovite se na klic in nam pošljite povpraševanje. Vaš predlog bomo pregledali in Vas v kratkem kontaktirali."
+          key="description"
+        />
+        <meta
+          name="og:description"
+          content="Odzovite se na klic in nam pošljite povpraševanje. Vaš predlog bomo pregledali in Vas v kratkem kontaktirali."
+          key="og:description"
+        />
+      </Head>
       <Header
         image={HAND_FLOWERS}
+        alt="Extending hand of a person in the middle of orange flowers"
         title="Kontakt"
         subtitles={<h2 className="text-white text-3xl sm:text-5xl mb-6">Odzovi se na klic</h2>}
         buttons={
@@ -37,7 +54,13 @@ const Kontakt = () => {
         <SectionContainer>
           <div className="section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 lg:p-0">
             <div className="section__image pointer-events-none sm:w-1/3 lg:flex relative w-auto overflow-hidden hidden">
-              <Image src={KONTAKT} width={450} height={675} placeholder="blur" />
+              <Image
+                src={KONTAKT}
+                alt="Pen and letter on a desk"
+                width={450}
+                height={675}
+                placeholder="blur"
+              />
             </div>
             <div className="w-full lg:w-2/3 flex flex-col lg:max-w-3xl relative z-10 items-start lg:ml-6 lg:ml-8">
               <h2 className="relative mt-0 z-10 lg:right-2 mb-2 text-left">Pozdravljeni,</h2>
@@ -129,7 +152,7 @@ const Kontakt = () => {
           </div>
         </SectionContainer>
       </div>
-    </>
+    </div>
   );
 };
 

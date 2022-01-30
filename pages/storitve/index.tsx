@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 import Header from '../../components/Header';
 import Section from '../../components/Section';
@@ -13,9 +14,25 @@ import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
 
 const Storitve = () => {
   return (
-    <>
+    <div className="storitve h-full">
+      <Head>
+        <title>Storitve | ESOS Digital</title>
+        <meta property="title" content="Storitve | ESOS Digital" key="title" />
+        <meta property="og:title" content="Storitve | ESOS Digital" key="og:title" />
+        <meta
+          name="description"
+          content="Za vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
+          key="description"
+        />
+        <meta
+          name="og:description"
+          content="Za vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
+          key="og:description"
+        />
+      </Head>
       <Header
         image={BUILDING_BRIDGE}
+        alt="Majestic cathedral near a big bridge"
         objectPosition="right"
         title="Storitve"
         subtitles={
@@ -45,6 +62,7 @@ const Storitve = () => {
         <SectionContainer>
           <Section
             image={SPLETNE_RESITVE}
+            alt="Beautiful skyscraper reaching for the skies"
             aboveTitle={<p>Izdelava in optimizacija spletnih strani in trgovin</p>}
             title={
               <>
@@ -63,6 +81,7 @@ const Storitve = () => {
           <Section
             right
             image={IZDELAVA_APLIKACIJ}
+            alt="Colorful image of a sand cave"
             aboveTitle={<p>Izdelava in razvoj aplikacij</p>}
             title={
               <>
@@ -80,6 +99,7 @@ const Storitve = () => {
           </Section>
           <Section
             image={DIGITALNI_MARKETING}
+            alt="Colorful tower reaching for the skies"
             aboveTitle={<p>Dober glas seže v deveto vas</p>}
             title="Digitalni Marketing"
             text="Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
@@ -93,6 +113,7 @@ const Storitve = () => {
           <Section
             right
             image={ANIMACIJE}
+            alt="Disney castle"
             aboveTitle={<p>Ko resničnost poka po šivih</p>}
             title={
               <>
@@ -109,6 +130,7 @@ const Storitve = () => {
           </Section>
           <Section
             image={VIDEO_PRODUCTION}
+            alt="Cathedral in distance between two greek towers"
             aboveTitle={<p>Inspiracija ne počiva</p>}
             title="Video Produkcija"
             text="Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
@@ -121,7 +143,7 @@ const Storitve = () => {
           </Section>
         </SectionContainer>
       </div>
-    </>
+    </div>
   );
 };
 

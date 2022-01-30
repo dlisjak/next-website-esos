@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 import Header from '../components/Header';
 import Section from '../components/Section';
@@ -10,8 +11,24 @@ import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
 const Index = () => {
   return (
     <div className="index h-full">
+      <Head>
+        <title>Domov | ESOS Digital</title>
+        <meta property="title" content="Domov | ESOS Digital" key="title" />
+        <meta property="og:title" content="Domov | ESOS Digital" key="og:title" />
+        <meta
+          name="description"
+          content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
+          key="description"
+        />
+        <meta
+          name="og:description"
+          content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
+          key="og:description"
+        />
+      </Head>
       <Header
         image={ABSTRACT_22}
+        alt="Greek statue looking out to the blue sky"
         title="ESOS Digital"
         subtitles={
           <h2 className="text-white	text-4xl sm:text-5xl mb-6">
@@ -38,6 +55,7 @@ const Index = () => {
         <SectionContainer>
           <Section
             image={CITY_AERIAL_OFFICE}
+            alt="Populated city with towers"
             title="ESOS Digital"
             text={
               <>
