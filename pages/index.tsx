@@ -7,6 +7,7 @@ import SectionContainer from '../components/SectionContainer';
 
 import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
 import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
+import COLLOSEUM from '../public/images/vstop/COLLOSEUM.jpeg';
 
 const Index = () => {
   return (
@@ -56,6 +57,7 @@ const Index = () => {
           <Section
             image={CITY_AERIAL_OFFICE}
             alt="Populated city with towers"
+            aboveTitle={<p className="text-slate-400">O nas</p>}
             title="ESOS Digital"
             text={
               <>
@@ -68,8 +70,23 @@ const Index = () => {
             }
           >
             <Link href="/storitve">
-              <a className="button -dark">Storitve</a>
+              <a className="button -dark mr-4">Storitve</a>
             </Link>
+          </Section>
+          <Section
+            right
+            image={COLLOSEUM}
+            alt="Populated city with towers"
+            aboveTitle={<p className="text-slate-400">Ker vemo kaj želite</p>}
+            title="Edinstvena Rešitev"
+            text={
+              <>
+                Zaradi širokega znanja z večih področij in edinstvenim pristopom lahko za Vas
+                ustvarimo rešitev, ki bo primerna za Vaš posel in učinkovita pri doseganju zadanih
+                ciljev.
+              </>
+            }
+          >
             <Link href="/kontakt">
               <a className="button -dark">Kontaktirajte nas</a>
             </Link>

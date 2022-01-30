@@ -47,7 +47,7 @@ const Storitve = () => {
         buttons={
           <>
             <Link href="#storitve">
-              <a className="button">Več o storitvah</a>
+              <a className="button mr-4">Več o storitvah</a>
             </Link>
             <Link href="/reference">
               <a className="button">Reference</a>
@@ -63,7 +63,9 @@ const Storitve = () => {
           <Section
             image={SPLETNE_RESITVE}
             alt="Beautiful skyscraper reaching for the skies"
-            aboveTitle={<p>Izdelava in optimizacija spletnih strani in trgovin</p>}
+            aboveTitle={
+              <p className="text-slate-400">Izdelava in optimizacija spletnih strani in trgovin</p>
+            }
             title={
               <>
                 Optimizacija
@@ -82,7 +84,7 @@ const Storitve = () => {
             right
             image={IZDELAVA_APLIKACIJ}
             alt="Colorful image of a sand cave"
-            aboveTitle={<p>Izdelava in razvoj aplikacij</p>}
+            aboveTitle={<p className="text-slate-400">Izdelava in razvoj aplikacij</p>}
             title={
               <>
                 Izdelava Mobilnih
@@ -100,7 +102,7 @@ const Storitve = () => {
           <Section
             image={DIGITALNI_MARKETING}
             alt="Colorful tower reaching for the skies"
-            aboveTitle={<p>Dober glas seže v deveto vas</p>}
+            aboveTitle={<p className="text-slate-400">Dober glas seže v deveto vas</p>}
             title="Digitalni Marketing"
             text="Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
             strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
@@ -114,7 +116,7 @@ const Storitve = () => {
             right
             image={ANIMACIJE}
             alt="Disney castle"
-            aboveTitle={<p>Ko resničnost poka po šivih</p>}
+            aboveTitle={<p className="text-slate-400">Ko resničnost poka po šivih</p>}
             title={
               <>
                 3D Modeliranje
@@ -131,7 +133,7 @@ const Storitve = () => {
           <Section
             image={VIDEO_PRODUCTION}
             alt="Cathedral in distance between two greek towers"
-            aboveTitle={<p>Inspiracija ne počiva</p>}
+            aboveTitle={<p className="text-slate-400">Inspiracija ne počiva</p>}
             title="Video Produkcija"
             text="Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
             so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali

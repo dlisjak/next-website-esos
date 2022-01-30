@@ -40,7 +40,7 @@ const Reference = () => {
         buttons={
           <>
             <Link href="#reference">
-              <a className="button">Podrobneje</a>
+              <a className="button mr-4">Podrobneje</a>
             </Link>
 
             <Link href="/kontakt">
