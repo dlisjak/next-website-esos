@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
-import axios from 'axios';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import Header from '../components/Header';
@@ -9,7 +9,6 @@ import SectionContainer from '../components/SectionContainer';
 
 import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
 import KONTAKT from '../public/images/kontakt/KONTAKT.jpeg';
-import { useState } from 'react';
 
 const Kontakt = () => {
   const {
@@ -22,6 +21,7 @@ const Kontakt = () => {
 
   const onSubmit = async (data) => {
     const formData = new FormData();
+    const axios = (await import('axios')).default;
 
     formData.set('zanimanje', data.zanimanje);
     formData.set('storitev', data.storitev);
