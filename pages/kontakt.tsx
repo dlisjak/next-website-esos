@@ -18,8 +18,10 @@ const Kontakt = () => {
     formState: { errors },
   } = useForm();
   const [isFormSuccessful, setIsFormSuccessful] = useState(false);
+  const [isFormSubmitting, setIsFormSubmitting] = useState(false);
 
   const onSubmit = async (data) => {
+    setIsFormSubmitting(true);
     const formData = new FormData();
     const axios = (await import('axios')).default;
 
@@ -35,13 +37,13 @@ const Kontakt = () => {
     });
 
     if (res.data.status === 'mail_sent') {
-      // show success
+      // success
       setIsFormSuccessful(true);
     } else {
+      // error
       setIsFormSuccessful(false);
     }
-
-    console.log(res);
+    setIsFormSubmitting(false);
   };
 
   return (
@@ -173,7 +175,12 @@ const Kontakt = () => {
                   </div>
                 )}
                 <div className="flex w-full sm:w-auto sm:ml-auto xl:ml-0 lg:mt-4">
-                  <input className="button -dark w-full" type="submit" value="Pošlji" />
+                  <input
+                    className={`button -dark w-full ${isFormSubmitting ? '' : ''}`}
+                    type="submit"
+                    disabled={isFormSubmitting}
+                    value="Pošlji"
+                  />
                 </div>
               </form>
             </div>
