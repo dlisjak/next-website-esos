@@ -45,6 +45,7 @@ const Storitve = () => {
         <SectionContainer>
           <Section
             image={SPLETNE_RESITVE}
+            aboveTitle={<p>Izdelava in optimizacija spletnih strani in trgovin</p>}
             title={
               <>
                 Optimizacija
@@ -56,12 +57,13 @@ const Storitve = () => {
                 vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
           >
             <Link href="/storitve/optimizacija-spletnih-resitev">
-              <a className="button -dark">Poglej podrobneje</a>
+              <a className="button -dark">Preberite podrobneje</a>
             </Link>
           </Section>
           <Section
             right
             image={IZDELAVA_APLIKACIJ}
+            aboveTitle={<p>Izdelava in razvoj aplikacij</p>}
             title={
               <>
                 Izdelava Mobilnih
@@ -78,6 +80,7 @@ const Storitve = () => {
           </Section>
           <Section
             image={DIGITALNI_MARKETING}
+            aboveTitle={<p>Dober glas seže v deveto vas</p>}
             title="Digitalni Marketing"
             text="Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
             strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
@@ -90,6 +93,7 @@ const Storitve = () => {
           <Section
             right
             image={ANIMACIJE}
+            aboveTitle={<p>Ko resničnost poka po šivih</p>}
             title={
               <>
                 3D Modeliranje
@@ -105,6 +109,7 @@ const Storitve = () => {
           </Section>
           <Section
             image={VIDEO_PRODUCTION}
+            aboveTitle={<p>Inspiracija ne počiva</p>}
             title="Video Produkcija"
             text="Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
             so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali

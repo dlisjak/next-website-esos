@@ -25,7 +25,7 @@ const Section = ({ image, title, text, right = false, aboveTitle = <></>, childr
           !right ? 'items-start sm:ml-4 md:ml-6 lg:ml-8' : 'items-end sm:mr-4 md:mr-6 lg:mr-8'
         }`}
       >
-        <div className="flex h-10">{aboveTitle}</div>
+        {aboveTitle}
         <h2 className={`relative mt-0 z-10 mb-2 ${!right ? 'text-left' : 'text-right'}`}>
           {title}
         </h2>

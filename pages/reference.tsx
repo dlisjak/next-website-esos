@@ -41,7 +41,7 @@ const Reference = () => {
             text="Z večletnimi izkušnjami in konstantnim napredovanjem na kreativnem in tehnološkem
             področju verjamemo, da imamo edinstveno rešitev, ki govori sama zase."
             aboveTitle={
-              <>
+              <div className="flex h-10">
                 <Link href="https://apnews.com">
                   <a className="mr-2" target="_blank" rel="nofollow">
                     <Image src={AP} width={40} height={40} />
@@ -57,7 +57,7 @@ const Reference = () => {
                     <Image src={JOE} width={40} height={40} />
                   </a>
                 </Link>
-              </>
+              </div>
             }
           >
             <Link href="/reference/optimizacija-spletnih-resitev">
