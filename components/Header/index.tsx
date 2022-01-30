@@ -2,7 +2,7 @@ import HeaderImage from '../../components/HeaderImage';
 
 const Header = ({ image, alt, objectPosition = 'center', title, subtitles, buttons }) => (
   <header className="bg-black h-full w-full relative">
-    <div className="flex relative h-full">
+    <div className="flex relative h-full pointer-events-none">
       <HeaderImage
         src={image}
         alt={alt}
