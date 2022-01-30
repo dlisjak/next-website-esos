@@ -18,15 +18,16 @@ class MyDocument extends Document {
           <NextScript />
         </body>
         <footer>
-          <script async src="" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 function downloadGAOnload() {
                   var element = document.createElement("script");
                   element.src = "https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD";
+                  element.defer = true;
                   document.head.appendChild(element);
                 }
+
                 window.onload = () => {
                   downloadGAOnload();
                   window.dataLayer = window.dataLayer || [];
