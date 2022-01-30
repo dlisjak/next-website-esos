@@ -20,6 +20,12 @@ const Kontakt = () => {
   const [isFormSuccessful, setIsFormSuccessful] = useState(false);
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
 
+  const handleFormSubmit = () => {
+    const submit = document.querySelector('.formSubmit');
+
+    console.log(submit);
+  };
+
   const onSubmit = async (data) => {
     setIsFormSubmitting(true);
     const formData = new FormData();
@@ -174,13 +180,22 @@ const Kontakt = () => {
                     kontaktirali.
                   </div>
                 )}
-                <div className="flex w-full sm:w-auto sm:ml-auto xl:ml-0 lg:mt-4">
-                  <input
-                    className={`button -dark w-full ${isFormSubmitting ? '' : ''}`}
-                    type="submit"
-                    disabled={isFormSubmitting}
-                    value="Pošlji"
-                  />
+                <div className="flex button h-12 justify-center align-center -dark sm:w-auto sm:ml-auto xl:ml-0 lg:mt-4">
+                  {!isFormSubmitting ? (
+                    <input
+                      className="w-full"
+                      type="submit"
+                      disabled={isFormSubmitting}
+                      value="Pošlji"
+                    />
+                  ) : (
+                    <div className="lds-ring h-6">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  )}
                 </div>
               </form>
             </div>
