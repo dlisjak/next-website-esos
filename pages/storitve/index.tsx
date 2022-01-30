@@ -135,7 +135,7 @@ const Storitve = () => {
             title="Video Produkcija"
             text="Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
             so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali
-            in uspešno prikazali svojo vizijo ter sporočilo."
+            in uspešno predali svojo sporočilo."
           >
             <Link href="/storitve/video-produkcija">
               <a className="button -dark">Poglej podrobneje</a>
