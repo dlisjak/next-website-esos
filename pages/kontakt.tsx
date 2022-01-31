@@ -106,17 +106,17 @@ const Kontakt = () => {
                     className="w-full"
                     id="zanimanje"
                     placeholder="Izberite"
-                    defaultValue="splosno"
+                    defaultValue=""
                     {...register('zanimanje', { required: true })}
                   >
                     <option value="" selected disabled hidden>
                       Izberi
                     </option>
-                    <option>Spletne rešitve</option>
-                    <option>Mobilne aplikacije</option>
-                    <option>Digitalni marketing</option>
-                    <option>3D animacije</option>
-                    <option>Video produkcija</option>
+                    <option value="spletne rešitve">Spletne rešitve</option>
+                    <option value="mobilne aplikacije">Mobilne aplikacije</option>
+                    <option value="digitalni marketing">Digitalni marketing</option>
+                    <option value="3d animacije">3D animacije</option>
+                    <option value="video produkcija">Video produkcija</option>
                   </select>
                 </div>
                 <div className="flex items-center mb-4 lg:mb-2 flex-wrap">
