@@ -33,6 +33,10 @@ const Index = () => {
           content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="og:description"
         />
+        <link
+          rel="canonical"
+          href="https://www.esos.si/storitve/izdelava-aplikacij-za-android-ios-pametne-telefone/"
+        />
       </Head>
       <Header
         image={ABSTRACT_27}

@@ -35,6 +35,10 @@ const Index = () => {
           content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
           key="og:description"
         />
+        <link
+          rel="canonical"
+          href="https://www.esos.si/storitve/izdelava-optimizacija-spletnih-strani-trgovin/"
+        />
       </Head>
       <Header
         image={ABSTRACT_5}

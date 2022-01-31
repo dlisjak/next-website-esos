@@ -25,6 +25,7 @@ const Index = () => {
           content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
           key="og:description"
         />
+        <link rel="canonical" href="https://www.esos.si/storitve/digitalni-marketing/" />
       </Head>
       <Header
         image={ABSTRACT_28}
@@ -90,6 +91,9 @@ const Index = () => {
             <div className="flex flex-wrap">
               <Link href="/kontakt">
                 <a className="button -dark mr-4 mb-4">Pošljite povpraševanje</a>
+              </Link>
+              <Link href="/storitve">
+                <a className="button -dark mr-4 mb-4">Ostale storitve</a>
               </Link>
             </div>
           </Section>

@@ -26,6 +26,7 @@ const Index = () => {
           content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
           key="og:description"
         />
+        <link rel="canonical" href="https://www.esos.si/" />
       </Head>
       <Header
         image={ABSTRACT_22}
@@ -88,10 +89,10 @@ const Index = () => {
               </>
             }
           >
-            <Link href="/storitve/izdelava-in-optimizacija-spletnih-strani-in-trgovin">
+            <Link href="/storitve/izdelava-optimizacija-spletnih-strani-trgovin">
               <a className="button -dark mr-4 mb-4">Spletne rešitve</a>
             </Link>
-            <Link href="/storitve/izdelava-aplikacij-za-android-in-ios-pametne-telefone">
+            <Link href="/storitve/izdelava-aplikacij-za-android-ios-pametne-telefone">
               <a className="button -dark mr-4 mb-4">Mobilne rešitve</a>
             </Link>
             <Link href="/storitve/digitalni-marketing">

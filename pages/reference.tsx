@@ -31,6 +31,7 @@ const Reference = () => {
           področju verjamemo, da imamo edinstveno rešitev, ki govori sama zase."
           key="og:description"
         />
+        <link rel="canonical" href="https://www.esos.si/reference/" />
       </Head>
       <Header
         image={WOMAN_SITTING_CHRIST_MUSEUM}
