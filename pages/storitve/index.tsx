@@ -104,7 +104,7 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za vas izdelamo mobilne aplikacije na sisemih IOS in Android. Omogočimo vam celotno
+                Za vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam celotno
                 ponudbo od izdelave do gostovanja na Cloud strežnikih.
               </p>
             }

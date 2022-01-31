@@ -25,12 +25,12 @@ const Index = () => {
         />
         <meta
           name="description"
-          content="Za vas izdelamo mobilne aplikacije na sisemih IOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+          content="Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za vas izdelamo mobilne aplikacije na sisemih IOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+          content="Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="og:description"
         />
       </Head>
@@ -46,7 +46,7 @@ const Index = () => {
             Pametne Telefone
           </h1>
         }
-        subtitle="Spletne Rešitve"
+        subtitle="Mobilne Rešitve"
         buttons={
           <>
             <Link href="#spletne-strani">
@@ -75,7 +75,7 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za vas izdelamo mobilne aplikacije na sistemih IOS in Android. Omogočimo vam
+                  Za vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam
                   celotno ponudbo od izdelave, gostovanja na strežnikih na Cloud tehnologiji s
                   podporo kubernetes sistema.
                 </p>
@@ -92,9 +92,9 @@ const Index = () => {
                 </p>
                 <p className="mb-2">
                   Moderni uporabnik najuspešnejših aplikacij večino časa preživi na mobilnih
-                  telefonih in se uporaba le teh močno povećije naspram ostalim napravam, kot so
-                  računalniki in prenosniki. Zato vam svetujemo, da svojo ponudbo ali idejo za novo
-                  aplikacijo ponudite uporabnikom preko aplikacij, ki potem smiselno omogočajo
+                  telefonih in se uporaba le teh močno povečuje v primerjavi ostalim napravam, kot
+                  so računalniki in prenosniki. Zato vam svetujemo, da svojo ponudbo ali idejo za
+                  novo aplikacijo ponudite uporabnikom preko aplikacij, ki potem smiselno omogočajo
                   uporabniku, da komunicira in uporablja aplikacijo kot stalen in veren kupec.
                 </p>
               </>
