@@ -5,7 +5,7 @@ import Header from '../../../components/Header';
 import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
 
-import ABSTRACT_5 from '../../../public/images/headers/1920/ABSTRACT_5.jpeg';
+import ABSTRACT_27 from '../../../public/images/headers/1920/ABSTRACT_27.jpeg';
 import IZDELAVA_APLIKACIJ from '../../../public/images/storitve/mobilne_aplikacije/IZDELAVA_APLIKACIJ.jpeg';
 
 const Index = () => {
@@ -35,7 +35,7 @@ const Index = () => {
         />
       </Head>
       <Header
-        image={ABSTRACT_5}
+        image={ABSTRACT_27}
         alt="Northern lights on a dark starry night"
         title={
           <h1 className="text-white	text-4xl sm:text-5xl mb-6">
