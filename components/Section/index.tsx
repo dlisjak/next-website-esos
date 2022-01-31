@@ -9,6 +9,7 @@ interface Props {
   right?: boolean;
   aboveTitle?: any;
   children?: any;
+  key?: any;
 }
 
 const Section: React.FC<Props> = ({
@@ -21,7 +22,6 @@ const Section: React.FC<Props> = ({
   aboveTitle = <></>,
   children,
 }) => {
-  console.log(children);
   const imageEl = (
     <div
       className={`section__image sm:w-1/3 ${
@@ -34,7 +34,7 @@ const Section: React.FC<Props> = ({
         alt={alt}
         width={450}
         height={675}
-        placeholder="blur"
+        placeholder={typeof image !== 'string' ? 'blur' : 'empty'}
       />
     </div>
   );
@@ -63,8 +63,7 @@ const Section: React.FC<Props> = ({
         <div
           className={`flex flex-wrap relative ${showImageOnSmall ? '' : 'ml-auto xl:ml-0'} ${
             right ? 'justify-end' : ''
-          }
-          ${children.length > 1 ? 'left-4' : ''}`}
+          }`}
         >
           {children}
         </div>
