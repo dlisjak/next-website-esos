@@ -21,12 +21,12 @@ const Storitve = () => {
         <meta property="og:title" content="Storitve | ESOS Digital" key="og:title" />
         <meta
           name="description"
-          content="Za vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
+          content="Za Vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
+          content="Za Vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
           key="og:description"
         />
       </Head>
@@ -81,7 +81,7 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki
+                Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki
                 vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu.
               </p>
             }
@@ -104,7 +104,7 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam celotno
+                Za Vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam celotno
                 ponudbo od izdelave do gostovanja na Cloud strežnikih.
               </p>
             }
@@ -120,7 +120,7 @@ const Storitve = () => {
             title="Digitalni Marketing"
             text={
               <p>
-                Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
+                Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
                 strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
                 ki vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo.
               </p>
@@ -143,7 +143,7 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
+                Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
                 ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
               </p>
             }
@@ -159,7 +159,7 @@ const Storitve = () => {
             title="Video Produkcija"
             text={
               <p>
-                Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
+                Za Vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
                 so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali
                 in uspešno predali svojo sporočilo.
               </p>

@@ -150,7 +150,7 @@ const Kontakt = () => {
                   <input
                     className="w-full"
                     id="contact"
-                    placeholder="Kako vas lahko kontaktiramo"
+                    placeholder="Kako Vas lahko kontaktiramo"
                     {...register('contact', { required: true })}
                   />
                 </div>

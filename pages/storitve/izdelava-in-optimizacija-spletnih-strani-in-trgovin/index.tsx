@@ -27,12 +27,12 @@ const Index = () => {
         />
         <meta
           name="description"
-          content="Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
           key="og:description"
         />
       </Head>
@@ -81,7 +81,7 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
+                  Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
                   ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
                   tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
                   izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
@@ -147,7 +147,7 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
+                  Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
                   ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
                   tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
                   izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
@@ -209,7 +209,7 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
+                  Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
                   ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
                   tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
                   izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so

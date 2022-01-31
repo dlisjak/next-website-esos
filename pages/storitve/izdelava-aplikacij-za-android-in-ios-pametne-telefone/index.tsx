@@ -25,12 +25,12 @@ const Index = () => {
         />
         <meta
           name="description"
-          content="Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="og:description"
         />
       </Head>
@@ -75,7 +75,7 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam
+                  Za Vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam
                   celotno ponudbo od izdelave, gostovanja na strežnikih na Cloud tehnologiji s
                   podporo kubernetes sistema.
                 </p>

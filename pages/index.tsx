@@ -63,7 +63,7 @@ const Index = () => {
               <>
                 Smo kreativna ekipa vizionarjev, kjer ne poznamo besede "nemogoče".
                 <br />Z izkušnjami na največjih projektih v Evropi smo prepričani, da smo pravi
-                naslov za vas.
+                naslov za Vas.
                 <br />
                 Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi.
               </>
