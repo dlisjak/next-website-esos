@@ -88,16 +88,16 @@ const Index = () => {
               </>
             }
           >
-            <Link href="/kontakt">
+            <Link href="/storitve/izdelava-in-optimizacija-spletnih-strani-in-trgovin">
               <a className="button -dark mr-4 mb-4">Spletne rešitve</a>
             </Link>
-            <Link href="/kontakt">
+            <Link href="/storitve/izdelava-aplikacij-za-android-in-ios-pametne-telefone">
               <a className="button -dark mr-4 mb-4">Mobilne rešitve</a>
             </Link>
-            <Link href="/kontakt">
+            <Link href="/storitve/digitalni-marketing">
               <a className="button -dark mr-4 mb-4">Digitalni marketing</a>
             </Link>
-            <Link href="/kontakt">
+            <Link href="/reference">
               <a className="button -dark mr-4 mb-4">3D Modeliranje in animacije</a>
             </Link>
             <Link href="/kontakt">
