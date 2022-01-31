@@ -87,7 +87,7 @@ const Index = () => {
                 </p>
                 <p className="mb-2">
                   Aplikacijo vam izdelamo na način, da lahko najbolje iztržite oglaševalski prostor
-                  v vaši aplikaciji in dodatno zaslužite z oddajanjem oglaševalskega prostora v
+                  v Vaši aplikaciji in dodatno zaslužite z oddajanjem oglaševalskega prostora v
                   aplikaciji.
                 </p>
                 <p className="mb-2">
