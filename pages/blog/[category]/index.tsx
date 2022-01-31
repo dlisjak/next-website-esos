@@ -46,7 +46,7 @@ export async function getStaticPaths() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/categories`);
   const categoriesJson = await res.json();
   const categories = categoriesJson.map((category) => {
-    return { params: { category: `${category.id}` } };
+    return { params: { category: `${category.slug}` } };
   });
 
   return {
