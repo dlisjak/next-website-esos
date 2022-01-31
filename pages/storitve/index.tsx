@@ -6,8 +6,8 @@ import Section from '../../components/Section';
 import SectionContainer from '../../components/SectionContainer';
 
 import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
-import SPLETNE_RESITVE from '../../public/images/storitve/SPLETNE_RESITVE.jpeg';
-import IZDELAVA_APLIKACIJ from '../../public/images/storitve/IZDELAVA_APLIKACIJ.jpeg';
+import EIFFEL from '../../public/images/storitve/spletne_resitve/EIFFEL.jpeg';
+import IZDELAVA_APLIKACIJ from '../../public/images/storitve/mobilne_aplikacije/IZDELAVA_APLIKACIJ.jpeg';
 import DIGITALNI_MARKETING from '../../public/images/storitve/DIGITALNI_MARKETING.jpeg';
 import VIDEO_PRODUCTION from '../../public/images/storitve/VIDEO_PRODUCTION.jpeg';
 import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
@@ -67,7 +67,7 @@ const Storitve = () => {
       >
         <SectionContainer>
           <Section
-            image={SPLETNE_RESITVE}
+            image={EIFFEL}
             alt="Beautiful skyscraper reaching for the skies"
             aboveTitle={
               <p className="text-slate-500">Izdelava in optimizacija spletnih strani in trgovin</p>
@@ -104,12 +104,12 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
-                ponudbo od izdelave do gostovanja.
+                Za vas izdelamo mobilne aplikacije na sisemih IOS in Android. Omogočimo vam celotno
+                ponudbo od izdelave do gostovanja na Cloud strežnikih.
               </p>
             }
           >
-            <Link href="/storitve/izdelava-mobilnih-aplikacij">
+            <Link href="/storitve/izdelava-aplikacij-za-android-in-ios-pametne-telefone">
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>

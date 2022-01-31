@@ -6,9 +6,9 @@ import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
 
 import ABSTRACT_5 from '../../../public/images/headers/1920/ABSTRACT_5.jpeg';
-import EIFFEL from '../../../public/images/spletne_resitve/EIFFEL.jpeg';
-import SHOP from '../../../public/images/spletne_resitve/SHOP.jpeg';
-import ROCKET from '../../../public/images/spletne_resitve/ROCKET.jpeg';
+import EIFFEL from '../../../public/images/storitve/spletne_resitve/EIFFEL.jpeg';
+import SHOP from '../../../public/images/storitve/spletne_resitve/SHOP.jpeg';
+import ROCKET from '../../../public/images/storitve/spletne_resitve/ROCKET.jpeg';
 
 const Index = () => {
   return (
