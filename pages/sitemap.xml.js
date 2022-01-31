@@ -15,14 +15,14 @@ export const getServerSideProps = async ({ res }) => {
       );
     })
     .map((staticPagePath) => {
-      return `${BASE_URL}/${staticPagePath.replace('index', '').replace('.tsx', '')}`;
+      return `${BASE_URL}/${staticPagePath.replace('index', '').replace('.tsx', '').replace("js", "")}`;
     });
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${staticPaths
-        .map((url) => {
-          return `
+      .map((url) => {
+        return `
             <url>
               <loc>${url}</loc>
               <lastmod>${new Date().toISOString()}</lastmod>
@@ -30,8 +30,8 @@ export const getServerSideProps = async ({ res }) => {
               <priority>1.0</priority>
             </url>
           `;
-        })
-        .join('')}
+      })
+      .join('')}
     </urlset>
   `;
 

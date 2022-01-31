@@ -63,17 +63,17 @@ const Reference = () => {
             aboveTitle={
               <div className="flex h-10">
                 <Link href="https://apnews.com">
-                  <a className="mr-2" target="_blank" rel="nofollow noreferrer">
+                  <a className="mr-2" target="_blank" rel="noreferrer">
                     <Image src={AP} alt="APnews.com logo" width={40} height={40} />
                   </a>
                 </Link>
                 <Link href="https://billa.at">
-                  <a className="mr-2" target="_blank" rel="nofollow noreferrer">
+                  <a className="mr-2" target="_blank" rel="noreferrer">
                     <Image src={BILLA} alt="Billa.at logo" width={40} height={40} />
                   </a>
                 </Link>
                 <Link href="https://joe-club.at">
-                  <a className="mr-2" target="_blank" rel="nofollow noreferrer">
+                  <a className="mr-2" target="_blank" rel="noreferrer">
                     <Image src={JOE} alt="joe-club.at logo" width={40} height={40} />
                   </a>
                 </Link>

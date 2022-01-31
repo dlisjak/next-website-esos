@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "utils/serializeModels.js",
-    "pages/stanovanja/[uuid]"
+    "pages/stanovanja/[uuid]",
+    "pages/sitemap.xml.js"
   ],
   "exclude": ["node_modules"]
 }
