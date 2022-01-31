@@ -1,6 +1,17 @@
 import Image from 'next/image';
 
-const Section = ({
+interface Props {
+  image?: any;
+  alt?: string;
+  showImageOnSmall?: boolean;
+  title?: any;
+  text?: any;
+  right?: boolean;
+  aboveTitle?: any;
+  children?: any;
+}
+
+const Section: React.FC<Props> = ({
   image,
   alt,
   showImageOnSmall = true,

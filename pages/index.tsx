@@ -77,7 +77,7 @@ const Index = () => {
             right
             image={COLOSSEUM}
             alt="Zoomed image of the Roman colosseum"
-            aboveTitle={<p className="text-slate-500">Ker vemo kaj želite</p>}
+            aboveTitle={<p className="text-slate-500">Ker vemo kaj je potrebno</p>}
             title="Edinstvena Rešitev"
             text={
               <>
