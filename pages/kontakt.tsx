@@ -20,12 +20,6 @@ const Kontakt = () => {
   const [isFormSuccessful, setIsFormSuccessful] = useState(false);
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
 
-  const handleFormSubmit = () => {
-    const submit = document.querySelector('.formSubmit');
-
-    console.log(submit);
-  };
-
   const onSubmit = async (data) => {
     setIsFormSubmitting(true);
     const formData = new FormData();
@@ -72,7 +66,7 @@ const Kontakt = () => {
       <Header
         image={HAND_FLOWERS}
         alt="Extending hand of a person in the middle of orange flowers"
-        title={<h2 className="text-white text-3xl sm:text-5xl mb-6">Odzovi se na klic</h2>}
+        title={<h1 className="text-white text-3xl sm:text-5xl mb-6">Odzovi se na klic</h1>}
         subtitle="Kontakt"
         buttons={
           <Link href="#kontakt">
