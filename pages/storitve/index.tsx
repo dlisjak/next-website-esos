@@ -87,7 +87,7 @@ const Storitve = () => {
             }
           >
             <Link href="/storitve/izdelava-in-optimizacija-spletnih-strani-in-trgovin">
-              <a className="button -dark">Preberite podrobneje</a>
+              <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>
           <Section

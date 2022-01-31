@@ -21,6 +21,7 @@ const Section: React.FC<Props> = ({
   aboveTitle = <></>,
   children,
 }) => {
+  console.log(children);
   const imageEl = (
     <div
       className={`section__image sm:w-1/3 ${
@@ -59,7 +60,14 @@ const Section: React.FC<Props> = ({
         <div className={`mb-2 md:mb-4 text-left ${!right ? 'text-left' : 'text-right'}`}>
           {text}
         </div>
-        <div className={`flex ${showImageOnSmall ? '' : 'ml-auto xl:ml-0'}`}>{children}</div>
+        <div
+          className={`flex flex-wrap relative ${showImageOnSmall ? '' : 'ml-auto xl:ml-0'} ${
+            right ? 'justify-end' : ''
+          }
+          ${children.length > 1 ? 'left-4' : ''}`}
+        >
+          {children}
+        </div>
       </div>
       {right && imageEl}
     </div>

@@ -77,6 +77,7 @@ const Index = () => {
             right
             image={COLOSSEUM}
             alt="Zoomed image of the Roman colosseum"
+            showImageOnSmall={false}
             aboveTitle={<p className="text-slate-500">Ker vemo kaj je potrebno</p>}
             title="Edinstvena Rešitev"
             text={
@@ -88,7 +89,19 @@ const Index = () => {
             }
           >
             <Link href="/kontakt">
-              <a className="button -dark">Kontaktirajte nas</a>
+              <a className="button -dark mr-4 mb-4">Spletne rešitve</a>
+            </Link>
+            <Link href="/kontakt">
+              <a className="button -dark mr-4 mb-4">Mobilne rešitve</a>
+            </Link>
+            <Link href="/kontakt">
+              <a className="button -dark mr-4 mb-4">Digitalni marketing</a>
+            </Link>
+            <Link href="/kontakt">
+              <a className="button -dark mr-4 mb-4">3D Modeliranje in animacije</a>
+            </Link>
+            <Link href="/kontakt">
+              <a className="button -dark mr-4 mb-4">Video produkcija</a>
             </Link>
           </Section>
         </SectionContainer>
