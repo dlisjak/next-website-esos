@@ -80,8 +80,8 @@ const Reference = () => {
               </div>
             }
           >
-            <Link href="/reference/optimizacija-spletnih-resitev">
-              <a className="button -dark">Poglej podrobneje</a>
+            <Link href="/kontakt">
+              <a className="button -dark">Kontakt</a>
             </Link>
           </Section>
         </SectionContainer>

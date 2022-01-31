@@ -62,7 +62,7 @@ const Index = () => {
         <SectionContainer>
           <Section
             image={IZDELAVA_APLIKACIJ}
-            alt="Populated city with towers"
+            alt="Colorful image of a sand cave"
             showImageOnSmall={false}
             aboveTitle={<p className="text-slate-500">Ustvarimo nekaj nepozabnega</p>}
             title={

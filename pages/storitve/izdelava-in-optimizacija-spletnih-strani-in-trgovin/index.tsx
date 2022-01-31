@@ -68,7 +68,7 @@ const Index = () => {
         <SectionContainer>
           <Section
             image={EIFFEL}
-            alt="Populated city with towers"
+            alt="Eiffel tower"
             showImageOnSmall={false}
             aboveTitle={<p className="text-slate-500">Ustvarimo nekaj nepozabnega</p>}
             title={
@@ -134,7 +134,7 @@ const Index = () => {
           <Section
             right
             image={SHOP}
-            alt="Populated city with towers"
+            alt="leather jackets hanging in a shop"
             showImageOnSmall={false}
             aboveTitle={<p className="text-slate-500">Spletna prodaja kot bi morala biti</p>}
             title={
@@ -196,7 +196,7 @@ const Index = () => {
         <SectionContainer>
           <Section
             image={ROCKET}
-            alt="Populated city with towers"
+            alt="Rocket lighting off the ground"
             showImageOnSmall={false}
             aboveTitle={<p className="text-slate-500">Rezultati kot še nikoli</p>}
             title={

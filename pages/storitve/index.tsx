@@ -8,7 +8,7 @@ import SectionContainer from '../../components/SectionContainer';
 import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jpeg';
 import EIFFEL from '../../public/images/storitve/spletne_resitve/EIFFEL.jpeg';
 import IZDELAVA_APLIKACIJ from '../../public/images/storitve/mobilne_aplikacije/IZDELAVA_APLIKACIJ.jpeg';
-import DIGITALNI_MARKETING from '../../public/images/storitve/DIGITALNI_MARKETING.jpeg';
+import DIGITALNI_MARKETING from '../../public/images/storitve/digitalni_marketing/DIGITALNI_MARKETING.jpeg';
 import VIDEO_PRODUCTION from '../../public/images/storitve/VIDEO_PRODUCTION.jpeg';
 import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
 
@@ -148,7 +148,7 @@ const Storitve = () => {
               </p>
             }
           >
-            <Link href="/storitve/3d-modeliranje-animiranje">
+            <Link href="/kontakt">
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>
@@ -165,7 +165,7 @@ const Storitve = () => {
               </p>
             }
           >
-            <Link href="/storitve/video-produkcija">
+            <Link href="/kontakt">
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>

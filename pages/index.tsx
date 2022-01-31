@@ -7,7 +7,7 @@ import SectionContainer from '../components/SectionContainer';
 
 import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
 import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
-import COLLOSEUM from '../public/images/vstop/COLLOSEUM.jpeg';
+import COLOSSEUM from '../public/images/vstop/COLOSSEUM.jpeg';
 
 const Index = () => {
   return (
@@ -75,8 +75,8 @@ const Index = () => {
           </Section>
           <Section
             right
-            image={COLLOSEUM}
-            alt="Populated city with towers"
+            image={COLOSSEUM}
+            alt="Zoomed image of the Roman colosseum"
             aboveTitle={<p className="text-slate-500">Ker vemo kaj želite</p>}
             title="Edinstvena Rešitev"
             text={
