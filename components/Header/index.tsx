@@ -1,6 +1,6 @@
 import HeaderImage from '../../components/HeaderImage';
 
-const Header = ({ image, alt, objectPosition = 'center', title, subtitles, buttons }) => (
+const Header = ({ image, alt, objectPosition = 'center', title, subtitle, buttons }) => (
   <header className="bg-black h-full w-full relative">
     <div className="flex relative h-full pointer-events-none">
       <HeaderImage
@@ -14,11 +14,11 @@ const Header = ({ image, alt, objectPosition = 'center', title, subtitles, butto
     </div>
     <div className="flex container mx-auto absolute flex-col justify-center h-full top-0 right-0 left-0 px-4">
       <div>
-        <h1 className="relative text-white text-sm underline underline-offset-1 2xl:mb-2 left-0.5">
-          {title}
-        </h1>
-        {subtitles}
-        <div className="flex">{buttons}</div>
+        <span className="CopperplateGothic relative text-white text-sm underline underline-offset-1 2xl:mb-2 left-0.5">
+          {subtitle}
+        </span>
+        {title}
+        <div className="flex flex-wrap">{buttons}</div>
       </div>
     </div>
   </header>

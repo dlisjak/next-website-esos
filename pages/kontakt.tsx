@@ -72,8 +72,8 @@ const Kontakt = () => {
       <Header
         image={HAND_FLOWERS}
         alt="Extending hand of a person in the middle of orange flowers"
-        title="Kontakt"
-        subtitles={<h2 className="text-white text-3xl sm:text-5xl mb-6">Odzovi se na klic</h2>}
+        title={<h2 className="text-white text-3xl sm:text-5xl mb-6">Odzovi se na klic</h2>}
+        subtitle="Kontakt"
         buttons={
           <Link href="#kontakt">
             <a className="button">Obrazec</a>

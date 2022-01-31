@@ -35,8 +35,8 @@ const Reference = () => {
       <Header
         image={WOMAN_SITTING_CHRIST_MUSEUM}
         alt="Silhouette of a woman sitting in a museum in front of images of Christ"
-        title="Reference"
-        subtitles={<h2 className="text-white text-3xl sm:text-5xl mb-6">Uspeh je naša vrlina</h2>}
+        title={<h1 className="text-white text-3xl sm:text-5xl mb-6">Uspeh je naša vrlina</h1>}
+        subtitle="Reference"
         buttons={
           <>
             <Link href="#reference">

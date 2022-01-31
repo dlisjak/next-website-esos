@@ -34,16 +34,22 @@ const Storitve = () => {
         image={BUILDING_BRIDGE}
         alt="Majestic cathedral near a big bridge"
         objectPosition="right"
-        title="Storitve"
-        subtitles={
+        title={
           <>
-            <h2 className="text-white text-3xl sm:text-5xl 2xl:mb-2">Spletne Rešitve</h2>
-            <h2 className="text-white	text-3xl sm:text-5xl 2xl:mb-2">Mobilne Aplikacije</h2>
-            <h2 className="text-white	text-3xl sm:text-5xl 2xl:mb-2">Digitalni Marketing</h2>
-            <h2 className="text-white	text-3xl sm:text-5xl 2xl:mb-2">3D Animacije</h2>
-            <h2 className="text-white	text-3xl sm:text-5xl mb-6">Video Produkcija</h2>
+            <h1 className="text-white text-3xl sm:text-5xl mb-6">
+              Spletne Rešitve
+              <br />
+              Mobilne Aplikacije
+              <br />
+              Digitalni Marketing
+              <br />
+              3D Animacije
+              <br />
+              Video Produkcija
+            </h1>
           </>
         }
+        subtitle="Storitve"
         buttons={
           <>
             <Link href="#storitve">
@@ -73,10 +79,14 @@ const Storitve = () => {
                 Spletnih Rešitev
               </>
             }
-            text="Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki
-                vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+            text={
+              <p>
+                Za vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki
+                vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu.
+              </p>
+            }
           >
-            <Link href="/storitve/optimizacija-spletnih-resitev">
+            <Link href="/storitve/izdelava-in-optimizacija-spletnih-strani-in-trgovin">
               <a className="button -dark">Preberite podrobneje</a>
             </Link>
           </Section>
@@ -92,8 +102,12 @@ const Storitve = () => {
                 Aplikacij
               </>
             }
-            text="Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
-            ponudbo od izdelave do gostovanja."
+            text={
+              <p>
+                Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
+                ponudbo od izdelave do gostovanja.
+              </p>
+            }
           >
             <Link href="/storitve/izdelava-mobilnih-aplikacij">
               <a className="button -dark">Poglej podrobneje</a>
@@ -104,9 +118,13 @@ const Storitve = () => {
             alt="Colorful tower reaching for the skies"
             aboveTitle={<p className="text-slate-400">Dober glas seže v deveto vas</p>}
             title="Digitalni Marketing"
-            text="Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
-            strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
-            ki vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo."
+            text={
+              <p>
+                Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
+                strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
+                ki vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo.
+              </p>
+            }
           >
             <Link href="/storitve/digitalni-marketing">
               <a className="button -dark">Poglej podrobneje</a>
@@ -123,8 +141,12 @@ const Storitve = () => {
                 <br />& Animiranje
               </>
             }
-            text="Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
-            ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema."
+            text={
+              <p>
+                Za vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
+                ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
+              </p>
+            }
           >
             <Link href="/storitve/3d-modeliranje-animiranje">
               <a className="button -dark">Poglej podrobneje</a>
@@ -135,9 +157,13 @@ const Storitve = () => {
             alt="Cathedral in distance between two greek towers"
             aboveTitle={<p className="text-slate-400">Inspiracija ne počiva</p>}
             title="Video Produkcija"
-            text="Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
-            so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali
-            in uspešno predali svojo sporočilo."
+            text={
+              <p>
+                Za vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
+                so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali
+                in uspešno predali svojo sporočilo.
+              </p>
+            }
           >
             <Link href="/storitve/video-produkcija">
               <a className="button -dark">Poglej podrobneje</a>
