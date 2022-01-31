@@ -109,6 +109,9 @@ const Kontakt = () => {
                     defaultValue="splosno"
                     {...register('zanimanje', { required: true })}
                   >
+                    <option value="" selected disabled hidden>
+                      Izberi
+                    </option>
                     <option>Spletne rešitve</option>
                     <option>Mobilne aplikacije</option>
                     <option>Digitalni marketing</option>
