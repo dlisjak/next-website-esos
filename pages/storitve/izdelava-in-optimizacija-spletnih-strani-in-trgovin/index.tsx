@@ -112,9 +112,17 @@ const Index = () => {
               </>
             }
           >
-            <Link href="/kontakt">
-              <a className="button -dark mr-4">Kontakt</a>
-            </Link>
+            <div className="flex flex-wrap">
+              <Link href="/kontakt">
+                <a className="button -dark mr-4 mb-4">Pošljite povpraševanje</a>
+              </Link>
+              <Link href="#spletne-trgovine">
+                <a className="button -dark mr-4 mb-4">Izdelava spletnih trgovin</a>
+              </Link>
+              <Link href="#optimizacija">
+                <a className="button -dark mr-4 mb-4">SEO Optimizacija</a>
+              </Link>
+            </div>
           </Section>
         </SectionContainer>
       </div>
@@ -170,9 +178,14 @@ const Index = () => {
               </>
             }
           >
-            <Link href="/kontakt">
-              <a className="button -dark mr-4">Kontakt</a>
-            </Link>
+            <div className="flex flex-wrap">
+              <Link href="/kontakt">
+                <a className="button -dark mr-4 mb-4">Pošlji povpraševanje</a>
+              </Link>
+              <Link href="#optimizacija">
+                <a className="button -dark mb-4">SEO Optimizacija</a>
+              </Link>
+            </div>
           </Section>
         </SectionContainer>
       </div>
@@ -228,7 +241,7 @@ const Index = () => {
             }
           >
             <Link href="/kontakt">
-              <a className="button -dark mr-4">Kontakt</a>
+              <a className="button -dark">Pošlji povpraševanje</a>
             </Link>
           </Section>
         </SectionContainer>

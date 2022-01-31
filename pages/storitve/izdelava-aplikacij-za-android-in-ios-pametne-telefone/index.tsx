@@ -49,14 +49,14 @@ const Index = () => {
         subtitle="Mobilne Rešitve"
         buttons={
           <>
-            <Link href="#spletne-strani">
+            <Link href="#mobilne-aplikacije">
               <a className="button mr-4 mb-4">Izdelava mobilne aplikacije</a>
             </Link>
           </>
         }
       />
       <div
-        id="spletne-strani"
+        id="mobilne-aplikacije"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
@@ -101,7 +101,7 @@ const Index = () => {
             }
           >
             <Link href="/kontakt">
-              <a className="button -dark mr-4">Kontakt</a>
+              <a className="button -dark mr-4">Pošlji povpraševanje</a>
             </Link>
           </Section>
         </SectionContainer>
