@@ -82,7 +82,7 @@ const Storitve = () => {
             text={
               <p>
                 Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki
-                vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu.
+                Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu.
               </p>
             }
           >
@@ -104,7 +104,7 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za Vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam celotno
+                Za Vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo Vam celotno
                 ponudbo od izdelave do gostovanja na Cloud strežnikih.
               </p>
             }
@@ -122,7 +122,7 @@ const Storitve = () => {
               <p>
                 Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
                 strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
-                ki vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo.
+                ki Vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo.
               </p>
             }
           >
@@ -143,7 +143,7 @@ const Storitve = () => {
             }
             text={
               <p>
-                Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno
+                Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno
                 ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
               </p>
             }

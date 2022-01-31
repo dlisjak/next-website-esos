@@ -25,12 +25,12 @@ const Index = () => {
         />
         <meta
           name="description"
-          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
           key="og:description"
         />
       </Head>
@@ -75,25 +75,25 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za Vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo vam
+                  Za Vas izdelamo mobilne aplikacije na sistemih iOS in Android. Omogočimo Vam
                   celotno ponudbo od izdelave, gostovanja na strežnikih na Cloud tehnologiji s
                   podporo kubernetes sistema.
                 </p>
                 <p className="mb-2">
-                  Pomagamo vam tudi pri digitalnem marketingu izdelane aplikacij in pozicioniranju
-                  na Google Play in Apple Store. S pomočjo oglaševanja na Google Ads vam omogočimo
+                  Pomagamo Vam tudi pri digitalnem marketingu izdelane aplikacij in pozicioniranju
+                  na Google Play in Apple Store. S pomočjo oglaševanja na Google Ads Vam omogočimo
                   najboljši reklami izplen in čim večje število namestitev aplikacije na mobilne
                   telefone uporabnikov.
                 </p>
                 <p className="mb-2">
-                  Aplikacijo vam izdelamo na način, da lahko najbolje iztržite oglaševalski prostor
+                  Aplikacijo Vam izdelamo na način, da lahko najbolje iztržite oglaševalski prostor
                   v Vaši aplikaciji in dodatno zaslužite z oddajanjem oglaševalskega prostora v
                   aplikaciji.
                 </p>
                 <p className="mb-2">
                   Moderni uporabnik najuspešnejših aplikacij večino časa preživi na mobilnih
                   telefonih in se uporaba le teh močno povečuje v primerjavi ostalim napravam, kot
-                  so računalniki in prenosniki. Zato vam svetujemo, da svojo ponudbo ali idejo za
+                  so računalniki in prenosniki. Zato Vam svetujemo, da svojo ponudbo ali idejo za
                   novo aplikacijo ponudite uporabnikom preko aplikacij, ki potem smiselno omogočajo
                   uporabniku, da komunicira in uporablja aplikacijo kot stalen in veren kupec.
                 </p>

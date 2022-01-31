@@ -27,12 +27,12 @@ const Index = () => {
         />
         <meta
           name="description"
-          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
           key="og:description"
         />
       </Head>
@@ -82,13 +82,13 @@ const Index = () => {
               <>
                 <p className="mb-2">
                   Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
-                  ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
+                  ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
                   tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
                   izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
                   potrebne velike zmožnosti prilagoditve poslovanja.
                 </p>
                 <p className="mb-2">
-                  Ponujamo vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
+                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
                   optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena različnim
                   napravam (računalnik, tablica, mobilni telefon).
                 </p>
@@ -97,15 +97,15 @@ const Index = () => {
                   ter moderen izgled in enostaven uporabniški vmesnik.
                 </p>
                 <p className="mb-2">
-                  Za izdelavo spletnih strani vam nudimo vse potrebne storitve, kot so načrtovanje
+                  Za izdelavo spletnih strani Vam nudimo vse potrebne storitve, kot so načrtovanje
                   in izdelavo spletne strani, dizajn, postavitev spletne strani na spletu v varnem
                   okolju z minimalnimi stroški za gostovanje na hitro odzivnih strežnikih in
                   registracijo domen.
                 </p>
                 <p className="mb-2">
-                  Za dobro prepoznavnost vaše nove spletne strani vam pomagamo pri organizaciji
+                  Za dobro prepoznavnost vaše nove spletne strani Vam pomagamo pri organizaciji
                   digitalne marketinške kampanje preko socialnih omrežij in Google –a in spremljamo,
-                  ter analiziramo skupaj z vami statistiko na Google Analitycs, ki nam na podlagi
+                  ter analiziramo skupaj z Vami statistiko na Google Analitycs, ki nam na podlagi
                   podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne akcije in
                   odziv morebitnih kupcev ali uporabnikov.
                 </p>
@@ -148,13 +148,13 @@ const Index = () => {
               <>
                 <p className="mb-2">
                   Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
-                  ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
+                  ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
                   tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
                   izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
                   potrebne velike zmožnosti prilagoditve poslovanja.
                 </p>
                 <p className="mb-2">
-                  Ponujamo vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
+                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
                   optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena različnim
                   napravam (računalnik, tablica, mobilni telefon).
                 </p>
@@ -163,15 +163,15 @@ const Index = () => {
                   ter moderen izgled in enostaven uporabniški vmesnik.
                 </p>
                 <p className="mb-2">
-                  Za izdelavo spletnih strani vam nudimo vse potrebne storitve, kot so načrtovanje
+                  Za izdelavo spletnih strani Vam nudimo vse potrebne storitve, kot so načrtovanje
                   in izdelavo spletne strani, dizajn, postavitev spletne strani na spletu v varnem
                   okolju z minimalnimi stroški za gostovanje na hitro odzivnih strežnikih in
                   registracijo domen.
                 </p>
                 <p className="mb-2">
-                  Za dobro prepoznavnost vaše nove spletne strani vam pomagamo pri organizaciji
+                  Za dobro prepoznavnost vaše nove spletne strani Vam pomagamo pri organizaciji
                   digitalne marketinške kampanje preko socialnih omrežij in Google –a in spremljamo,
-                  ter analiziramo skupaj z vami statistiko na Google Analitycs, ki nam na podlagi
+                  ter analiziramo skupaj z Vami statistiko na Google Analitycs, ki nam na podlagi
                   podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne akcije in
                   odziv morebitnih kupcev ali uporabnikov.
                 </p>
@@ -210,13 +210,13 @@ const Index = () => {
               <>
                 <p className="mb-2">
                   Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
-                  ki vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
+                  ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
                   tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
                   izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
                   potrebne velike zmožnosti prilagoditve poslovanja.
                 </p>
                 <p className="mb-2">
-                  Ponujamo vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
+                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
                   optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena različnim
                   napravam (računalnik, tablica, mobilni telefon).
                 </p>
@@ -225,15 +225,15 @@ const Index = () => {
                   ter moderen izgled in enostaven uporabniški vmesnik.
                 </p>
                 <p className="mb-2">
-                  Za izdelavo spletnih strani vam nudimo vse potrebne storitve, kot so načrtovanje
+                  Za izdelavo spletnih strani Vam nudimo vse potrebne storitve, kot so načrtovanje
                   in izdelavo spletne strani, dizajn, postavitev spletne strani na spletu v varnem
                   okolju z minimalnimi stroški za gostovanje na hitro odzivnih strežnikih in
                   registracijo domen.
                 </p>
                 <p className="mb-2">
-                  Za dobro prepoznavnost vaše nove spletne strani vam pomagamo pri organizaciji
+                  Za dobro prepoznavnost vaše nove spletne strani Vam pomagamo pri organizaciji
                   digitalne marketinške kampanje preko socialnih omrežij in Google –a in spremljamo,
-                  ter analiziramo skupaj z vami statistiko na Google Analitycs, ki nam na podlagi
+                  ter analiziramo skupaj z Vami statistiko na Google Analitycs, ki nam na podlagi
                   podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne akcije in
                   odziv morebitnih kupcev ali uporabnikov.
                 </p>
