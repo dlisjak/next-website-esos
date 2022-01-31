@@ -76,7 +76,7 @@ const fetchAdditional = async (postsJson) => {
 
 export async function getStaticProps({ params }) {
   const categoryRes = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/categories/${params.category}`
+    `${process.env.NEXT_PUBLIC_API_URL}/categories?slug=${params.category}`
   );
   const postsRes = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/posts?categories=${params.category}`
