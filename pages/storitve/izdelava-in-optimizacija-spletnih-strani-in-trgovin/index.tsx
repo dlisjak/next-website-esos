@@ -70,7 +70,7 @@ const Index = () => {
             image={EIFFEL}
             alt="Populated city with towers"
             showImageOnSmall={false}
-            aboveTitle={<p className="text-slate-400">Ustvarimo nekaj nepozabnega</p>}
+            aboveTitle={<p className="text-slate-500">Ustvarimo nekaj nepozabnega</p>}
             title={
               <>
                 Izdelava
@@ -128,7 +128,7 @@ const Index = () => {
             image={SHOP}
             alt="Populated city with towers"
             showImageOnSmall={false}
-            aboveTitle={<p className="text-slate-400">Spletna prodaja kot bi morala biti</p>}
+            aboveTitle={<p className="text-slate-500">Spletna prodaja kot bi morala biti</p>}
             title={
               <>
                 Izdelava
@@ -185,7 +185,7 @@ const Index = () => {
             image={ROCKET}
             alt="Populated city with towers"
             showImageOnSmall={false}
-            aboveTitle={<p className="text-slate-400">Rezultati kot še nikoli</p>}
+            aboveTitle={<p className="text-slate-500">Rezultati kot še nikoli</p>}
             title={
               <>
                 SEO Optimizacija

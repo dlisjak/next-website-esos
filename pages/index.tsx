@@ -57,7 +57,7 @@ const Index = () => {
           <Section
             image={CITY_AERIAL_OFFICE}
             alt="Populated city with towers"
-            aboveTitle={<p className="text-slate-400">O nas</p>}
+            aboveTitle={<p className="text-slate-500">O nas</p>}
             title="ESOS Digital"
             text={
               <>
@@ -77,7 +77,7 @@ const Index = () => {
             right
             image={COLLOSEUM}
             alt="Populated city with towers"
-            aboveTitle={<p className="text-slate-400">Ker vemo kaj želite</p>}
+            aboveTitle={<p className="text-slate-500">Ker vemo kaj želite</p>}
             title="Edinstvena Rešitev"
             text={
               <>

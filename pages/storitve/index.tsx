@@ -70,7 +70,7 @@ const Storitve = () => {
             image={SPLETNE_RESITVE}
             alt="Beautiful skyscraper reaching for the skies"
             aboveTitle={
-              <p className="text-slate-400">Izdelava in optimizacija spletnih strani in trgovin</p>
+              <p className="text-slate-500">Izdelava in optimizacija spletnih strani in trgovin</p>
             }
             title={
               <>
@@ -94,7 +94,7 @@ const Storitve = () => {
             right
             image={IZDELAVA_APLIKACIJ}
             alt="Colorful image of a sand cave"
-            aboveTitle={<p className="text-slate-400">Izdelava in razvoj aplikacij</p>}
+            aboveTitle={<p className="text-slate-500">Izdelava in razvoj aplikacij</p>}
             title={
               <>
                 Izdelava Mobilnih
@@ -116,7 +116,7 @@ const Storitve = () => {
           <Section
             image={DIGITALNI_MARKETING}
             alt="Colorful tower reaching for the skies"
-            aboveTitle={<p className="text-slate-400">Dober glas seže v deveto vas</p>}
+            aboveTitle={<p className="text-slate-500">Dober glas seže v deveto vas</p>}
             title="Digitalni Marketing"
             text={
               <p>
@@ -134,7 +134,7 @@ const Storitve = () => {
             right
             image={ANIMACIJE}
             alt="Disney castle"
-            aboveTitle={<p className="text-slate-400">Ko resničnost poka po šivih</p>}
+            aboveTitle={<p className="text-slate-500">Ko resničnost poka po šivih</p>}
             title={
               <>
                 3D Modeliranje
@@ -155,7 +155,7 @@ const Storitve = () => {
           <Section
             image={VIDEO_PRODUCTION}
             alt="Cathedral in distance between two greek towers"
-            aboveTitle={<p className="text-slate-400">Inspiracija ne počiva</p>}
+            aboveTitle={<p className="text-slate-500">Inspiracija ne počiva</p>}
             title="Video Produkcija"
             text={
               <p>
