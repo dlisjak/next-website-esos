@@ -60,18 +60,12 @@ const fetchAdditional = async (postsJson) => {
     const featuredImageRes = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/media/${post.featured_media}`
     );
-    const categoryRes = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/categories/${post.categories[0]}`
-    );
     const featuredImageJson = await featuredImageRes.json();
-    const categoryJson = await categoryRes.json();
     const src = featuredImageJson.source_url;
-    const category = categoryJson;
 
     const newPost = {
       ...post,
       src: src || null,
-      category: category || null,
     };
 
     return newPost;
