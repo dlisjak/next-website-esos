@@ -37,7 +37,7 @@ const Index = () => {
         />
         <link
           rel="canonical"
-          href="https://www.esos.si/storitve/izdelava-optimizacija-spletnih-strani-trgovin/"
+          href="https://www.esos.si/storitve/izdelava-optimizacija-spletnih-strani-trgovin"
         />
       </Head>
       <Header

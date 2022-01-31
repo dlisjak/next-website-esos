@@ -26,7 +26,7 @@ const Index = () => {
           content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
           key="og:description"
         />
-        <link rel="canonical" href="https://www.esos.si/" />
+        <link rel="canonical" href="https://www.esos.si" />
       </Head>
       <Header
         image={ABSTRACT_22}

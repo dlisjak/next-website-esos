@@ -62,7 +62,7 @@ const Kontakt = () => {
           content="Odzovite se na klic in nam pošljite povpraševanje. Vaš predlog bomo pregledali in Vas v kratkem kontaktirali."
           key="og:description"
         />
-        <link rel="canonical" href="https://www.esos.si/kontakt/" />
+        <link rel="canonical" href="https://www.esos.si/kontakt" />
       </Head>
       <Header
         image={HAND_FLOWERS}

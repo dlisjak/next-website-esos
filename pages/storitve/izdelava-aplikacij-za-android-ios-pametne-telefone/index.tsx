@@ -35,7 +35,7 @@ const Index = () => {
         />
         <link
           rel="canonical"
-          href="https://www.esos.si/storitve/izdelava-aplikacij-za-android-ios-pametne-telefone/"
+          href="https://www.esos.si/storitve/izdelava-aplikacij-za-android-ios-pametne-telefone"
         />
       </Head>
       <Header

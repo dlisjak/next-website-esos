@@ -29,7 +29,7 @@ const Storitve = () => {
           content="Za Vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
           key="og:description"
         />
-        <link rel="canonical" href="https://www.esos.si/storitve/" />
+        <link rel="canonical" href="https://www.esos.si/storitve" />
       </Head>
       <Header
         image={BUILDING_BRIDGE}

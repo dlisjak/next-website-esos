@@ -25,7 +25,7 @@ const Index = () => {
           content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
           key="og:description"
         />
-        <link rel="canonical" href="https://www.esos.si/storitve/digitalni-marketing/" />
+        <link rel="canonical" href="https://www.esos.si/storitve/digitalni-marketing" />
       </Head>
       <Header
         image={ABSTRACT_28}
