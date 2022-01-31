@@ -17,12 +17,12 @@ const Index = () => {
         <meta property="og:title" content="Digitalni marketing | ESOS Digital" key="og:title" />
         <meta
           name="description"
-          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+          content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
           key="description"
         />
         <meta
           name="og:description"
-          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+          content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
           key="og:description"
         />
       </Head>
