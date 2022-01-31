@@ -122,7 +122,7 @@ const Storitve = () => {
               <p>
                 Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
                 strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo,
-                ki Vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo.
+                kar Vam bo omogočilo najboljši izplen vloženih sredstev v reklamno kampanjo.
               </p>
             }
           >

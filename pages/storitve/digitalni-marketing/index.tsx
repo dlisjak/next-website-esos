@@ -54,16 +54,15 @@ const Index = () => {
                 <p className="mb-2">
                   Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
                   strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno
-                  občinstvo, ki vam bo omogočilo najboljši izplen vloženih sredstev v reklamno
+                  občinstvo, kar vam bo omogočilo najboljši izplen vloženih sredstev v reklamno
                   kampanjo.
                 </p>
                 <p className="mb-2">
                   Z vami skupaj pripravimo strategijo celostnega nastopa blagovne znamke na
                   družbenih omrežjih. Le-ta omogočajo učinkovito, dvosmerno komunikacijo z vašim
                   ciljnim občinstvom in ponujajo platforme za grajenje skupnosti sledilcev. Nudimo
-                  pomoč pri identifikaciji ustreznih vplivnežev, ki z s svojimi objavami na
-                  digitalnih kanalih ustvarjajo simbiozo z vašo blagovno znamko in potencialnimi
-                  kupci.
+                  pomoč pri identifikaciji ustreznih vplivnežev, ki s svojimi objavami na digitalnih
+                  kanalih ustvarjajo simbiozo z vašo blagovno znamko in potencialnimi kupci.
                 </p>
                 <p className="mb-2">
                   S premišljenim umeščanjem družbenih medijev v vaše strategije in z iskanjem
