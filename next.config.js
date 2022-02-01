@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['www.wp.esos.si'],
+    domains: ['www.wp.esos.si', "cdn.sanity.io"],
   },
 }
