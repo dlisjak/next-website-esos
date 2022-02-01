@@ -1,9 +1,9 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
 import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
-import { Fragment } from 'react';
 
 const Category = ({ category, posts = [] }) => {
   console.log(category);
@@ -30,7 +30,9 @@ const Category = ({ category, posts = [] }) => {
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={post.title}
                 aboveTitle={post.categories.map((category) => (
-                  <Link href={`/blog/${category.slug}`}>{category.title}</Link>
+                  <Link key={category.slug} href={`/blog/${category.slug}`}>
+                    {category.title}
+                  </Link>
                 ))}
                 text={<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />}
               >
