@@ -34,14 +34,14 @@ class MyDocument extends Document {
                   document.head.appendChild(element);
                 }
 
-                window.onload = () => {
+                window.addEventListener("DOMContentLoaded", () => {
                   downloadGAOnload();
                   window.dataLayer = window.dataLayer || [];
 
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
                   gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
-                }
+                })
               `,
             }}
           ></script>
