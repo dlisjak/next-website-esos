@@ -56,8 +56,8 @@ const Storitve = () => {
             <Link href="#storitve">
               <a className="button mr-4">Več o storitvah</a>
             </Link>
-            <Link href="/reference">
-              <a className="button">Reference</a>
+            <Link href="/kontakt">
+              <a className="button">Kontakt</a>
             </Link>
           </>
         }
