@@ -93,8 +93,8 @@ const Index = () => {
                 </p>
                 <p className="mb-2">
                   Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
-                  optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena različnim
-                  napravam (računalnik, tablica, mobilni telefon).
+                  optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena vsem
+                  modernim napravam.
                 </p>
                 <p className="mb-2">
                   Za današnjega uporabnika spletnih strani je pomembna dobra uporabniška izkušnja
@@ -108,7 +108,7 @@ const Index = () => {
                 </p>
                 <p className="mb-2">
                   Za dobro prepoznavnost vaše nove spletne strani Vam pomagamo pri organizaciji
-                  digitalne marketinške kampanje preko socialnih omrežij in Google –a in spremljamo,
+                  digitalne marketinške kampanje preko socialnih omrežij in Google-a in spremljamo,
                   ter analiziramo skupaj z Vami statistiko na Google Analitycs, ki nam na podlagi
                   podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne akcije in
                   odziv morebitnih kupcev ali uporabnikov.
@@ -152,20 +152,21 @@ const Index = () => {
               <>
                 <p className="mb-2">
                   Za Vas izdelamo spletno trgovino z uporabo najmodernejših orodij in Vam omogočimo
-                  preprosto in smiselno dodajanje ter pregledovanje izdelkov.
+                  preprosto in smiselno dodajanje ter pregledovanje izdelkov, kupcev in ostalih
+                  pomembnih podatkov.
                 </p>
                 <p className="mb-2">
                   Ponujamo Vam oblikovanje in izdelavo optimizirane spletne trgovine po dostopnih
                   cenah, optimizacijo za vse vrste brskalnikov. Vaša spletna trgovina bo prilagojena
-                  različnim napravam (računalnik, tablica, mobilni telefon).
+                  vsem modernim napravam.
                 </p>
                 <p className="mb-2">
                   Za današnjega uporabnika spletnih trgovin je pomembna dobra uporabniška izkušnja,
                   odzivnost ter moderen izgled in enostaven uporabniški vmesnik.
                 </p>
                 <p className="mb-2">
-                  Za izdelavo spletnih trgovin Vam nudimo vse potrebne storitve, kot so načrtovanje
-                  ,izdelava spletne trgovine, dizajn, postavitev spletne trgovine na spletu v varnem
+                  Za izdelavo spletnih trgovin Vam nudimo vse potrebne storitve, kot so načrtovanje,
+                  izdelava spletne trgovine, dizajn, postavitev spletne trgovine na spletu v varnem
                   okolju z minimalnimi stroški za gostovanje na hitro odzivnih strežnikih in
                   registracijo domen.
                 </p>
@@ -210,9 +211,9 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Že imate spletno stran ali spletno trgovino? Za Vas tudi optimiziramo spletno
-                  stran oz. trgovino z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo
-                  povečale odzivnost, obisk in promet.
+                  Že imate spletno stran ali spletno trgovino? Za Vas tudi optimiziramo obstoječo
+                  spletno stran oz. trgovino z uporabo najustreznejših orodij, ki Vam bodo povečale
+                  odzivnost, obisk in promet.
                 </p>
                 <p className="mb-2">
                   Ponujamo Vam izdelavo optimizacijske strategije, ki jo premišljeno nato izvedemo.
@@ -224,12 +225,13 @@ const Index = () => {
                   globalnem trgu, zato smo samozavestni, da Vam lahko pomagamo.
                 </p>
                 <p className="mb-2">
-                  Ker ima optimizacija spletnih rešitev več primakojočih se delov je najbolje, da to
+                  Ker ima optimizacija spletnih rešitev več premikajočih se delov je najbolje, da to
                   prepustite nam, saj imamo za Vas pripravljeno le najboljše.
                 </p>
                 <p className="mb-2">
-                  Za povečanje obiska in s tem tudi prodaje, skrbno nadzorujemo obnašanje Vaših
-                  obiskovalcev in nato s temi podatki izvedemo optimizacijsko strategijo.
+                  Za povečanje obiska in s tem tudi prodaje, redno in skrbno nadzorujemo obnašanje
+                  Vaših obiskovalcev ter na podlagi realnih podatkov izvedemo optimizacijsko
+                  strategijo.
                 </p>
               </>
             }
