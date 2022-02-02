@@ -7,8 +7,10 @@ const NavBar = () => {
       <ul className='flex items-center relative text-white font-light'>
         <li className='mx-4'><Link href="/">Vstop</Link></li>
         <li className='mx-4'><Link href="/storitve">Storitve</Link></li>
-        <li>
-          <Image src="/images/logo_icon.svg" alt="ESOS Digital logo" width={80} height={45} priority />
+        <li className="cursor-pointer">
+          <Link href="/">
+            <Image src="/images/logo_icon.svg" alt="ESOS Digital logo" width={80} height={45} priority />
+          </Link>
         </li>
         {/*<li className='mx-4'><Link href="/reference">Reference</Link></li>*/}
         <li className='mx-4'><Link href="/vsebina">Vsebina</Link></li>
