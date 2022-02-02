@@ -151,33 +151,30 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
-                  ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
-                  tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
-                  izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
-                  potrebne velike zmožnosti prilagoditve poslovanja.
+                  Za Vas izdelamo spletno trgovino z uporabo najmodernejših orodij in Vam omogočimo
+                  preprosto in smiselno dodajanje ter pregledovanje izdelkov.
                 </p>
                 <p className="mb-2">
-                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
-                  optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena različnim
-                  napravam (računalnik, tablica, mobilni telefon).
+                  Ponujamo Vam oblikovanje in izdelavo optimizirane spletne trgovine po dostopnih
+                  cenah, optimizacijo za vse vrste brskalnikov. Vaša spletna trgovina bo prilagojena
+                  različnim napravam (računalnik, tablica, mobilni telefon).
                 </p>
                 <p className="mb-2">
-                  Za današnjega uporabnika spletnih strani je pomembna dobra uporabniška izkušnja
-                  ter moderen izgled in enostaven uporabniški vmesnik.
+                  Za današnjega uporabnika spletnih trgovin je pomembna dobra uporabniška izkušnja,
+                  odzivnost ter moderen izgled in enostaven uporabniški vmesnik.
                 </p>
                 <p className="mb-2">
-                  Za izdelavo spletnih strani Vam nudimo vse potrebne storitve, kot so načrtovanje
-                  in izdelavo spletne strani, dizajn, postavitev spletne strani na spletu v varnem
+                  Za izdelavo spletnih trgovin Vam nudimo vse potrebne storitve, kot so načrtovanje
+                  ,izdelava spletne trgovine, dizajn, postavitev spletne trgovine na spletu v varnem
                   okolju z minimalnimi stroški za gostovanje na hitro odzivnih strežnikih in
                   registracijo domen.
                 </p>
                 <p className="mb-2">
-                  Za dobro prepoznavnost vaše nove spletne strani Vam pomagamo pri organizaciji
-                  digitalne marketinške kampanje preko socialnih omrežij in Google –a in spremljamo,
-                  ter analiziramo skupaj z Vami statistiko na Google Analitycs, ki nam na podlagi
-                  podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne akcije in
-                  odziv morebitnih kupcev ali uporabnikov.
+                  Za dobro prepoznavnost vaše nove spletne trgovine Vam pomagamo pri organizaciji
+                  premišljene digitalne marketinške kampanje preko socialnih omrežij in Google-a in
+                  spremljamo, ter skupaj z Vami analiziramo statistiko na Google Analitycs, ki nam
+                  na podlagi podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne
+                  strategije in odziv morebitnih kupcev ali uporabnikov.
                 </p>
               </>
             }
@@ -213,33 +210,26 @@ const Index = () => {
             text={
               <>
                 <p className="mb-2">
-                  Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij,
-                  ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu. S
-                  tem boste dobili možnost, da v prihodnje nadgradite, prilagodite funkcionalnost in
-                  izgled svoje spletne strani, saj se poslovno okolje nenehno spreminja in so
-                  potrebne velike zmožnosti prilagoditve poslovanja.
+                  Že imate spletno stran ali spletno trgovino? Za Vas tudi optimiziramo spletno
+                  stran oz. trgovino z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo
+                  povečale odzivnost, obisk in promet.
                 </p>
                 <p className="mb-2">
-                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
-                  optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena različnim
-                  napravam (računalnik, tablica, mobilni telefon).
+                  Ponujamo Vam izdelavo optimizacijske strategije, ki jo premišljeno nato izvedemo.
+                  Poskrbimo za pregleden prikaz pomamebnih informacij, s katerimi boste lahko
+                  konkurirali tudi na globalnem trgu.
                 </p>
                 <p className="mb-2">
-                  Za današnjega uporabnika spletnih strani je pomembna dobra uporabniška izkušnja
-                  ter moderen izgled in enostaven uporabniški vmesnik.
+                  Naše optimizacijske rešitve so ene izmed najuspešnejših in najmodernejših na
+                  globalnem trgu, zato smo samozavestni, da Vam lahko pomagamo.
                 </p>
                 <p className="mb-2">
-                  Za izdelavo spletnih strani Vam nudimo vse potrebne storitve, kot so načrtovanje
-                  in izdelavo spletne strani, dizajn, postavitev spletne strani na spletu v varnem
-                  okolju z minimalnimi stroški za gostovanje na hitro odzivnih strežnikih in
-                  registracijo domen.
+                  Ker ima optimizacija spletnih rešitev več primakojočih se delov je najbolje, da to
+                  prepustite nam, saj imamo za Vas pripravljeno le najboljše.
                 </p>
                 <p className="mb-2">
-                  Za dobro prepoznavnost vaše nove spletne strani Vam pomagamo pri organizaciji
-                  digitalne marketinške kampanje preko socialnih omrežij in Google –a in spremljamo,
-                  ter analiziramo skupaj z Vami statistiko na Google Analitycs, ki nam na podlagi
-                  podatkov omogoča, da lahko v hitrem času spremljamo uspešnost reklamne akcije in
-                  odziv morebitnih kupcev ali uporabnikov.
+                  Za povečanje obiska in s tem tudi prodaje, skrbno nadzorujemo obnašanje Vaših
+                  obiskovalcev in nato s temi podatki izvedemo optimizacijsko strategijo.
                 </p>
               </>
             }

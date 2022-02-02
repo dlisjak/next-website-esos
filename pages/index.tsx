@@ -89,8 +89,8 @@ const Index = () => {
               </>
             }
           >
-            <Link href="/storitve/izdelava-optimizacija-spletnih-strani-trgovin">
-              <a className="button -dark">Storitve</a>
+            <Link href="/kontakt">
+              <a className="button -dark">Kontakt</a>
             </Link>
           </Section>
         </SectionContainer>

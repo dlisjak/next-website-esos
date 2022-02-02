@@ -11,7 +11,7 @@ const NavBar = () => {
           <Image src="/images/logo_icon.svg" alt="ESOS Digital logo" width={90} height={50} priority />
         </li>
         {/*<li className='mx-4'><Link href="/reference">Reference</Link></li>*/}
-        <li className='mx-4'><Link href="/blog">Blog</Link></li>
+        <li className='mx-4'><Link href="/vsebina">Vsebina</Link></li>
         <li className='mx-4'><Link href="/kontakt">Kontakt</Link></li>
       </ul>
     </nav>
