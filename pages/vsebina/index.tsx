@@ -54,7 +54,11 @@ const Vsebina = ({ posts }) => {
               <Section
                 image={post.mainImageSrc}
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
-                title={post.title}
+                title={
+                  <Link href={`/vsebina/${post.categories[0].slug}/${post.slug}`}>
+                    {post.title}
+                  </Link>
+                }
                 aboveTitle={
                   <div className="flex flex-wrap">
                     {post.categories.map((category) => (

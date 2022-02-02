@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import Head from 'next/head';
 
+import Header from '../../../../components/Header';
 import Section from '../../../../components/Section';
 import SectionContainer from '../../../../components/SectionContainer';
+
+import WOMAN_SITTING_CHRIST_MUSEUM from '../../../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
 
 const Post = ({ post }) => {
   console.log(post);
   const { authorImage, body, categories, imgSrc, publishedAt, slug, title } = post;
-  const intro = `${(body || []).map((block) => block.children[0].text)}`;
+  const intro = (body || [])[0].children[0].text;
   return (
     <div className="post h-full">
       <Head>
@@ -18,8 +21,25 @@ const Post = ({ post }) => {
         <meta name="og:description" content={intro} />
         <link rel="canonical" href={`https://www.esos.si/vsebina/${categories.slug}/${slug}`} />
       </Head>
+      <Header
+        image={WOMAN_SITTING_CHRIST_MUSEUM}
+        alt="Silhouette of a woman sitting in a museum in front of images of Christ"
+        title={<h1 className="text-white text-3xl sm:text-5xl mb-6">{category.title}</h1>}
+        subtitle="Vsebina"
+        buttons={
+          <>
+            <Link href="#vsebina">
+              <a className="button mr-4">Podrobneje</a>
+            </Link>
+
+            <Link href="/kontakt">
+              <a className="button">Kontakt</a>
+            </Link>
+          </>
+        }
+      />
       <div
-        id="post"
+        id="vsebina"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>

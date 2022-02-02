@@ -2,8 +2,11 @@ import { Fragment } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import Header from '../../../components/Header';
 import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
+
+import WOMAN_SITTING_CHRIST_MUSEUM from '../../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
 
 const Category = ({ category, posts = [] }) => {
   return (
@@ -16,8 +19,25 @@ const Category = ({ category, posts = [] }) => {
         <meta name="og:description" content={`${category.description}`} key="og:description" />
         <link rel="canonical" href={`https://www.esos.si/vsebina/${category.slug}`} />
       </Head>
+      <Header
+        image={WOMAN_SITTING_CHRIST_MUSEUM}
+        alt="Silhouette of a woman sitting in a museum in front of images of Christ"
+        title={<h1 className="text-white text-3xl sm:text-5xl mb-6">{category.title}</h1>}
+        subtitle="Vsebina"
+        buttons={
+          <>
+            <Link href="#vsebina">
+              <a className="button mr-4">Podrobneje</a>
+            </Link>
+
+            <Link href="/kontakt">
+              <a className="button">Kontakt</a>
+            </Link>
+          </>
+        }
+      />
       <div
-        id={`category-${category.slug}`}
+        id="vsebina"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
@@ -26,13 +46,13 @@ const Category = ({ category, posts = [] }) => {
               <Section
                 image={post.imgSrc}
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
-                title={post.title}
+                title={<Link href={`/vsebina/${category.slug}/${post.slug}`}>{post.title}</Link>}
                 aboveTitle={post.categories.map((category) => (
-                  <Link key={category.slug} href={`/vsebina/${category.slug}/${post.slug}`}>
+                  <Link key={category.slug} href={`/vsebina/${category.slug}`}>
                     {category.title}
                   </Link>
                 ))}
-                text={<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />}
+                text={<div>{(post.body || [])[0].children[0].text}</div>}
               >
                 <Link href={`/vsebina/${category.slug}/${post.slug}`}>
                   <a className="button -dark">Preberi podrobneje</a>
@@ -76,6 +96,8 @@ export async function getStaticProps({ params }) {
   const postsQuery = `
   *[_type == "post" && $category in categories[]->slug.current] { 
     title,
+    body,
+    mainImage,
     "slug": slug.current,
     "categories": categories[] -> {title, "slug": slug.current},
     "authorImage": author->image,
@@ -84,7 +106,7 @@ export async function getStaticProps({ params }) {
   `;
   const category = await sanity.fetch(categoryQuery, { slug: params.category });
   const posts = await sanity.fetch(postsQuery, { category: params.category });
-  posts.forEach((post) => (post.imgSrc = urlFor(post.authorImage).width(50).url()));
+  posts.forEach((post) => (post.imgSrc = urlFor(post.mainImage).width(450).url()));
 
   return { props: { posts, category: category } };
 }
