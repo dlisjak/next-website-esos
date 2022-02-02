@@ -30,14 +30,14 @@ const Category = ({ category, posts = [] }) => {
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={post.title}
                 aboveTitle={post.categories.map((category) => (
-                  <Link key={category.slug} href={`/blog/${category.slug}`}>
+                  <Link key={category.slug} href={`/blog/${post.slug}`}>
                     {category.title}
                   </Link>
                 ))}
                 text={<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />}
               >
-                <Link href={`/${category.slug}/${post.slug}`}>
-                  <a className="button -dark">Kontakt</a>
+                <Link href={`/vsebina/${category.slug}/${post.slug}`}>
+                  <a className="button -dark">Preberi podrobneje</a>
                 </Link>
               </Section>
             </Fragment>
@@ -78,7 +78,7 @@ export async function getStaticProps({ params }) {
   const postsQuery = `
   *[_type == "post" && $category in categories[]->slug.current] { 
     title,
-    slug,
+    "slug": slug.current,
     "categories": categories[] -> {title, "slug": slug.current},
     "authorImage": author->image,
     "publishedAt": publishedAt
