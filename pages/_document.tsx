@@ -34,7 +34,7 @@ class MyDocument extends Document {
                   document.head.appendChild(element);
                 }
 
-                window.addEventListener("DOMContentLoaded", () => {
+                window.onload = () => {
                   downloadGAOnload();
                   window.dataLayer = window.dataLayer || [];
 
