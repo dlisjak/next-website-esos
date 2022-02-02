@@ -42,7 +42,7 @@ const PostSection = ({
     >
       {!isPost && (
         <div className="flex flex-col py-2">
-          <Link href={`/vsebina/${category.slug}/${slug}`}>
+          <Link href={href}>
             <a className="button -dark mb-2">Preberi podrobneje</a>
           </Link>
           <div className="flex items-center mt-2">

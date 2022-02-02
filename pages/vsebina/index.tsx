@@ -58,6 +58,7 @@ const Vsebina = ({ posts }) => {
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={post.title}
                 category={post.category}
+                slug={post.slug}
                 author={post.author}
                 authorImage={post.authorImgSrc}
                 isPost={false}
