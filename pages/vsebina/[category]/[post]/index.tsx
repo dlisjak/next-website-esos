@@ -24,8 +24,8 @@ const Post = ({ post }) => {
       <Header
         image={WOMAN_SITTING_CHRIST_MUSEUM}
         alt="Silhouette of a woman sitting in a museum in front of images of Christ"
-        title={<h1 className="text-white text-3xl sm:text-5xl mb-6">{category.title}</h1>}
-        subtitle="Vsebina"
+        title={<h1 className="text-white text-3xl sm:text-5xl mb-6">{title}</h1>}
+        subtitle={categories.slug}
         buttons={
           <>
             <Link href="#vsebina">
