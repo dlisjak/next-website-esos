@@ -53,7 +53,7 @@ const Section: React.FC<Props> = ({
       <div
         className={`sm:w-2/3 flex flex-col sm:max-w-3xl relative z-10 ${
           !right ? 'items-start sm:ml-4 md:ml-6 lg:ml-8' : 'items-end sm:mr-4 md:mr-6 lg:mr-8'
-        } ${showImageOnSmall ? '' : 'sm:w-full'}${isBlog ? 'sm:pt-8 md:pt-12 xl:pt-16' : ''}`}
+        } ${showImageOnSmall ? '' : 'sm:w-full'}${isBlog ? 'sm:pt-4 sm:pr-8 xl:pr-0' : ''}`}
       >
         {aboveTitle}
         <h2 className={`relative mt-0 z-10 mb-2 ${!right ? 'text-left' : 'text-right'}`}>

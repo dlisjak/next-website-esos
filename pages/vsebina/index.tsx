@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head';
 
 import Header from '../../components/Header';
@@ -55,24 +56,31 @@ const Vsebina = ({ posts }) => {
                 image={post.mainImageSrc}
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={
-                  <Link href={`/vsebina/${post.categories[0].slug}/${post.slug}`}>
-                    {post.title}
-                  </Link>
+                  <Link href={`/vsebina/${post.category.slug}/${post.slug}`}>{post.title}</Link>
                 }
                 aboveTitle={
                   <div className="flex flex-wrap">
-                    {post.categories.map((category) => (
-                      <Link key={category.slug} href={`/vsebina/${category.slug}`}>
-                        <a className="text-slate-500 mr-4">{category.title}</a>
-                      </Link>
-                    ))}
+                    <Link key={post.category.slug} href={`/vsebina/${post.category.slug}`}>
+                      {post.category.title}
+                    </Link>
                   </div>
                 }
-                text={<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />}
+                text={<div>{(post.body || [])[0].children[0].text}</div>}
               >
-                <Link href={`/vsebina/${post.categories[0].slug}/${post.slug}`}>
-                  <a className="button -dark">Preberi podrobneje</a>
-                </Link>
+                <div className="flex flex-col py-2">
+                  <Link href={`/vsebina/${post.category.slug}/${post.slug}`}>
+                    <a className="button -dark mb-2">Preberi podrobneje</a>
+                  </Link>
+                  <div className="flex items-center mt-2">
+                    <Image
+                      className="rounded-full"
+                      src={post.authorImgSrc}
+                      width={50}
+                      height={50}
+                    />
+                    <span className="ml-4">{post.author}</span>
+                  </div>
+                </div>
               </Section>
             </Fragment>
           ))}
@@ -91,11 +99,13 @@ export async function getStaticProps() {
   const postsQuery = `
     *[_type == "post"] { 
       title,
-      "slug": slug.current,
+      body,
       mainImage,
-      "categories": categories[] -> {title, "slug": slug.current},
+      "author": author->name,
+      "slug": slug.current,
+      "publishedAt": publishedAt,
       "authorImage": author->image,
-      "publishedAt": publishedAt
+      "category": categories[0] -> {title, "slug": slug.current},
   }
   `;
   const posts = await sanity.fetch(postsQuery);

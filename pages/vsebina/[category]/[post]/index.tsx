@@ -6,10 +6,10 @@ import Section from '../../../../components/Section';
 import SectionContainer from '../../../../components/SectionContainer';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
+import Image from 'next/image';
 
 const Post = ({ post }) => {
-  console.log(post);
-  const { authorImage, body, categories, imgSrc, publishedAt, slug, title } = post;
+  const { author, authorImgSrc, body, category, imgSrc, publishedAt, slug, title } = post;
   const intro = (body || [])[0].children[0].text;
   return (
     <div className="post h-full">
@@ -19,13 +19,13 @@ const Post = ({ post }) => {
         <meta property="og:title" content={`${title} | ESOS Digital`} key="og:title" />
         <meta name="description" content={intro} key="description" />
         <meta name="og:description" content={intro} />
-        <link rel="canonical" href={`https://www.esos.si/vsebina/${categories.slug}/${slug}`} />
+        <link rel="canonical" href={`https://www.esos.si/vsebina/${category.slug}/${slug}`} />
       </Head>
       <Header
         image={WOMAN_SITTING_CHRIST_MUSEUM}
         alt="Silhouette of a woman sitting in a museum in front of images of Christ"
         title={<h1 className="text-white text-3xl sm:text-5xl mb-6">{title}</h1>}
-        subtitle={categories.slug}
+        subtitle={category.title}
         buttons={
           <>
             <Link href="#vsebina">
@@ -47,7 +47,15 @@ const Post = ({ post }) => {
             image={imgSrc}
             alt="Indoors of the Cathedral of St.Peter in Vatican"
             title={title}
-            aboveTitle={new Date(`${publishedAt} UTC`).toString()}
+            aboveTitle={
+              <div className="flex flex-col items-start">
+                <div className="flex items-center py-2">
+                  <Image className="rounded-full" src={authorImgSrc} width={50} height={50} />
+                  <span className="ml-4">{author}</span>
+                </div>
+                <Link href={`/vsebina/${category.slug}`}>{category.title}</Link>
+              </div>
+            }
             isBlog={true}
             text={(body || []).map((block) => (
               <p className="pb-4" key={block._key}>
@@ -89,16 +97,18 @@ export async function getStaticProps({ params }) {
     *[_type == "post" && $slug == slug.current][0] { 
       title,
       body,
-      "slug": slug.current,
       mainImage,
-      "categories": categories[0] -> {title, "slug": slug.current},
+      "author": author->name,
+      "slug": slug.current,
+      "publishedAt": publishedAt,
       "authorImage": author->image,
-      "publishedAt": publishedAt
+      "category": categories[0] -> {title, "slug": slug.current},
     }
   `;
   const post = await sanity.fetch(postsQuery, { slug: params.post });
   if (post) {
     post.imgSrc = urlFor(post.mainImage).width(450).url();
+    post.authorImgSrc = urlFor(post.authorImage).width(50).url();
   }
 
   return { props: { post } };

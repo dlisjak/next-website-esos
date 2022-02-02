@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head';
 
 import Header from '../../../components/Header';
@@ -47,16 +48,23 @@ const Category = ({ category, posts = [] }) => {
                 image={post.imgSrc}
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={<Link href={`/vsebina/${category.slug}/${post.slug}`}>{post.title}</Link>}
-                aboveTitle={post.categories.map((category) => (
-                  <Link key={category.slug} href={`/vsebina/${category.slug}`}>
-                    {category.title}
-                  </Link>
-                ))}
+                aboveTitle={<Link href={`/vsebina/${category.slug}`}>{category.title}</Link>}
                 text={<div>{(post.body || [])[0].children[0].text}</div>}
               >
-                <Link href={`/vsebina/${category.slug}/${post.slug}`}>
-                  <a className="button -dark">Preberi podrobneje</a>
-                </Link>
+                <div className="flex flex-col py-2">
+                  <Link href={`/vsebina/${category.slug}/${post.slug}`}>
+                    <a className="button -dark mb-2">Preberi podrobneje</a>
+                  </Link>
+                  <div className="flex items-center mt-2">
+                    <Image
+                      className="rounded-full"
+                      src={post.authorImgSrc}
+                      width={50}
+                      height={50}
+                    />
+                    <span className="ml-4">{post.author}</span>
+                  </div>
+                </div>
               </Section>
             </Fragment>
           ))}
@@ -98,15 +106,17 @@ export async function getStaticProps({ params }) {
     title,
     body,
     mainImage,
+    "author": author->name,
     "slug": slug.current,
-    "categories": categories[] -> {title, "slug": slug.current},
+    "publishedAt": publishedAt,
     "authorImage": author->image,
-    "publishedAt": publishedAt
+    "category": categories[0] -> {title, "slug": slug.current},
   }
   `;
   const category = await sanity.fetch(categoryQuery, { slug: params.category });
   const posts = await sanity.fetch(postsQuery, { category: params.category });
   posts.forEach((post) => (post.imgSrc = urlFor(post.mainImage).width(450).url()));
+  posts.forEach((post) => (post.authorImgSrc = urlFor(post.authorImage).width(50).url()));
 
   return { props: { posts, category: category } };
 }
