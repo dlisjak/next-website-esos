@@ -46,7 +46,13 @@ const PostSection = ({
             <a className="button -dark mb-2">Preberi podrobneje</a>
           </Link>
           <div className="flex items-center mt-2">
-            <Image className="rounded-full" src={authorImage} width={50} height={50} />
+            <Image
+              className="rounded-full"
+              src={authorImage}
+              alt="image of author"
+              width={50}
+              height={50}
+            />
             <span className="ml-4">{author}</span>
           </div>
         </div>
