@@ -8,6 +8,7 @@ import Section from '../../components/Section';
 import SectionContainer from '../../components/SectionContainer';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
+import PostSection from '../../components/PostSection';
 
 const Vsebina = ({ posts }) => {
   return (
@@ -52,36 +53,16 @@ const Vsebina = ({ posts }) => {
         <SectionContainer>
           {(posts || []).map((post) => (
             <Fragment key={post.title}>
-              <Section
+              <PostSection
                 image={post.mainImageSrc}
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
-                title={
-                  <Link href={`/vsebina/${post.category.slug}/${post.slug}`}>{post.title}</Link>
-                }
-                aboveTitle={
-                  <div className="flex flex-wrap">
-                    <Link key={post.category.slug} href={`/vsebina/${post.category.slug}`}>
-                      {post.category.title}
-                    </Link>
-                  </div>
-                }
-                text={<div>{(post.body || [])[0].children[0].text}</div>}
-              >
-                <div className="flex flex-col py-2">
-                  <Link href={`/vsebina/${post.category.slug}/${post.slug}`}>
-                    <a className="button -dark mb-2">Preberi podrobneje</a>
-                  </Link>
-                  <div className="flex items-center mt-2">
-                    <Image
-                      className="rounded-full"
-                      src={post.authorImgSrc}
-                      width={50}
-                      height={50}
-                    />
-                    <span className="ml-4">{post.author}</span>
-                  </div>
-                </div>
-              </Section>
+                title={post.title}
+                category={post.category}
+                author={post.author}
+                authorImage={post.authorImgSrc}
+                isPost={false}
+                body={<div>{(post.body || [])[0].children[0].text}</div>}
+              />
             </Fragment>
           ))}
         </SectionContainer>

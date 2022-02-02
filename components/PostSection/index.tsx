@@ -13,7 +13,6 @@ const PostSection = ({
   slug = '',
   isPost,
   body,
-  children = <></>,
 }) => {
   const href = `/vsebina/${category.slug}/${slug}`;
   return (
