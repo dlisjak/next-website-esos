@@ -7,24 +7,15 @@ import SectionContainer from '../../../../components/SectionContainer';
 const Post = ({ post }) => {
   console.log(post);
   const { authorImage, body, categories, imgSrc, publishedAt, slug, title } = post;
+  const intro = `${(body || []).map((block) => block.children[0].text)}`;
   return (
     <div className="post h-full">
       <Head>
         <title>{title} | ESOS Digital</title>
         <meta property="title" content={`${title} | ESOS Digital`} key="title" />
         <meta property="og:title" content={`${title} | ESOS Digital`} key="og:title" />
-        <meta
-          name="description"
-          content="Z večletnimi izkušnjami in konstantnim napredovanjem na kreativnem in tehnološkem
-          področju verjamemo, da imamo edinstveno rešitev, ki govori sama zase."
-          key="description"
-        />
-        <meta
-          name="og:description"
-          content="Z večletnimi izkušnjami in konstantnim napredovanjem na kreativnem in tehnološkem
-          področju verjamemo, da imamo edinstveno rešitev, ki govori sama zase."
-          key="og:description"
-        />
+        <meta name="description" content={intro} key="description" />
+        <meta name="og:description" content={intro} />
         <link rel="canonical" href={`https://www.esos.si/vsebina/${categories.slug}/${slug}`} />
       </Head>
       <div
@@ -35,7 +26,7 @@ const Post = ({ post }) => {
           <Section
             image={imgSrc}
             alt="Indoors of the Cathedral of St.Peter in Vatican"
-            title="Dokazali Smo Ostalim, Naj Še Vam"
+            title={title}
             aboveTitle={new Date(`${publishedAt} UTC`).toString()}
             isBlog={true}
             text={(body || []).map((block) => (

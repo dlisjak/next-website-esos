@@ -28,7 +28,7 @@ const Category = ({ category, posts = [] }) => {
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={post.title}
                 aboveTitle={post.categories.map((category) => (
-                  <Link key={category.slug} href={`/vsebina/${post.slug}`}>
+                  <Link key={category.slug} href={`/vsebina/${category.slug}/${post.slug}`}>
                     {category.title}
                   </Link>
                 ))}
