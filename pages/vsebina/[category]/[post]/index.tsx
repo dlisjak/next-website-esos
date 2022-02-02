@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import Header from '../../../../components/Header';
-import Section from '../../../../components/Section';
+import PostSection from '../../../../components/PostSection';
 import SectionContainer from '../../../../components/SectionContainer';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
-import Image from 'next/image';
 
 const Post = ({ post }) => {
   const { author, authorImgSrc, body, category, imgSrc, publishedAt, slug, title } = post;
@@ -43,26 +43,20 @@ const Post = ({ post }) => {
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
-          <Section
+          <PostSection
             image={imgSrc}
             alt="Indoors of the Cathedral of St.Peter in Vatican"
             title={title}
-            aboveTitle={
-              <div className="flex flex-col items-start">
-                <div className="flex items-center py-2">
-                  <Image className="rounded-full" src={authorImgSrc} width={50} height={50} />
-                  <span className="ml-4">{author}</span>
-                </div>
-                <Link href={`/vsebina/${category.slug}`}>{category.title}</Link>
-              </div>
-            }
-            isBlog={true}
-            text={(body || []).map((block) => (
+            category={post.category}
+            author={author}
+            authorImage={authorImgSrc}
+            isPost={true}
+            body={(body || []).map((block) => (
               <p className="pb-4" key={block._key}>
                 {block.children[0].text}
               </p>
             ))}
-          ></Section>
+          />
         </SectionContainer>
       </div>
     </div>

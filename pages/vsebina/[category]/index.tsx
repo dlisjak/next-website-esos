@@ -8,6 +8,7 @@ import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
+import PostSection from '../../../components/PostSection';
 
 const Category = ({ category, posts = [] }) => {
   return (
@@ -44,28 +45,17 @@ const Category = ({ category, posts = [] }) => {
         <SectionContainer>
           {(posts || []).map((post) => (
             <Fragment key={post.title}>
-              <Section
+              <PostSection
                 image={post.imgSrc}
-                alt="Indoors of the Cathedral of St.Peter in Vatican"
-                title={<Link href={`/vsebina/${category.slug}/${post.slug}`}>{post.title}</Link>}
-                aboveTitle={<Link href={`/vsebina/${category.slug}`}>{category.title}</Link>}
-                text={<div>{(post.body || [])[0].children[0].text}</div>}
-              >
-                <div className="flex flex-col py-2">
-                  <Link href={`/vsebina/${category.slug}/${post.slug}`}>
-                    <a className="button -dark mb-2">Preberi podrobneje</a>
-                  </Link>
-                  <div className="flex items-center mt-2">
-                    <Image
-                      className="rounded-full"
-                      src={post.authorImgSrc}
-                      width={50}
-                      height={50}
-                    />
-                    <span className="ml-4">{post.author}</span>
-                  </div>
-                </div>
-              </Section>
+                alt={post.title}
+                title={post.title}
+                slug={post.slug}
+                author={post.author}
+                authorImage={post.authorImgSrc}
+                isPost={false}
+                category={post.category}
+                body={<div>{(post.body || [])[0].children[0].text}</div>}
+              ></PostSection>
             </Fragment>
           ))}
         </SectionContainer>
