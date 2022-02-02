@@ -9,7 +9,6 @@ import SectionContainer from '../../components/SectionContainer';
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
 
 const Vsebina = ({ posts }) => {
-  console.log(posts);
   return (
     <div className="vsebina h-full">
       <Head>
@@ -67,8 +66,8 @@ const Vsebina = ({ posts }) => {
                 }
                 text={<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />}
               >
-                <Link href={`/${post.categories[0].slug}/${post.slug}`}>
-                  <a className="button -dark">Kontakt</a>
+                <Link href={`/vsebina/${post.categories[0].slug}/${post.slug}`}>
+                  <a className="button -dark">Preberi podrobneje</a>
                 </Link>
               </Section>
             </Fragment>

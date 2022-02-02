@@ -8,6 +8,7 @@ interface Props {
   text?: any;
   right?: boolean;
   aboveTitle?: any;
+  isBlog?: boolean;
   children?: any;
   key?: any;
 }
@@ -20,6 +21,7 @@ const Section: React.FC<Props> = ({
   text,
   right = false,
   aboveTitle = <></>,
+  isBlog = false,
   children,
 }) => {
   const imageEl = (
@@ -41,17 +43,17 @@ const Section: React.FC<Props> = ({
 
   return (
     <div
-      className={`section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 ${
+      className={`section bg-white w-full flex overflow-hidden m-auto my-12 p-4 ${
         !right ? '' : 'justify-end'
       } ${showImageOnSmall ? 'sm:p-0' : 'md:p-4 xl:p-0 justify-center xl:justify-start'} ${
         !right ? '' : 'xl:justify-end'
-      }`}
+      } ${isBlog ? 'items-start' : 'items-center'}`}
     >
       {!right && imageEl}
       <div
         className={`sm:w-2/3 flex flex-col sm:max-w-3xl relative z-10 ${
           !right ? 'items-start sm:ml-4 md:ml-6 lg:ml-8' : 'items-end sm:mr-4 md:mr-6 lg:mr-8'
-        } ${showImageOnSmall ? '' : 'sm:w-full'}`}
+        } ${showImageOnSmall ? '' : 'sm:w-full'}${isBlog ? 'sm:pt-8 md:pt-12 xl:pt-16' : ''}`}
       >
         {aboveTitle}
         <h2 className={`relative mt-0 z-10 mb-2 ${!right ? 'text-left' : 'text-right'}`}>

@@ -6,8 +6,6 @@ import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
 
 const Category = ({ category, posts = [] }) => {
-  console.log(category);
-  console.log(posts);
   return (
     <div className="category h-full">
       <Head>
@@ -16,7 +14,7 @@ const Category = ({ category, posts = [] }) => {
         <meta property="og:title" content={`${category.title} | ESOS Digital`} key="og:title" />
         <meta name="description" content={`${category.description}`} key="description" />
         <meta name="og:description" content={`${category.description}`} key="og:description" />
-        <link rel="canonical" href={`https://www.esos.si/blog/${category.slug}`} />
+        <link rel="canonical" href={`https://www.esos.si/vsebina/${category.slug}`} />
       </Head>
       <div
         id={`category-${category.slug}`}
@@ -30,7 +28,7 @@ const Category = ({ category, posts = [] }) => {
                 alt="Indoors of the Cathedral of St.Peter in Vatican"
                 title={post.title}
                 aboveTitle={post.categories.map((category) => (
-                  <Link key={category.slug} href={`/blog/${post.slug}`}>
+                  <Link key={category.slug} href={`/vsebina/${post.slug}`}>
                     {category.title}
                   </Link>
                 ))}
@@ -50,10 +48,10 @@ const Category = ({ category, posts = [] }) => {
 
 export async function getStaticPaths() {
   const sanity = (await import('../../../utils/sanity')).default;
-  const categoryQuery = `*[_type == "category"] { title, slug }`;
+  const categoryQuery = `*[_type == "category"] { title, "slug": slug.current }`;
   const categories = await sanity.fetch(categoryQuery);
   const paths = categories.map((category) => ({
-    params: { category: category.slug.current, title: category.title },
+    params: { category: category.slug, title: category.title },
   }));
 
   return {
