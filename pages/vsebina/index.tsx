@@ -51,7 +51,8 @@ const Vsebina = ({ posts }) => {
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
-          {(posts || []).map((post) => (
+          <h2>Trenutno še ni vsebine</h2>
+          {/* {(posts || []).map((post) => (
             <Fragment key={post.title}>
               <PostSection
                 image={post.mainImageSrc}
@@ -65,7 +66,7 @@ const Vsebina = ({ posts }) => {
                 body={<div>{(post.body || [])[0].children[0].text}</div>}
               />
             </Fragment>
-          ))}
+          ))} */}
         </SectionContainer>
       </div>
     </div>
