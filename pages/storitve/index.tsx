@@ -139,17 +139,17 @@ const Storitve = () => {
             title={
               <>
                 3D Modeliranje
-                <br />& Animiranje
+                <br /> Animiranje
               </>
             }
             text={
               <p>
-                Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno
-                ponudbo od izdelave, gostovanja na Cloud tehnologiji s podporo kubernetes sistema.
+                Za poustvarjanje neverjetnih scen iz filmov in reklam in za prikaz domišljijskega in
+                dinamičnega sveta se v današnjem času vse bolj uveljavlja tehnologija 3D animacij.
               </p>
             }
           >
-            <Link href="/kontakt">
+            <Link href="/storitve/3d-modeliranje-animiranje">
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>

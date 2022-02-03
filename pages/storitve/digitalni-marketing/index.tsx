@@ -5,7 +5,7 @@ import Header from '../../../components/Header';
 import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
 
-import ABSTRACT_28 from '../../../public/images/headers/1920/ABSTRACT_28.jpeg';
+import ABSTRACT_29 from '../../../public/images/headers/1920/ABSTRACT_29.jpeg';
 import DIGITALNI_MARKETING from '../../../public/images/storitve/digitalni_marketing/DIGITALNI_MARKETING.jpeg';
 
 const Index = () => {
@@ -28,7 +28,7 @@ const Index = () => {
         <link rel="canonical" href="https://www.esos.si/storitve/digitalni-marketing" />
       </Head>
       <Header
-        image={ABSTRACT_28}
+        image={ABSTRACT_29}
         alt="Arizona desert red cave"
         title={<h1 className="text-white text-4xl sm:text-5xl mb-6">Digitalni marketing</h1>}
         subtitle="Marketinške Rešitve"

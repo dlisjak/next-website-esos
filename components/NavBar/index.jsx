@@ -9,7 +9,9 @@ const NavBar = () => {
         <li className='mx-4'><Link href="/storitve">Storitve</Link></li>
         <li className="cursor-pointer">
           <Link href="/">
-            <Image src="/images/logo_icon.svg" alt="ESOS Digital logo" width={80} height={45} priority />
+            <div>
+              <Image src="/images/logo_icon.svg" alt="ESOS Digital logo" width={80} height={45} priority />
+            </div>
           </Link>
         </li>
         {/*<li className='mx-4'><Link href="/reference">Reference</Link></li>*/}
