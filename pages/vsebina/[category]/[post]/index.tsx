@@ -1,3 +1,4 @@
+import { createElement, Fragment } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -11,6 +12,7 @@ import WOMAN_SITTING_CHRIST_MUSEUM from '../../../../public/images/headers/1920/
 const Post = ({ post }) => {
   const { author, authorImgSrc, body, category, imgSrc, publishedAt, slug, title } = post;
   const intro = (body || [])[0].children[0].text;
+  console.log(body);
   return (
     <div className="post h-full">
       <Head>
@@ -51,11 +53,16 @@ const Post = ({ post }) => {
             author={author}
             authorImage={authorImgSrc}
             isPost={true}
-            body={(body || []).map((block) => (
-              <p className="pb-4" key={block._key}>
-                {block.children[0].text}
-              </p>
-            ))}
+            body={(body || []).map((block) => {
+              let el;
+              if (block.style !== 'normal') {
+                el = createElement(block.style, {}, block.children[0].text);
+              } else {
+                el = <p className="pb-4">{block.children[0].text}</p>;
+              }
+
+              return <Fragment key={block._key}>{el}</Fragment>;
+            })}
           />
         </SectionContainer>
       </div>
