@@ -268,8 +268,9 @@ const Index = () => {
                   Zaradi narave storitev je končna cena izračun večih faktorjev. Cena varira na
                   zahtevnost implementacije posameznega dizajna, št. strani, SEO optimizacijo,
                   optimizacijo slik, dodajanje Google in Facebook analitike, Google Maps,
-                  implementacije CMS-ja in različnih funkcionalnosti. Začetna cena izdelave spletne
-                  strani je 750 €.
+                  implementacije CMS-ja in različnih funkcionalnosti.
+                  <br />
+                  Začetna cena izdelave spletne strani je 750 €.
                 </p>
                 <p className="mb-2">
                   Zaradi narave našega izdelovanje, da dosežemo popolnost, je pomembno, da se
@@ -286,10 +287,49 @@ const Index = () => {
             image={SAND_CAVE}
             alt="sand falling in a sand cave"
             showImageOnSmall={false}
-            aboveTitle={<p className="text-slate-500">Dobite največ za najmanj</p>}
+            aboveTitle={
+              <p className="text-slate-500">Profesionalna izdelava spletnih strani in aplikacij</p>
+            }
             title={
               <>
                 Izdelava Spletnih
+                <br />
+                Strani in Aplikacij
+              </>
+            }
+            text={
+              <>
+                <p className="mb-2">
+                  Z nami izgradnje spletnih strani in aplikacij postane umetnost. Z suverenostjo
+                  lahko obvladamo neobvladujoče in tako doprinesemo popolne rezultate, kjer se je to
+                  prej zdelo nemogoče.
+                </p>
+                <p className="mb-2">
+                  Izgradnje spletnih strani in aplikacije je proces, kjer je pomemben vsak korak. Če
+                  ne obvladujemo vseh procesov, to kasneje plačamo z obrestmi. Naše rešitve
+                  omogočajo, da Vašim strankam doprinesete neverjetno uporabniško izkušnjo, boljši
+                  izplen oglaševalskih sredstev in povišane konverzije ter izstopanje izmed tekmeci.
+                </p>
+                <p className="mb-2">
+                  Z našo natančnostjo in marljivim delom želimo to dokazati tudi Vam.
+                </p>
+              </>
+            }
+          >
+            <Link href="/kontakt">
+              <a className="button -dark">Pošlji povpraševanje</a>
+            </Link>
+          </Section>
+          <Section
+            image={SAND_CAVE}
+            alt="sand falling in a sand cave"
+            showImageOnSmall={false}
+            aboveTitle={
+              <p className="text-slate-500">Profesionalna izdelava spletnih strani in aplikacij</p>
+            }
+            title={
+              <>
+                Hitra Izdelava
                 <br />
                 Strani in Aplikacij
               </>
