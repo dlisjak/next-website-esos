@@ -9,6 +9,8 @@ import ABSTRACT_5 from '../../../public/images/headers/1920/ABSTRACT_5.jpeg';
 import EIFFEL from '../../../public/images/storitve/spletne_resitve/EIFFEL.jpeg';
 import SHOP from '../../../public/images/storitve/spletne_resitve/SHOP.jpeg';
 import ROCKET from '../../../public/images/storitve/spletne_resitve/ROCKET.jpeg';
+import WOMAN_BEACH from '../../../public/images/storitve/spletne_resitve/WOMAN_BEACH.jpeg';
+import SAND_CAVE from '../../../public/images/storitve/spletne_resitve/SAND_CAVE.jpeg';
 
 const Index = () => {
   return (
@@ -79,7 +81,7 @@ const Index = () => {
               <>
                 Izdelava
                 <br />
-                spletnih strani
+                Spletnih Strani
               </>
             }
             text={
@@ -145,7 +147,7 @@ const Index = () => {
               <>
                 Izdelava
                 <br />
-                spletnih trgovin
+                Spletnih Trgovin
               </>
             }
             text={
@@ -232,6 +234,81 @@ const Index = () => {
                   Za povečanje obiska in s tem tudi prodaje, redno in skrbno nadzorujemo obnašanje
                   Vaših obiskovalcev ter na podlagi realnih podatkov izvedemo optimizacijsko
                   strategijo.
+                </p>
+              </>
+            }
+          >
+            <Link href="/kontakt">
+              <a className="button -dark">Pošlji povpraševanje</a>
+            </Link>
+          </Section>
+        </SectionContainer>
+      </div>
+      <div
+        id="content"
+        className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
+      >
+        <SectionContainer>
+          <Section
+            image={WOMAN_BEACH}
+            right
+            alt="Woman walking on the beach"
+            showImageOnSmall={false}
+            aboveTitle={<p className="text-slate-500">Dobite največ za najmanj</p>}
+            title={
+              <>
+                Izdelava Spletnih
+                <br />
+                Strani Cenik
+              </>
+            }
+            text={
+              <>
+                <p className="mb-2">
+                  Zaradi narave storitev je končna cena izračun večih faktorjev. Cena varira na
+                  zahtevnost implementacije posameznega dizajna, št. strani, SEO optimizacijo,
+                  optimizacijo slik, dodajanje Google in Facebook analitike, Google Maps,
+                  implementacije CMS-ja in različnih funkcionalnosti. Začetna cena izdelave spletne
+                  strani je 750 €.
+                </p>
+                <p className="mb-2">
+                  Zaradi narave našega izdelovanje, da dosežemo popolnost, je pomembno, da se
+                  vsakemu aspektu spletne rešitve posebej posvetimo.
+                </p>
+              </>
+            }
+          >
+            <Link href="/kontakt">
+              <a className="button -dark">Pošlji povpraševanje</a>
+            </Link>
+          </Section>
+          <Section
+            image={SAND_CAVE}
+            alt="sand falling in a sand cave"
+            showImageOnSmall={false}
+            aboveTitle={<p className="text-slate-500">Dobite največ za najmanj</p>}
+            title={
+              <>
+                Izdelava Spletnih
+                <br />
+                Strani in Aplikacij
+              </>
+            }
+            text={
+              <>
+                <p className="mb-2">
+                  Z nami izgradnje spletnih strani in aplikacij postane umetnost. Z suverenostjo
+                  lahko obvladamo neobvladujoče in tako doprinesemo popolne rezultate, kjer se je to
+                  prej zdelo nemogoče.
+                </p>
+                <p className="mb-2">
+                  Izgradnje spletnih strani in aplikacije je proces, kjer je pomemben vsak korak. Če
+                  ne obvladujemo vseh procesov, to kasneje plačamo z obrestmi. Naše rešitve
+                  omogočajo, da Vašim strankam doprinesete neverjetno uporabniško izkušnjo, boljši
+                  izplen oglaševalskih sredstev in povišane konverzije ter izstopanje izmed tekmeci.
+                </p>
+                <p className="mb-2">
+                  Z našo natančnostjo in marljivim delom želimo to dokazati tudi Vam.
                 </p>
               </>
             }
