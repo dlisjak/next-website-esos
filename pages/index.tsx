@@ -27,13 +27,16 @@ const Index = () => {
           property="og:description"
           content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
         />
+        <meta property="og:image" content="/images/meta/ABSTRACT_22.jpeg" />
 
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.esos.si/" />
         <meta property="twitter:title" content="Edinstvena rešitev nove dobe | ESOS Digital" />
         <meta
           property="twitter:description"
           content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
         />
+        <meta property="twitter:image" content="/images/meta/ABSTRACT_22.jpeg" />
         <link rel="canonical" href="https://www.esos.si" />
       </Head>
       <Header
