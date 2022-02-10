@@ -8,6 +8,7 @@ const Header = ({ image, alt, objectPosition = 'center', title, subtitle, button
         alt={alt}
         objectFit="cover"
         objectPosition={objectPosition}
+        placeholder="blur"
         priority={true}
       />
     </div>
