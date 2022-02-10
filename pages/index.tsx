@@ -50,13 +50,13 @@ const Index = () => {
         image={ABSTRACT_22}
         alt="Greek statue looking out to the blue sky"
         title={
-          <h1 className="text-white	text-4xl sm:text-5xl mb-6">
+          <h2 className="text-white	text-4xl sm:text-5xl mb-6">
             Edinstvena Rešitev
             <br />
             Nove Dobe
-          </h1>
+          </h2>
         }
-        subtitle="ESOS Digital"
+        subtitle="Domov"
         buttons={
           <>
             <Link href="#onas">

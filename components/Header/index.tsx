@@ -14,9 +14,9 @@ const Header = ({ image, alt, objectPosition = 'center', title, subtitle, button
     </div>
     <div className="flex container mx-auto absolute items-center h-full top-0 right-0 left-0 px-4">
       <div>
-        <span className="CopperplateGothic relative text-white text-sm underline underline-offset-1 2xl:mb-2 left-0.5">
+        <h1 className="CopperplateGothic relative text-white text-sm underline underline-offset-1 2xl:mb-2 left-0.5">
           {subtitle}
-        </span>
+        </h1>
         {title}
         <div className="flex flex-wrap">{buttons}</div>
       </div>

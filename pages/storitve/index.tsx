@@ -54,17 +54,13 @@ const Storitve = () => {
         objectPosition="right"
         title={
           <>
-            <h1 className="text-white text-3xl sm:text-5xl mb-6">
-              Spletne Rešitve
-              <br />
-              Mobilne Aplikacije
-              <br />
-              Digitalni Marketing
-              <br />
-              3D Animacije
-              <br />
+            <h2 className="text-white text-3xl sm:text-5xl mb-6">
+              Spletne Rešitve <br />
+              Mobilne Aplikacije <br />
+              Digitalni Marketing <br />
+              3D Animacije <br />
               Video Produkcija
-            </h1>
+            </h2>
           </>
         }
         subtitle="Storitve"
