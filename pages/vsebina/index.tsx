@@ -1,31 +1,46 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head';
 
 import Header from '../../components/Header';
-import Section from '../../components/Section';
 import SectionContainer from '../../components/SectionContainer';
+import PostSection from '../../components/PostSection';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';
-import PostSection from '../../components/PostSection';
 
 const Vsebina = ({ posts }) => {
   return (
     <div className="vsebina h-full">
       <Head>
         <title>Vsebina | ESOS Digital</title>
-        <meta property="title" content="Vsebina | ESOS Digital" key="title" />
-        <meta property="og:title" content="Vsebina | ESOS Digital" key="og:title" />
+        <meta name="title" content="Vsebina | ESOS Digital" />
         <meta
           name="description"
           content="Vas zanima kakšne so naše skrivnosti? Tukaj lahko preberete več in se sami pozanimate kakšne so naše strategije."
-          key="description"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.esos.si/vsebina" />
+        <meta property="og:title" content="Vsebina | ESOS Digital" />
+        <meta
+          property="og:description"
+          content="Vas zanima kakšne so naše skrivnosti? Tukaj lahko preberete več in se sami pozanimate kakšne so naše strategije."
         />
         <meta
-          name="og:description"
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}WOMAN_SITTING_MUSEUM_CHRIST.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.esos.si/vsebina" />
+        <meta property="twitter:title" content="Vsebina | ESOS Digital" />
+        <meta
+          property="twitter:description"
           content="Vas zanima kakšne so naše skrivnosti? Tukaj lahko preberete več in se sami pozanimate kakšne so naše strategije."
-          key="og:description"
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}WOMAN_SITTING_MUSEUM_CHRIST.jpeg`}
         />
         <link rel="canonical" href="https://www.esos.si/vsebina" />
       </Head>

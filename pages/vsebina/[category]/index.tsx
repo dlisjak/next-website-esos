@@ -1,10 +1,8 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head';
 
 import Header from '../../../components/Header';
-import Section from '../../../components/Section';
 import SectionContainer from '../../../components/SectionContainer';
 
 import WOMAN_SITTING_CHRIST_MUSEUM from '../../../public/images/headers/1920/WOMAN_SITTING_MUSEUM_CHRIST.jpeg';

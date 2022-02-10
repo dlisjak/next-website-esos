@@ -47,7 +47,7 @@ const Index = () => {
       <Header
         image={ABSTRACT_29}
         alt="Arizona desert red cave"
-        title={<h1 className="text-white text-4xl sm:text-5xl mb-6">Digitalni marketing</h1>}
+        title={<h2 className="text-white text-4xl sm:text-5xl mb-6">Digitalni marketing</h2>}
         subtitle="Marketinške Rešitve"
         buttons={
           <>

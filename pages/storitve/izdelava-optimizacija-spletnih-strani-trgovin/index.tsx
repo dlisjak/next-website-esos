@@ -71,8 +71,7 @@ const Index = () => {
         alt="Northern lights on a dark starry night"
         title={
           <h2 className="text-white	text-4xl sm:text-5xl mb-6">
-            Izdelava in optimizacija
-            <br />
+            Izdelava in optimizacija <br />
             spletnih strani in trgovin
           </h2>
         }

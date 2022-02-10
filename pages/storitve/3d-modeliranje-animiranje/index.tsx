@@ -13,21 +13,37 @@ const Index = () => {
     <div className="appdevelopment h-full">
       <Head>
         <title>3D Moderliranje in Animiranje | ESOS Digital</title>
-        <meta property="title" content="3D Moderliranje in Animiranje | ESOS Digital" key="title" />
-        <meta
-          property="og:title"
-          content="3D Moderliranje in Animiranje | ESOS Digital"
-          key="og:title"
-        />
+        <meta name="title" content="3D Moderliranje in Animiranje | ESOS Digital" />
         <meta
           name="description"
           content="Za poustvarjanje neverjetnih scen iz filmov in reklam in za prikaz domišljijskega in dinamičnega sveta."
-          key="description"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.esos.si/storitve/3d-modeliranje-animiranje" />
+        <meta property="og:title" content="3D Moderliranje in Animiranje | ESOS Digital" />
+        <meta
+          property="og:description"
+          content="Za poustvarjanje neverjetnih scen iz filmov in reklam in za prikaz domišljijskega in dinamičnega sveta."
         />
         <meta
-          name="og:description"
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_27.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.esos.si/storitve/3d-modeliranje-animiranje"
+        />
+        <meta property="twitter:title" content="3D Moderliranje in Animiranje | ESOS Digital" />
+        <meta
+          property="twitter:description"
           content="Za poustvarjanje neverjetnih scen iz filmov in reklam in za prikaz domišljijskega in dinamičnega sveta."
-          key="og:description"
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_27.jpeg`}
         />
         <link rel="canonical" href="https://www.esos.si/storitve/3d-modeliranje-animiranje" />
       </Head>
@@ -35,12 +51,11 @@ const Index = () => {
         image={ABSTRACT_27}
         alt="Northern lights on a dark starry night"
         title={
-          <h1 className="text-white	text-4xl sm:text-5xl mb-6">
-            3D Moderliranje
-            <br />& Animiranje
-          </h1>
+          <h2 className="text-white	text-4xl sm:text-5xl mb-6">
+            3D Moderliranje <br />& Animiranje
+          </h2>
         }
-        subtitle="Mobilne Rešitve"
+        subtitle="Grafične rešitve"
         buttons={
           <>
             <Link href="#modeliranje-animiranje">

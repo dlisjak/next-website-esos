@@ -66,13 +66,11 @@ const Index = () => {
         image={ABSTRACT_30}
         alt="Northern lights on a dark starry night"
         title={
-          <h1 className="text-white	text-4xl sm:text-5xl mb-6">
-            Izdelava Aplikacij
-            <br />
-            Za Android in IOS
-            <br />
+          <h2 className="text-white	text-4xl sm:text-5xl mb-6">
+            Izdelava Aplikacij <br />
+            Za Android in IOS <br />
             Pametne Telefone
-          </h1>
+          </h2>
         }
         subtitle="Mobilne Rešitve"
         buttons={
