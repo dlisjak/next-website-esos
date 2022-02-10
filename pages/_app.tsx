@@ -20,7 +20,7 @@ const MyApp = ({ Component, pageProps, router }) => {
     <>
       <NavBar />
       <SwitchTransition mode="out-in">
-        <CSSTransition key={route} classNames="page" timeout={500}>
+        <CSSTransition key={route} classNames="page" timeout={250}>
           <Component {...pageProps} key={route} />
         </CSSTransition>
       </SwitchTransition>
