@@ -50,17 +50,34 @@ const Kontakt = () => {
     <div className="kontakt h-full">
       <Head>
         <title>Kontakt | ESOS Digital</title>
-        <meta property="title" content="Kontakt | ESOS Digital" key="title" />
-        <meta property="og:title" content="Kontakt | ESOS Digital" key="og:title" />
+        <meta name="title" content="Kontakt | ESOS Digital" />
         <meta
           name="description"
           content="Odzovite se na klic in nam pošljite povpraševanje. Vaš predlog bomo pregledali in Vas v kratkem kontaktirali."
-          key="description"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.esos.si/kontakt" />
+        <meta property="og:title" content="Kontakt | ESOS Digital" />
+        <meta
+          property="og:description"
+          content="Odzovite se na klic in nam pošljite povpraševanje. Vaš predlog bomo pregledali in Vas v kratkem kontaktirali."
         />
         <meta
-          name="og:description"
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}HAND_FLOWERS.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.esos.si/kontakt" />
+        <meta property="twitter:title" content="Kontakt | ESOS Digital" />
+        <meta
+          property="twitter:description"
           content="Odzovite se na klic in nam pošljite povpraševanje. Vaš predlog bomo pregledali in Vas v kratkem kontaktirali."
-          key="og:description"
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}HAND_FLOWERS.jpeg`}
         />
         <link rel="canonical" href="https://www.esos.si/kontakt" />
       </Head>
