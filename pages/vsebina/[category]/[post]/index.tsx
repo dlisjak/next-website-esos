@@ -12,9 +12,9 @@ import WOMAN_SITTING_CHRIST_MUSEUM from '../../../../public/images/headers/1920/
 const Post = ({ post }) => {
   const { author, authorImgSrc, body, category, imgSrc, publishedAt, slug, title } = post;
   const intro = (body || [])[0].children[0].text;
-  console.log(body);
+
   return (
-    <div className="post h-full">
+    <div className="h-full">
       <Head>
         <title>{title} | ESOS Digital</title>
         <meta property="title" content={`${title} | ESOS Digital`} key="title" />

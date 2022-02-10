@@ -47,7 +47,7 @@ const Section: React.FC<Props> = ({
         !right ? '' : 'justify-end'
       } ${showImageOnSmall ? 'sm:p-0' : 'md:p-4 xl:p-0 justify-center xl:justify-start'} ${
         !right ? '' : 'xl:justify-end'
-      } ${isPost ? 'items-start' : 'items-center'}`}
+      } ${isPost ? 'items-start post' : 'items-center'}`}
     >
       {!right && imageEl}
       <div
