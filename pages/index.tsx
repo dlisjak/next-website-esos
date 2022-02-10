@@ -6,6 +6,7 @@ import Section from '../components/Section';
 import SectionContainer from '../components/SectionContainer';
 
 import ABSTRACT_22 from '../public/images/headers/1920/ABSTRACT_22.jpeg';
+import ABSTRACT_22_META from '../public/images/meta/ABSTRACT_22.jpeg';
 import CITY_AERIAL_OFFICE from '../public/images/vstop/CITY_AERIAL_OFFICE.jpeg';
 import COLOSSEUM from '../public/images/vstop/COLOSSEUM.jpeg';
 
@@ -27,7 +28,10 @@ const Index = () => {
           property="og:description"
           content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
         />
-        <meta property="og:image" content="/images/meta/ABSTRACT_22.jpeg" />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_22.jpeg`}
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.esos.si/" />
@@ -36,7 +40,10 @@ const Index = () => {
           property="twitter:description"
           content="Smo kreativna ekipa vizionarjev, kjer ne poznamo besede nemogoče. Naše tehnološke rešitve so najnaprednejše in smo zmeraj korak pred ostalimi."
         />
-        <meta property="twitter:image" content="/images/meta/ABSTRACT_22.jpeg" />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_22.jpeg`}
+        />
         <link rel="canonical" href="https://www.esos.si" />
       </Head>
       <Header

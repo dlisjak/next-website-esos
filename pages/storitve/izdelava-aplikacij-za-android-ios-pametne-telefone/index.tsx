@@ -14,24 +14,48 @@ const Index = () => {
       <Head>
         <title>Izdelava aplikacij za android in iOS pametne telefone | ESOS Digital</title>
         <meta
-          property="title"
+          name="title"
           content="Izdelava aplikacij za android in iOS pametne telefone | ESOS Digital"
-          key="title"
-        />
-        <meta
-          property="og:title"
-          content="Izdelava aplikacij za android in iOS pametne telefone | ESOS Digital"
-          key="og:title"
         />
         <meta
           name="description"
           content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
-          key="description"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.esos.si/storitve/izdelava-aplikacij-za-android-ios-pametne-telefone"
         />
         <meta
-          name="og:description"
+          property="og:title"
+          content="Izdelava aplikacij za android in iOS pametne telefone | ESOS Digital"
+        />
+        <meta
+          property="og:description"
           content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
-          key="og:description"
+        />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_30.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.esos.si/storitve/izdelava-aplikacij-za-android-ios-pametne-telefone"
+        />
+        <meta
+          property="twitter:title"
+          content="Izdelava aplikacij za android in iOS pametne telefone | ESOS Digital"
+        />
+        <meta
+          property="twitter:description"
+          content="Za Vas izdelamo mobilne aplikacije na sisemih iOS in Android. Omogočimo Vam celotno ponudbo od izdelave do gostovanja na Cloud strežnikih."
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_30.jpeg`}
         />
         <link
           rel="canonical"

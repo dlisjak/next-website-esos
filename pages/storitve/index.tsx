@@ -17,17 +17,34 @@ const Storitve = () => {
     <div className="storitve h-full">
       <Head>
         <title>Storitve | ESOS Digital</title>
-        <meta property="title" content="Storitve | ESOS Digital" key="title" />
-        <meta property="og:title" content="Storitve | ESOS Digital" key="og:title" />
+        <meta name="title" content="Storitve | ESOS Digital" />
         <meta
           name="description"
-          content="Za Vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
-          key="description"
+          content="Za Vas pripravimo edinstveno rešitev s katero boste zajadrali mimo konkurence."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.esos.si/storitve" />
+        <meta property="og:title" content="Storitve | ESOS Digital" />
+        <meta
+          property="og:description"
+          content="Za Vas pripravimo edinstveno rešitev s katero boste zajadrali mimo konkurence."
         />
         <meta
-          name="og:description"
-          content="Za Vas pripravimo edinstveno rešitev s katero boste lahko zajadrali mimo konkurence."
-          key="og:description"
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}BUILDING_BRIDGE.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.esos.si/storitve" />
+        <meta property="twitter:title" content="Storitve | ESOS Digital" />
+        <meta
+          property="twitter:description"
+          content="Za Vas pripravimo edinstveno rešitev s katero boste zajadrali mimo konkurence."
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}BUILDING_BRIDGE.jpeg`}
         />
         <link rel="canonical" href="https://www.esos.si/storitve" />
       </Head>

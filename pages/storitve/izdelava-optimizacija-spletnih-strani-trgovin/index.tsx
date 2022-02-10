@@ -18,24 +18,48 @@ const Index = () => {
       <Head>
         <title>Izdelava in optimizacija spletnih strani in trgovin | ESOS Digital</title>
         <meta
-          property="title"
+          name="title"
           content="Izdelava in optimizacija spletnih strani in trgovin | ESOS Digital"
-          key="title"
-        />
-        <meta
-          property="og:title"
-          content="Izdelava in optimizacija spletnih strani in trgovin | ESOS Digital"
-          key="og:title"
         />
         <meta
           name="description"
           content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
-          key="description"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.esos.si/storitve/izdelava-optimizacija-spletnih-strani-trgovin"
         />
         <meta
-          name="og:description"
+          property="og:title"
+          content="Izdelava in optimizacija spletnih strani in trgovin | ESOS Digital"
+        />
+        <meta
+          property="og:description"
           content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
-          key="og:description"
+        />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_5.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://www.esos.si/storitve/izdelava-optimizacija-spletnih-strani-trgovin"
+        />
+        <meta
+          property="twitter:title"
+          content="Izdelava in optimizacija spletnih strani in trgovin | ESOS Digital"
+        />
+        <meta
+          property="twitter:description"
+          content="Za Vas izdelamo spletno stran z uporabo najmodernejših in najustreznejših orodij, ki Vam bodo omogočala, da boste konkurenčni ponudnik svojih storitev na spletu."
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_5.jpeg`}
         />
         <link
           rel="canonical"

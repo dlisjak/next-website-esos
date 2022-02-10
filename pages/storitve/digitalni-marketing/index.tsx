@@ -13,17 +13,34 @@ const Index = () => {
     <div className="digitalmarketing h-full">
       <Head>
         <title>Digitalni marketing | ESOS Digital</title>
-        <meta property="title" content="Digitalni marketing | ESOS Digital" key="title" />
-        <meta property="og:title" content="Digitalni marketing | ESOS Digital" key="og:title" />
+        <meta name="title" content="Digitalni marketing | ESOS Digital" />
         <meta
           name="description"
           content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
-          key="description"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.esos.si/storitve/digitalni-marketing" />
+        <meta property="og:title" content="Digitalni marketing | ESOS Digital" />
+        <meta
+          property="og:description"
+          content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
         />
         <meta
-          name="og:description"
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_29.jpeg`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.esos.si/storitve/digitalni-marketing" />
+        <meta property="twitter:title" content="Digitalni marketing | ESOS Digital" />
+        <meta
+          property="twitter:description"
           content="Za Vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno občinstvo."
-          key="og:description"
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}ABSTRACT_29.jpeg`}
         />
         <link rel="canonical" href="https://www.esos.si/storitve/digitalni-marketing" />
       </Head>
