@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 import { pageview } from '../utils/ga';
 
@@ -23,6 +24,7 @@ const MyApp = ({ Component, pageProps, router }) => {
           <Component {...pageProps} key={route} />
         </CSSTransition>
       </SwitchTransition>
+      <Footer />
     </>
   );
 };
