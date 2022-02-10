@@ -13,10 +13,47 @@ const Category = ({ category, posts = [] }) => {
     <div className="category h-full">
       <Head>
         <title>{category.title} | ESOS Digital</title>
-        <meta property="title" content={`${category.title} | ESOS Digital`} key="title" />
-        <meta property="og:title" content={`${category.title} | ESOS Digital`} key="og:title" />
+        <meta name="title" content={`${category.title} | ESOS Digital`} key="title" />
         <meta name="description" content={`${category.description}`} key="description" />
-        <meta name="og:description" content={`${category.description}`} key="og:description" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${category.title} | ESOS Digital`} key="og:title" />
+        <meta property="og:description" content={`${category.description}`} key="og:description" />
+        <meta
+          property="og:url"
+          content={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/vsebina/${category.slug}`}
+          key="og:url"
+        />
+        <meta property="og:title" content={`${category.title} | ESOS Digital`} key="og:title" />
+        <meta name="og:description" content={category.description} key="og:description" />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}/WOMAN_SITTING_MUSEUM_CHRIST.jpeg`}
+          key="og:image"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" key="twitter:card" />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/vsebina/${category.slug}`}
+          key="twitter:url"
+        />
+        <meta
+          property="twitter:title"
+          content={`${category.title} | ESOS Digital`}
+          key="twitter:title"
+        />
+        <meta
+          property="twitter:description"
+          content={category.description}
+          key="twitter:description"
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}/WOMAN_SITTING_MUSEUM_CHRIST.jpeg`}
+          key="twitter:image"
+        />
+
         <link rel="canonical" href={`https://www.esos.si/vsebina/${category.slug}`} />
       </Head>
       <Header

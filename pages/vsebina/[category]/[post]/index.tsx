@@ -27,7 +27,11 @@ const Post = ({ post }) => {
         />
         <meta property="og:title" content={`${title} | ESOS Digital`} key="og:title" />
         <meta name="og:description" content={intro} key="og:description" />
-        <meta property="og:image" content={imgSrc} key="og:image" />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}/WOMAN_SITTING_MUSEUM_CHRIST.jpeg`}
+          key="og:image"
+        />
 
         <meta property="twitter:card" content="summary_large_image" key="twitter:card" />
         <meta
@@ -37,7 +41,11 @@ const Post = ({ post }) => {
         />
         <meta property="twitter:title" content={`${title} | ESOS Digital`} key="twitter:title" />
         <meta property="twitter:description" content={intro} key="twitter:description" />
-        <meta property="twitter:image" content={imgSrc} key="twitter:image" />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_META_FOLDER_URL}/WOMAN_SITTING_MUSEUM_CHRIST.jpeg`}
+          key="twitter:image"
+        />
 
         <link rel="canonical" href={`https://www.esos.si/vsebina/${category.slug}/${slug}`} />
       </Head>
