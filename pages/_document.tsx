@@ -23,29 +23,6 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <footer>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                function downloadGAOnload() {
-                  var element = document.createElement("script");
-                  element.src = "https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD";
-                  element.defer = true;
-                  document.head.appendChild(element);
-                }
-
-                window.onload = () => {
-                  downloadGAOnload();
-                  window.dataLayer = window.dataLayer || [];
-
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
-                }
-              `,
-            }}
-          ></script>
-        </footer>
       </Html>
     );
   }
