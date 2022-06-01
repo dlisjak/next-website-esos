@@ -33,8 +33,9 @@ export const getStaticPaths = async () => {
   // const { data } = await client.query({ query });
 
   // const paths = data.products.items.map((item) => ({ params: { slug: item.slug } }));
+  const paths = [];
 
-  return { fallback: false };
+  return { paths, fallback: false };
 };
 
 export const getStaticProps = async ({ params }) => {
@@ -45,7 +46,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      product: [],
+      product: {},
     },
   };
 };
