@@ -268,7 +268,6 @@ const Index = () => {
           </Section>
         </SectionContainer>
       </div>
-      <ContactBlock />
       <div
         id="content"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"

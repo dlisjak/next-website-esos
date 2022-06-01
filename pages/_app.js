@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps, router }) => {
           <Component {...pageProps} key={route} />
         </CSSTransition>
       </SwitchTransition>
-      <Footer />
+      <Footer route={route} />
     </>
   );
 };

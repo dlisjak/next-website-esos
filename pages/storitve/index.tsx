@@ -12,6 +12,7 @@ import DIGITALNI_MARKETING from '../../public/images/storitve/digitalni_marketin
 import COPYWRITING from '../../public/images/storitve/COPYWRITING.jpeg';
 import VIDEO_PRODUCTION from '../../public/images/storitve/VIDEO_PRODUCTION.jpeg';
 import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
+import ContactBlock from '../../components/ContactBlock';
 
 const Storitve = () => {
   return (
