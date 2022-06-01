@@ -11,6 +11,7 @@ import SHOP from '../../../public/images/storitve/spletne_resitve/SHOP.jpeg';
 import ROCKET from '../../../public/images/storitve/spletne_resitve/ROCKET.jpeg';
 import WOMAN_BEACH from '../../../public/images/storitve/spletne_resitve/WOMAN_BEACH.jpeg';
 import SAND_CAVE from '../../../public/images/storitve/spletne_resitve/SAND_CAVE.jpeg';
+import ContactBlock from '../../../components/ContactBlock';
 
 const Index = () => {
   return (
@@ -242,7 +243,7 @@ const Index = () => {
                 </p>
                 <p className="mb-2">
                   Ponujamo Vam izdelavo optimizacijske strategije, ki jo premišljeno nato izvedemo.
-                  Poskrbimo za pregleden prikaz pomamebnih informacij, s katerimi boste lahko
+                  Poskrbimo za pregleden prikaz pomemebnih informacij, s katerimi boste lahko
                   konkurirali tudi na globalnem trgu.
                 </p>
                 <p className="mb-2">
@@ -267,6 +268,7 @@ const Index = () => {
           </Section>
         </SectionContainer>
       </div>
+      <ContactBlock />
       <div
         id="content"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"

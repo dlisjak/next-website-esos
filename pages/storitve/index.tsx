@@ -9,6 +9,7 @@ import BUILDING_BRIDGE from '../../public/images/headers/1920/BUILDING_BRIDGE.jp
 import EIFFEL from '../../public/images/storitve/spletne_resitve/EIFFEL.jpeg';
 import IZDELAVA_APLIKACIJ from '../../public/images/storitve/mobilne_aplikacije/IZDELAVA_APLIKACIJ.jpeg';
 import DIGITALNI_MARKETING from '../../public/images/storitve/digitalni_marketing/DIGITALNI_MARKETING.jpeg';
+import COPYWRITING from '../../public/images/storitve/COPYWRITING.jpeg';
 import VIDEO_PRODUCTION from '../../public/images/storitve/VIDEO_PRODUCTION.jpeg';
 import ANIMACIJE from '../../public/images/storitve/3D_ANIMACIJE.jpeg';
 
@@ -58,8 +59,10 @@ const Storitve = () => {
               Spletne Rešitve <br />
               Mobilne Aplikacije <br />
               Digitalni Marketing <br />
-              3D Animacije <br />
+              Copywriting <br />
               Video Produkcija
+              <br />
+              3D Animacije
             </h2>
           </>
         }
@@ -127,6 +130,7 @@ const Storitve = () => {
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>
+
           <Section
             image={DIGITALNI_MARKETING}
             alt="Colorful tower reaching for the skies"
@@ -141,6 +145,41 @@ const Storitve = () => {
             }
           >
             <Link href="/storitve/digitalni-marketing">
+              <a className="button -dark">Poglej podrobneje</a>
+            </Link>
+          </Section>
+          <Section
+            right
+            image={COPYWRITING}
+            alt="Disney castle"
+            aboveTitle={<p className="text-slate-500">Povejte svoje sporočilo jasno in glasno.</p>}
+            title="Copywriting"
+            text={
+              <p>
+                Kako v današnjem svetu pridobiti pozornost uporabnika?
+                <br />
+                Pomagamo Vam izstopati in na zanimiv način ujeti pozornosti ljudi.
+              </p>
+            }
+          >
+            <Link href="/storitve/3d-modeliranje-animiranje">
+              <a className="button -dark">Poglej podrobneje</a>
+            </Link>
+          </Section>
+          <Section
+            image={VIDEO_PRODUCTION}
+            alt="Cathedral in distance between two greek towers"
+            aboveTitle={<p className="text-slate-500">Inspiracija ne počiva</p>}
+            title="Video Produkcija"
+            text={
+              <p>
+                Za Vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
+                so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali
+                in uspešno predali svojo sporočilo.
+              </p>
+            }
+          >
+            <Link href="/kontakt">
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>
@@ -163,23 +202,6 @@ const Storitve = () => {
             }
           >
             <Link href="/storitve/3d-modeliranje-animiranje">
-              <a className="button -dark">Poglej podrobneje</a>
-            </Link>
-          </Section>
-          <Section
-            image={VIDEO_PRODUCTION}
-            alt="Cathedral in distance between two greek towers"
-            aboveTitle={<p className="text-slate-500">Inspiracija ne počiva</p>}
-            title="Video Produkcija"
-            text={
-              <p>
-                Za Vas pripravimo in uresničimo kreativno vizijo, kjer bo vašemu občinstvu jasno, da
-                so končno prispeli na pravi naslov. Z kreativno in umetniško režijo boste izstopali
-                in uspešno predali svojo sporočilo.
-              </p>
-            }
-          >
-            <Link href="/kontakt">
               <a className="button -dark">Poglej podrobneje</a>
             </Link>
           </Section>

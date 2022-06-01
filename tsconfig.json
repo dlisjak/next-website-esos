@@ -22,7 +22,8 @@
     "utils/serializeModels.js",
     "pages/stanovanja/[uuid]",
     "pages/sitemap.xml.js",
-    "pages/_app.js"
+    "pages/_app.js",
+    "gql/product.js"
   ],
   "exclude": ["node_modules"]
 }
