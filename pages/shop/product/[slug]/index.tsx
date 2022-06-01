@@ -51,3 +51,5 @@
 // };
 
 // export default Product;
+
+export {};
