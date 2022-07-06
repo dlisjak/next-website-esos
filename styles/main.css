@@ -121,6 +121,26 @@ a.button {
   background: rgba(0, 0, 0, 0.8);
   border: 1px solid black;
 }
+.button.-red {
+  color: white;
+  border: 1px solid rgb(220, 38, 38);
+  background: rgb(220, 38, 38);
+}
+.button.-red:hover {
+  color: white;
+  background: rgba(220, 38, 38, 0.8);
+  border: 1px solid rgb(220, 38, 38);
+}
+.button.-teal {
+  color: white;
+  border: 1px solid rgb(15, 118, 110);
+  background: rgb(15, 118, 110);
+}
+.button.-teal:hover {
+  color: white;
+  background: rgba(15, 118, 110, 0.8);
+  border: 1px solid rgb(15, 118, 110);
+}
 
 .button:hover {
   color: black;
@@ -220,6 +240,21 @@ a.button {
     border-top-right-radius: 200px;
     border-bottom-left-radius: 200px;
   }
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .lds-ring {

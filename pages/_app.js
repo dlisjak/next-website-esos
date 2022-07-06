@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 
 import '../styles/main.css';
 import '../styles/page.css';
+import '../styles/carousel.css';
 
 const MyApp = ({ Component, pageProps, router }) => {
   const route = router.route;
