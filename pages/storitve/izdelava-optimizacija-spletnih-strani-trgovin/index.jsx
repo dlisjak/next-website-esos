@@ -118,7 +118,7 @@ const Index = () => {
                   potrebne velike zmožnosti prilagoditve poslovanja.
                 </p>
                 <p className="mb-2">
-                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah,
+                  Ponujamo Vam oblikovanje in izdelavo spletne strani po dostopnih cenah ter
                   optimizacijo za vse vrste brskalnikov. Vaša spletna stran bo prilagojena vsem
                   modernim napravam.
                 </p>

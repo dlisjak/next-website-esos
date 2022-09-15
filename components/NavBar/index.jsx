@@ -6,6 +6,8 @@ import { pageview } from '../../utils/ga';
 import Button from '../Button';
 import GoogleAnalytics from '../GoogleAnalytics';
 
+import Logo from '../../public/images/logo_icon_white.svg';
+
 const NavBar = ({ route }) => {
   const [isCookieConsent, setIsCookieConsent] = useState(false);
 
@@ -35,8 +37,8 @@ const NavBar = ({ route }) => {
           <li className='mx-4'><Link href="/storitve">Storitve</Link></li>
           <li className="cursor-pointer">
             <Link href="/">
-              <div>
-                <Image src="/images/logo_icon.svg" alt="ESOS Digital logo" width={80} height={45} priority />
+              <div className='w-12 text-white'>
+                <Logo />
               </div>
             </Link>
           </li>

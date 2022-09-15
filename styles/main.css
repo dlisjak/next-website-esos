@@ -118,7 +118,6 @@ h1.text-gradient.-dolphin::before {
   content: '';
   position: absolute;
   top: 1.5rem;
-  width: 11.1rem;
   left: auto;
   right: 0;
   height: 0.1rem;
@@ -126,7 +125,7 @@ h1.text-gradient.-dolphin::before {
 }
 h1.text-gradient.-dolphin::before {
   background: linear-gradient(to left, #0099ff, #91e0f4);
-  width: 17.7rem;
+  width: 10rem;
 }
 
 .text-gradient.-tiger {
@@ -178,11 +177,12 @@ h1.text-gradient.-bird::before {
   left: auto;
   right: auto;
 }
+
 .landing .container .headerText > h1.-lion::before {
   width: 9rem;
 }
 .landing .container .headerText > h1.-dolphin::before {
-  width: 14.2rem;
+  width: 9rem;
 }
 .landing .container .headerText > h1.-tiger::before {
   width: 11rem;
@@ -190,6 +190,21 @@ h1.text-gradient.-bird::before {
 .landing .container .headerText > h1.-bird::before {
   width: 9.7rem;
 }
+@media screen and (min-width: 640px) {
+  .landing .container .headerText > h1.-lion::before {
+    width: 11.2rem;
+  }
+  .landing .container .headerText > h1.-dolphin::before {
+    width: 11.3rem;
+  }
+  .landing .container .headerText > h1.-tiger::before {
+    width: 13.8rem;
+  }
+  .landing .container .headerText > h1.-bird::before {
+    width: 12.2rem;
+  }
+}
+
 .landing .container .buttons {
   justify-content: center;
 }
@@ -246,10 +261,32 @@ h1.text-gradient.-bird::before {
 
 @media screen and (min-width: 1024px) {
   .landing .container {
+    flex-direction: row;
     padding: 0 2rem;
+  }
+  .landing .container .headerText {
+    margin: 0;
+    text-align: inherit;
+  }
+  .landing .container .headerText > h1::before {
+    left: auto;
+    right: auto;
+  }
+  .landing .container .buttons {
+    justify-content: inherit;
+  }
+  .landing .container.-left {
+    flex-direction: row;
+  }
+  .landing .container.-left .headerText {
+    text-align: right;
+  }
+  .landing .container.-left .headerText .buttons {
+    justify-content: flex-end;
   }
   .landing .headerImageContainer {
     min-width: 400px;
+    margin: 0;
   }
 }
 
