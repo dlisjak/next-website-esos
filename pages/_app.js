@@ -12,9 +12,9 @@ const MyApp = ({ Component, pageProps, router }) => {
 
   return (
     <>
-      {route === "/" ? (
-        <NavBarNew />
-      ) : <NavBar />}
+      {route === "/" ?
+        <NavBarNew /> : <NavBar />
+      }
       <SwitchTransition mode="out-in">
         <CSSTransition key={route} classNames="page" timeout={500}>
           <Component {...pageProps} key={route} />
