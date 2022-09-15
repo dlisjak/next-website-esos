@@ -1,7 +1,7 @@
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
 import Footer from '../components/Footer';
-import NavBar from '../components/Navbar';
+import NavBar from '../components/NavbBar';
 import NavBarNew from '../components/NavbarNew';
 
 import '../styles/main.css';
