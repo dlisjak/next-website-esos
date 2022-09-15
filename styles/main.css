@@ -14,6 +14,37 @@
   font-family: 'Copperplate-Gothic';
 }
 
+.logo defs stop {
+  transition: 1s ease;
+}
+.logo.-lion .logo_icon_svg__main-stop {
+  stop-color: #ff9500;
+}
+.logo.-lion .logo_icon_svg__alt-stop {
+  stop-color: #ffd797;
+}
+
+.logo.-dolphin .logo_icon_svg__main-stop {
+  stop-color: #0099ff;
+}
+.logo.-dolphin .logo_icon_svg__alt-stop {
+  stop-color: #b4f0ff;
+}
+
+.logo.-tiger .logo_icon_svg__main-stop {
+  stop-color: #cc460c;
+}
+.logo.-tiger .logo_icon_svg__alt-stop {
+  stop-color: #e4b49e;
+}
+
+.logo.-bird .logo_icon_svg__main-stop {
+  stop-color: #11c700;
+}
+.logo.-bird .logo_icon_svg__alt-stop {
+  stop-color: #93ff89;
+}
+
 html {
   font-family: 'Open Sans';
   --scroll-behavior: smooth;
@@ -55,6 +86,102 @@ h3 {
 p {
   font-weight: 300;
   padding: 0 0.2rem;
+}
+
+h1.text-gradient::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  width: 11.1rem;
+  left: 0;
+  height: 0.1rem;
+  border-radius: 0;
+}
+
+.text-gradient.-lion {
+  background: linear-gradient(to left, #ffd797, #ff9500);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1.text-gradient.-lion::before {
+  background: linear-gradient(to left, #ffc364, #ff9500);
+}
+
+.text-gradient.-dolphin {
+  background: linear-gradient(to left, #0099ff, #b4f0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1.text-gradient.-dolphin::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  width: 11.1rem;
+  left: auto;
+  right: 0;
+  height: 0.1rem;
+  border-radius: 0;
+}
+h1.text-gradient.-dolphin::before {
+  background: linear-gradient(to left, #0099ff, #91e0f4);
+  width: 17.7rem;
+}
+
+.text-gradient.-tiger {
+  background: linear-gradient(to left, #e4b49e, #cc460c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1.text-gradient.-tiger::before {
+  background: linear-gradient(to left, #ff7e47, #cc460c);
+  width: 13.8rem;
+}
+
+.text-gradient.-bird {
+  background: linear-gradient(to left, #11c700, #93ff89);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1.text-gradient.-bird::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  width: 11.1rem;
+  left: auto;
+  right: 0;
+  height: 0.1rem;
+  border-radius: 0;
+}
+h1.text-gradient.-bird::before {
+  background: linear-gradient(to left, #11c700, #93ff89);
+  width: 12rem;
+}
+
+.headerImageContainer {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 640px) {
+  .headerImageContainer {
+    min-width: 250px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .headerImageContainer {
+    min-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .headerImageContainer {
+    min-width: 800px;
+  }
 }
 
 .post h1 {
@@ -147,7 +274,7 @@ a.button {
   background: white;
 }
 
-.section {
+.contentSection {
   background-color: white;
 }
 .section__image {
@@ -165,7 +292,7 @@ a.button {
   h3 {
     font-size: 2rem;
   }
-  .section {
+  .contentSection {
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
   }
@@ -175,7 +302,7 @@ a.button {
   }
 }
 @media screen and (min-width: 768px) {
-  .section {
+  .contentSection {
     border-top-right-radius: 90px;
     border-bottom-left-radius: 90px;
   }
@@ -195,7 +322,7 @@ a.button {
   h3 {
     font-size: 2rem;
   }
-  .section {
+  .contentSection {
     border-top-right-radius: 120px;
     border-bottom-left-radius: 120px;
   }
@@ -211,7 +338,7 @@ a.button {
   h3 {
     font-size: 2.5rem;
   }
-  .section {
+  .contentSection {
     border-top-right-radius: 180px;
     border-bottom-left-radius: 180px;
   }
@@ -232,7 +359,7 @@ a.button {
   h3 {
     font-size: 2.5rem;
   }
-  .section {
+  .contentSection {
     border-top-right-radius: 200px;
     border-bottom-left-radius: 200px;
   }

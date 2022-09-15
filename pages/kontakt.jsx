@@ -97,7 +97,7 @@ const Kontakt = () => {
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
         <SectionContainer>
-          <div className="section bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 xl:p-0">
+          <div className="contentSection bg-white w-full flex items-center overflow-hidden m-auto my-12 p-4 md:p-6 xl:p-0">
             <div className="section__image pointer-events-none lg:w-1/3 xl:flex relative w-auto overflow-hidden hidden">
               <Image
                 src={KONTAKT}
