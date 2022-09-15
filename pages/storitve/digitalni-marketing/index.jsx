@@ -61,60 +61,6 @@ const Index = () => {
         id="digital-marketing"
         className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
       >
-        <SectionContainer>
-          <Section
-            image={DIGITALNI_MARKETING}
-            alt="Colorful tower reaching for the skies"
-            showImageOnSmall={false}
-            title={<>Digitalni marketing</>}
-            text={
-              <>
-                <p className="mb-2">
-                  Za vas organiziramo in upravljamo izvedbo učinkovitih digitalnih trženjskih
-                  strategij. Tako boste dobili celostni vpogled in pravilno izbrali ciljno
-                  občinstvo, kar vam bo omogočilo najboljši izplen vloženih sredstev v reklamno
-                  kampanjo.
-                </p>
-                <p className="mb-2">
-                  Z vami skupaj pripravimo strategijo celostnega nastopa blagovne znamke na
-                  družbenih omrežjih. Le-ta omogočajo učinkovito, dvosmerno komunikacijo z vašim
-                  ciljnim občinstvom in ponujajo platforme za grajenje skupnosti sledilcev. Nudimo
-                  pomoč pri identifikaciji ustreznih vplivnežev, ki s svojimi objavami na digitalnih
-                  kanalih ustvarjajo simbiozo z vašo blagovno znamko in potencialnimi kupci.
-                </p>
-                <p className="mb-2">
-                  S premišljenim umeščanjem družbenih medijev v vaše strategije in z iskanjem
-                  sinergij z oglaševalskimi orodji in taktikami vam pomagamo, da dosežete prave
-                  uporabnike, ki bodo priporočali vašo blagovno znamko svojim znancem.
-                </p>
-                <p className="mb-2">
-                  Z našimi poslovnimi partnerji vam omogočimo ustvarjenje zanimivih vsebin; od
-                  priprave besedil, produkcije foto in video gradiv in izdelave aplikacij do
-                  oblikovanja natečajev, nagradnih iger in drugih aktivacij.
-                </p>
-                <p className="mb-2">
-                  Za vas oblikujemo celovite in integrirane komunikacijske strategije, s katerimi
-                  boste ustvarili pravo kemijo med svojo blagovno znamko in svojimi kupci.
-                </p>
-                <p className="mb-2">
-                  Preko podatkov o klikih, prikazih v sorazmerju s porabljenimi sredstvi, lahko
-                  hitro ugotovimo uspešnost zastavljene digitalne kampanje in po potrebi prilagodimo
-                  razmerja in parametre v kampanji na način, ki bo najbolje optimiziral kampanjo in
-                  privabil največjo možno skupino bodočih uporabnikov ali kupcev.
-                </p>
-              </>
-            }
-          >
-            <div className="flex flex-wrap">
-              <Link href="/kontakt">
-                <a className="button -dark mr-4 mb-4">Pošljite povpraševanje</a>
-              </Link>
-              <Link href="/storitve">
-                <a className="button -dark mr-4 mb-4">Ostale storitve</a>
-              </Link>
-            </div>
-          </Section>
-        </SectionContainer>
       </div>
     </div>
   );
