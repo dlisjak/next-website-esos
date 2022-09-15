@@ -34,7 +34,7 @@ const Index = () => {
   }
 
   return (
-    <div className="index h-full">
+    <div className="landing h-full">
       <Head>
         <title>Edinstvena rešitev nove dobe | ESOS Digital</title>
         <meta name="title" content="Edinstvena rešitev nove dobe | ESOS Digital" />
@@ -76,14 +76,14 @@ const Index = () => {
               image={LION}
               alt="Majest calm lion looking towards you"
               title={
-                <h2 className="text-gradient -lion text-4xl sm:text-5xl mb-6">
+                <h2 className="text-gradient -lion text-3xl sm:text-3xl md:text-5xl mb-4 sm:mb-6 px-2">
                   Postanite kralj
                   <br />
                   spletnega prostora
                 </h2>
               }
               subtitle={
-                <h1 className="relative text-gradient -lion text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
+                <h1 className="relative text-gradient -lion text-base sm:text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
                   Spletne rešitve
                 </h1>
               }
@@ -106,7 +106,7 @@ const Index = () => {
               image={DOLPHIN}
               alt="Dolphin swimming towards the top of the page"
               title={
-                <h2 className="text-gradient -dolphin	text-4xl sm:text-5xl mb-6">
+                <h2 className="text-gradient -dolphin	text-3xl sm:text-3xl md:text-5xl mb-4 sm:mb-6 px-2">
                   Zasedite svoje mesto
                   <br />
                   na pametnih telefonih
@@ -114,7 +114,7 @@ const Index = () => {
               }
               left
               subtitle={
-                <h1 className="relative text-gradient -dolphin text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
+                <h1 className="relative text-gradient -dolphin text-base sm:text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
                   Izdelava mobilnih rešitev
                 </h1>
               }
@@ -136,12 +136,12 @@ const Index = () => {
               image={TIGER}
               alt="fierce tiger looking at you"
               title={
-                <h2 className="text-gradient -tiger text-4xl sm:text-5xl mb-6">
+                <h2 className="text-gradient -tiger text-3xl sm:text-3xl md:text-5xl mb-4 sm:mb-6">
                   Nepozabljiva prezenca
                 </h2>
               }
               subtitle={
-                <h1 className="relative text-gradient -tiger text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
+                <h1 className="relative text-gradient -tiger text-base sm:text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
                   Digitalni marketing
                 </h1>
               }
@@ -163,14 +163,14 @@ const Index = () => {
               image={BIRD_RIGHT}
               alt="fierce tiger looking at you"
               title={
-                <h2 className="text-gradient -bird text-4xl sm:text-5xl mb-6">
+                <h2 className="text-gradient -bird text-3xl sm:text-3xl md:text-5xl mb-4 sm:mb-6">
                   Inspiracija v vsakem
                   <br />
                   trenutku
                 </h2>
               }
               subtitle={
-                <h1 className="relative text-gradient -bird text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
+                <h1 className="relative text-gradient -bird text-base sm:text-xl underline underline-offset-1 2xl:mb-2 left-0.5">
                   Video produkcija
                 </h1>
               }

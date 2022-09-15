@@ -161,25 +161,121 @@ h1.text-gradient.-bird::before {
   width: 12rem;
 }
 
-.headerImageContainer {
+.landing .headerImageContainer {
   display: block;
   margin: auto;
 }
 
+.landing .container {
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.landing .container .headerText {
+  margin: 0;
+  text-align: center;
+}
+.landing .container .headerText > h1::before {
+  left: auto;
+  right: auto;
+}
+.landing .container .headerText > h1.-lion::before {
+  width: 9rem;
+}
+.landing .container .headerText > h1.-dolphin::before {
+  width: 14.2rem;
+}
+.landing .container .headerText > h1.-tiger::before {
+  width: 11rem;
+}
+.landing .container .headerText > h1.-bird::before {
+  width: 9.7rem;
+}
+.landing .container .buttons {
+  justify-content: center;
+}
+.landing .container.-left {
+  flex-direction: column;
+}
+.landing .headerImageContainer {
+  min-width: 250px;
+  margin: 0;
+}
+.navigation .mx-4 {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
-  .headerImageContainer {
+  .landing .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0 1rem;
+    height: auto;
+  }
+  .landing .container .headerText {
+    margin: 0;
+    text-align: center;
+  }
+  .landing .container .headerText > h1::before {
+    left: auto;
+    right: auto;
+  }
+  .landing .container .buttons {
+    justify-content: center;
+  }
+  .landing .container.-left {
+    flex-direction: column;
+  }
+  .landing .headerImageContainer {
     min-width: 250px;
+    margin: 0;
   }
 }
 
-@media screen and (min-width: 1536px) {
-  .headerImageContainer {
+@media screen and (min-width: 768px) {
+  .landing .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0 1rem;
+    height: auto;
+  }
+  .landing .headerImageContainer {
+    min-width: 250px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing .container {
+    padding: 0 2rem;
+  }
+  .landing .headerImageContainer {
+    min-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .landing .container {
+    padding: 0 2rem;
+  }
+  .landing .headerImageContainer {
     min-width: 500px;
   }
 }
 
+@media screen and (min-width: 1536px) {
+  .landing .container {
+    padding: 0 4rem;
+  }
+  .landing .headerImageContainer {
+    min-width: 650px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
-  .headerImageContainer {
+  .landing .container {
+    padding: 0;
+  }
+  .landing .headerImageContainer {
     min-width: 800px;
   }
 }

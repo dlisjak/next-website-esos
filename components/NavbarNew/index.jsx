@@ -7,7 +7,7 @@ import GoogleAnalytics from '../GoogleAnalytics';
 
 import Logo from '../../public/images/logo_icon.svg';
 
-const NavBar = ({ route }) => {
+const NavBarNew = ({ route }) => {
   const [isCookieConsent, setIsCookieConsent] = useState(false);
 
   const acceptCookies = () => {
@@ -30,13 +30,13 @@ const NavBar = ({ route }) => {
 
   return (
     <>
-      <nav className='fixed w-full flex justify-center z-50 mix-blend-difference py-4'>
+      <nav className='navigation fixed w-full flex justify-center z-50 mix-blend-difference py-4'>
         <ul className='flex items-center relative text-white font-light'>
           <li className='mx-4'><Link href="#splet">Splet</Link></li>
           <li className='mx-4'><Link href="#mobile">Mobile</Link></li>
           <li className="cursor-pointer">
             <Link href="/">
-              <div className='logo -lion'>
+              <div className='logo -lion w-12'>
                 <Logo />
               </div>
             </Link>
@@ -61,4 +61,4 @@ const NavBar = ({ route }) => {
   );
 };
 
-export default NavBar;
+export default NavBarNew;
