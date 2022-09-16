@@ -115,6 +115,18 @@ const Kontakt = () => {
                 <div className="w-full xl:w-2/3 flex flex-col xl:max-w-3xl relative z-10 xl:items-start lg:ml-6 xl:ml-8">
                   <h2 className="relative mt-0 z-10 lg:right-2 mb-2 text-left">Pozdravljeni,</h2>
                   <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col py-1">
+                    <div className="flex flex-col items-start mb-4 lg:mb-2">
+                      <label className="mr-2 whitespace-nowrap" htmlFor="name">
+                        Ime, priimek<span className="text-red-500">*</span>
+                        <br />
+                      </label>
+                      <input
+                        className="w-full"
+                        id="name"
+                        placeholder="Ime, Priimek"
+                        {...register('name', { required: true })}
+                      />
+                    </div>
                     <div className="flex items-center mb-4 lg:mb-2 flex-wrap">
                       <label className="mr-2 whitespace-nowrap" htmlFor="zanimanje">
                         Pošiljam zanimanje za:<span className="text-red-500">*</span>
@@ -179,18 +191,6 @@ const Kontakt = () => {
                         id="moreinfo"
                         placeholder="Po želji lahko dodate sporočilo"
                         {...register('moreinfo')}
-                      />
-                    </div>
-                    <div className="flex flex-col items-start mb-4 lg:mb-2">
-                      <label className="mr-2 whitespace-nowrap" htmlFor="name">
-                        Lep pozdrav,<span className="text-red-500">*</span>
-                        <br />
-                      </label>
-                      <input
-                        className="w-full lg:w-auto"
-                        id="name"
-                        placeholder="Ime, Priimek"
-                        {...register('name', { required: true })}
                       />
                     </div>
                     {isFormSuccessful && (
