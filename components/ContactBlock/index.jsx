@@ -21,7 +21,7 @@ const ContactBlock = () => {
           <a className="button">Kontakt</a>
         </Link>
       </div>
-      <div className="max-w-5xl w-full hidden sm:block">
+      <div className="max-w-5xl w-full hidden sm:block ml-auto">
         <Image
           src={HAND_FLOWERS}
           alt="Extending hand of a person in the middle of orange flowers"

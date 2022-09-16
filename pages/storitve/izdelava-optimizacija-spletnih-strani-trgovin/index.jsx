@@ -11,7 +11,6 @@ import SHOP from '../../../public/images/storitve/spletne_resitve/SHOP.jpeg';
 import ROCKET from '../../../public/images/storitve/spletne_resitve/ROCKET.jpeg';
 import WOMAN_BEACH from '../../../public/images/storitve/spletne_resitve/WOMAN_BEACH.jpeg';
 import SAND_CAVE from '../../../public/images/storitve/spletne_resitve/SAND_CAVE.jpeg';
-import ContactBlock from '../../../components/ContactBlock';
 
 const Index = () => {
   return (

@@ -8,6 +8,7 @@ import LION from '../public/images/headers/new/800/LION.jpeg';
 import DOLPHIN from '../public/images/headers/new/800/DOLPHIN.jpeg';
 import TIGER from '../public/images/headers/new/800/TIGER.jpeg';
 import BIRD_RIGHT from '../public/images/headers/new/800/BIRD_RIGHT.jpeg';
+import ContactBlock from "../components/ContactBlock";
 
 const Index = () => {
   const handleOnLeave = (origin, destination, direction, trigger) => {
@@ -186,6 +187,9 @@ const Index = () => {
                 </>
               }
             />
+          </div>
+          <div className="section">
+            <ContactBlock />
           </div>
         </ReactFullpage.Wrapper>
       )} />
