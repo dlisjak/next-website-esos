@@ -17,6 +17,8 @@ const NavBarNew = ({ route }) => {
 
   useEffect(() => {
     const allowsCookies = localStorage.getItem("allowsCookies");
+    const nav = document.querySelectorAll("#fp-nav ul li a span");
+    nav.forEach(item => item.classList.add("-lion"));
 
     if (allowsCookies) {
       setIsCookieConsent(true);

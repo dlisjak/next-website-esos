@@ -28,13 +28,29 @@ html {
 }
 
 .logo defs stop {
-  transition: 1s ease;
+  transition: 1.3s ease;
 }
 .logo.-lion .logo_icon_svg__main-stop {
   stop-color: #ff9500;
 }
 .logo.-lion .logo_icon_svg__alt-stop {
   stop-color: #ffd797;
+}
+
+#fp-nav ul li a span {
+  transition: background 1.3s ease !important;
+}
+#fp-nav ul li a span.-lion {
+  background: #ffd797 !important;
+}
+#fp-nav ul li a span.-dolphin {
+  background: #0099ff !important;
+}
+#fp-nav ul li a span.-tiger {
+  background: #e4b49e !important;
+}
+#fp-nav ul li a span.-bird {
+  background: #11c700 !important;
 }
 
 .logo.-dolphin .logo_icon_svg__main-stop {

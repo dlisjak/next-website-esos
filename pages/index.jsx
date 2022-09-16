@@ -8,29 +8,44 @@ import LION from '../public/images/headers/new/800/LION.jpeg';
 import DOLPHIN from '../public/images/headers/new/800/DOLPHIN.jpeg';
 import TIGER from '../public/images/headers/new/800/TIGER.jpeg';
 import BIRD_RIGHT from '../public/images/headers/new/800/BIRD_RIGHT.jpeg';
-import ContactBlock from "../components/ContactBlock";
 
 const Index = () => {
   const handleOnLeave = (origin, destination, direction, trigger) => {
     const index = destination.index;
     const logo = document.querySelector("div.logo");
+    const nav = document.querySelectorAll("#fp-nav ul li a span");
+
     if (index === 0) {
       logo.classList.add("-lion")
       logo.classList.remove("-dolphin")
+      logo.classList.remove("-bird")
+      nav.forEach(item => item.classList.add("-lion"));
+      nav.forEach(item => item.classList.remove("-dolphin"));
+      nav.forEach(item => item.classList.remove("-bird"));
     }
     if (index === 1) {
       logo.classList.add("-dolphin")
       logo.classList.remove("-lion")
       logo.classList.remove("-tiger")
+      nav.forEach(item => item.classList.add("-dolphin"));
+      nav.forEach(item => item.classList.remove("-lion"));
+      nav.forEach(item => item.classList.remove("-tiger"));
     }
     if (index === 2) {
       logo.classList.add("-tiger")
       logo.classList.remove("-dolphin")
       logo.classList.remove("-bird")
+      nav.forEach(item => item.classList.add("-tiger"));
+      nav.forEach(item => item.classList.remove("-dolphin"));
+      nav.forEach(item => item.classList.remove("-bird"));
     }
     if (index === 3) {
       logo.classList.add("-bird")
       logo.classList.remove("-tiger")
+      logo.classList.remove("-lion")
+      nav.forEach(item => item.classList.add("-bird"));
+      nav.forEach(item => item.classList.remove("-tiger"));
+      nav.forEach(item => item.classList.remove("-lion"));
     }
   }
 
@@ -69,7 +84,7 @@ const Index = () => {
         />
         <link rel="canonical" href="https://www.esos.si" />
       </Head>
-      <ReactFullpage scrollingSpeed={1300} onLeave={handleOnLeave} licenseKey="KA7UH-YQJQ7-88GKK-JJ83H-CDYUM" render={() => (
+      <ReactFullpage scrollingSpeed={1300} onLeave={handleOnLeave} continuousVertical={true} navigation={true} licenseKey="KA7UH-YQJQ7-88GKK-JJ83H-CDYUM" render={() => (
         <ReactFullpage.Wrapper>
           <div className="section bg-black">
             <HeaderSection
