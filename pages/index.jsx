@@ -188,9 +188,6 @@ const Index = () => {
               }
             />
           </div>
-          <div className="section">
-            <ContactBlock />
-          </div>
         </ReactFullpage.Wrapper>
       )} />
     </div>

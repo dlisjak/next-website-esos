@@ -7,7 +7,7 @@ const HeaderSection = ({ id, image, alt, title, subtitle, buttons, priority = fa
         <HeaderSectionImage src={image} alt={alt} placeholder="blur" priority={priority} />
       </div>
     )}
-    <div className="flex container mx-auto mt-4 items-center h-auto sm:h-full top-0 right-0 left-0 sm:px-4">
+    <div className="flex container mx-auto mt-4 items-center h-auto top-0 right-0 left-0 sm:px-4">
       <div className={`headerText ${left ? "text-right ml-auto" : "text-left mr-auto"}`}>
         {subtitle}
         {title}

@@ -18,6 +18,11 @@ html {
   height: -webkit-fill-available;
 }
 
+.h-screen {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 .CopperplateGothic {
   font-family: 'Copperplate-Gothic';
 }
@@ -232,7 +237,7 @@ h1.text-gradient.-bird::before {
     flex-direction: column-reverse;
     justify-content: center;
     padding: 0 1rem;
-    height: auto;
+    align-items: center;
   }
   .landing .container .headerText {
     margin: 0;
@@ -259,10 +264,9 @@ h1.text-gradient.-bird::before {
     flex-direction: column-reverse;
     justify-content: center;
     padding: 0 1rem;
-    height: auto;
   }
   .landing .headerImageContainer {
-    min-width: 250px;
+    min-width: 450px;
     margin: 0;
   }
 }

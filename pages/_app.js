@@ -4,11 +4,14 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import NavBarNew from '../components/NavbarNew';
 
+import { vh } from "../utils/vh";
+
 import '../styles/main.css';
 import '../styles/page.css';
 
 const MyApp = ({ Component, pageProps, router }) => {
   const route = router.route;
+  vh();
 
   return (
     <>
