@@ -132,7 +132,6 @@ const Kontakt = () => {
                         <option value="spletne rešitve">Spletne rešitve</option>
                         <option value="mobilne aplikacije">Mobilne aplikacije</option>
                         <option value="digitalni marketing">Digitalni marketing</option>
-                        <option value="3d animacije">3D animacije</option>
                         <option value="video produkcija">Video produkcija</option>
                       </select>
                     </div>
