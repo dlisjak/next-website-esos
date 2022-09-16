@@ -108,9 +108,9 @@ const Index = () => {
               alt="Dolphin swimming towards the top of the page"
               title={
                 <h2 className="text-gradient -dolphin	text-3xl sm:text-3xl md:text-5xl mb-4 mt-2 px-2 lg:px-0">
-                  Zasedite svoje mesto
+                  Osvojite pametne
                   <br />
-                  na pametnih telefonih
+                  telefone
                 </h2>
               }
               left
