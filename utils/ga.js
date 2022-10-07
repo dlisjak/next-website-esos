@@ -4,7 +4,7 @@ export const loadGA = (callback) => {
 
   if (!existingScript) {
     const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-TB9DYKMJLD';
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`;
     script.id = 'googleAnlaytics';
     script.defer = true;
 
