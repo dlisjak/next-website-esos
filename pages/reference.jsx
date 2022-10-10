@@ -59,23 +59,32 @@ const Reference = () => {
             image={NA_ROBU_NAPREDKA}
             alt="Indoors of the Cathedral of St.Peter in Vatican"
             title="Dokazali Smo Ostalim, Naj Še Vam"
-            text="Z večletnimi izkušnjami in konstantnim napredovanjem na kreativnem in tehnološkem
-            področju verjamemo, da imamo edinstveno rešitev, ki govori sama zase."
-            aboveTitle={
+            aboveTitle={<></>}
+            text={
               <div className="flex h-10">
-                <Link href="https://apnews.com">
+                <Link href="https://www.chip-tuning.si">
                   <a className="mr-2" target="_blank" rel="noreferrer">
-                    <Image src={AP} alt="APnews.com logo" width={40} height={40} />
+                    https://www.chip-tuning.si/
                   </a>
                 </Link>
-                <Link href="https://billa.at">
+                <Link href="https://www.escort-ljubljana.com">
                   <a className="mr-2" target="_blank" rel="noreferrer">
-                    <Image src={BILLA} alt="Billa.at logo" width={40} height={40} />
+                    https://www.escort-ljubljana.com/
                   </a>
                 </Link>
-                <Link href="https://joe-club.at">
+                <Link href="https://www.avrame-slovenia.com/">
                   <a className="mr-2" target="_blank" rel="noreferrer">
-                    <Image src={JOE} alt="joe-club.at logo" width={40} height={40} />
+                    https://www.avrame-slovenia.com/
+                  </a>
+                </Link>
+                <Link href="https://www.taxi-ptuj.si/">
+                  <a className="mr-2" target="_blank" rel="noreferrer">
+                    https://www.taxi-ptuj.si/
+                  </a>
+                </Link>
+                <Link href="https://www.sanjska-savna.si/">
+                  <a className="mr-2" target="_blank" rel="noreferrer">
+                    https://www.sanjska-savna.si/
                   </a>
                 </Link>
               </div>

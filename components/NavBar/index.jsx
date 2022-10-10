@@ -41,8 +41,8 @@ const NavBar = ({ route }) => {
               </div>
             </Link>
           </li>
-          {/*<li className='mx-4'><Link href="/reference">Reference</Link></li>*/}
-          <li className='mx-4'><Link href="/vsebina">Vsebina</Link></li>
+          <li className='mx-4'><Link href="/reference">Reference</Link></li>
+          {/*<li className='mx-4'><Link href="/vsebina">Vsebina</Link></li>*/}
           <li className='mx-4'><Link href="/kontakt">Kontakt</Link></li>
         </ul>
       </nav>
@@ -53,7 +53,7 @@ const NavBar = ({ route }) => {
             <span className="button mr-4">
               <Link href="/politika-zasebnosti">Preberi več</Link>
             </span>
-            <Button onClick={() => acceptCookies(true)}>Sprejmi</Button>
+            <Button onClick={() => acceptCookies()}>Sprejmi</Button>
           </div>
         </div>
       )}
