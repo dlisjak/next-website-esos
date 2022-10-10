@@ -63,27 +63,27 @@ const Reference = () => {
             text={
               <div className="flex h-10">
                 <Link href="https://www.chip-tuning.si">
-                  <a className="mr-2" target="_blank" rel="noreferrer">
+                  <a className="mr-2" target="_blank">
                     https://www.chip-tuning.si/
                   </a>
                 </Link>
                 <Link href="https://www.escort-ljubljana.com">
-                  <a className="mr-2" target="_blank" rel="noreferrer">
+                  <a className="mr-2" target="_blank">
                     https://www.escort-ljubljana.com/
                   </a>
                 </Link>
                 <Link href="https://www.avrame-slovenia.com/">
-                  <a className="mr-2" target="_blank" rel="noreferrer">
+                  <a className="mr-2" target="_blank">
                     https://www.avrame-slovenia.com/
                   </a>
                 </Link>
                 <Link href="https://www.taxi-ptuj.si/">
-                  <a className="mr-2" target="_blank" rel="noreferrer">
+                  <a className="mr-2" target="_blank">
                     https://www.taxi-ptuj.si/
                   </a>
                 </Link>
                 <Link href="https://www.sanjska-savna.si/">
-                  <a className="mr-2" target="_blank" rel="noreferrer">
+                  <a className="mr-2" target="_blank">
                     https://www.sanjska-savna.si/
                   </a>
                 </Link>
