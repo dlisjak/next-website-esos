@@ -87,6 +87,11 @@ const Reference = () => {
                     https://www.sanjska-savna.si/
                   </a>
                 </Link>
+                <Link href="https://www.minoksidil.si/">
+                  <a className="mr-2" target="_blank">
+                    https://www.minoksidil.si/
+                  </a>
+                </Link>
               </div>
             }
           >
