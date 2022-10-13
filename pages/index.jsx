@@ -153,7 +153,7 @@ const Index = () => {
               alt="fierce tiger looking at you"
               title={
                 <h2 className="text-gradient -tiger text-3xl sm:text-3xl md:text-5xl mb-4 sm:mb-6">
-                  Nepozabljiva prezenca
+                  Nepozabna prezenca
                 </h2>
               }
               subtitle={
