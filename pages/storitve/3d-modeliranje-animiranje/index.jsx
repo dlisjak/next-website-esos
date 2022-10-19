@@ -88,7 +88,7 @@ const Index = () => {
                   animacij.
                 </p>
                 <p className="mb-2">
-                  Naše podjetje Tim Optimum d.o.o. se lahko pohvali s strokovnim kadrom na področju
+                  Naše podjetje TEHIDEJA j.d.o.o. se lahko pohvali s strokovnim kadrom na področju
                   modeliranja 3D objektov in 3D animacij. Zato vam lahko ponudimo izdelavo oglasa od
                   zasnove ideje, izvedbe in uspešnega lansiranja oglasa, ki vam bo omogočil
                   prepoznavnost in modern pristop za pridobivanje strank in posledično večjo
