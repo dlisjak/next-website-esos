@@ -41,7 +41,7 @@ const NavBar = ({ route }) => {
               </div>
             </Link>
           </li>
-          <li className='mx-4'><Link href="/reference">Reference</Link></li>
+          <li className='mx-4'><Link href="/kontakt">Reference</Link></li>
           {/*<li className='mx-4'><Link href="/vsebina">Vsebina</Link></li>*/}
           <li className='mx-4'><Link href="/kontakt">Kontakt</Link></li>
         </ul>

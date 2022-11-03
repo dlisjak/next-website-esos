@@ -1,16 +1,13 @@
-import Link from 'next/link';
 import Head from 'next/head';
+import Link from 'next/link';
 
-import Header from '../../../components/Header';
-import Section from '../../../components/Section';
-import SectionContainer from '../../../components/SectionContainer';
+import LandingHeaderSection from '../../../components/LandingHeaderSection';
 
-import ABSTRACT_29 from '../../../public/images/headers/1920/ABSTRACT_29.jpeg';
-import DIGITALNI_MARKETING from '../../../public/images/storitve/digitalni_marketing/DIGITALNI_MARKETING.jpeg';
+import TIGER from "../../../public/images/headers/new/800/TIGER.jpeg";
 
 const Index = () => {
   return (
-    <div className="digitalmarketing h-full">
+    <div className="digitalmarketing">
       <Head>
         <title>Digitalni marketing | ESOS Digital</title>
         <meta name="title" content="Digitalni marketing | ESOS Digital" />
@@ -44,23 +41,29 @@ const Index = () => {
         />
         <link rel="canonical" href="https://www.esos.si/storitve/digitalni-marketing" />
       </Head>
-      <Header
-        image={ABSTRACT_29}
-        alt="Arizona desert red cave"
-        title={<h2 className="text-white text-4xl sm:text-5xl mb-6">Digitalni marketing</h2>}
-        subtitle="Marketinške Rešitve"
-        buttons={
-          <>
-            <Link href="#digital-marketing">
-              <a className="button mr-4 mb-4">Podrobneje</a>
-            </Link>
-          </>
-        }
-      />
-      <div
-        id="digital-marketing"
-        className="bg-[#EfEfEf] h-auto flex relative flex-col justify-center text-black py-12 px-4"
-      >
+      <div className="section">
+        <LandingHeaderSection
+          id="marketing"
+          image={TIGER}
+          alt="fierce tiger looking at you"
+          title={
+            <>
+              <h2 className="text-gradient text-center -tiger leading-6 text-2xl sm:text-2xl md:text-5xl mb-4 sm:mb-6">
+                Najemite nas za upravljanje Google Ads in prejmite 100% dodatnega budgeta z naše strani!
+              </h2>
+              <p className='text-white underline text-center text-xs'>Dodatne informacije:</p>
+              <ul className='text-white text-xs text-center'>
+                <li>Minimalen znesek: 300€</li>
+                <li>Maksimalen znesek: 1000€</li>
+                <li>Velja le 1. mesec sodelovanja</li>
+              </ul>
+              <Link href="/kontakt"><a className='relative top-8 button'>Kontakt</a></Link>
+            </>
+          }
+          subtitle={
+            <h1 className="relative text-center text-gradient -tiger -noUnderline text-base sm:text-xl underline underline-offset-1 2xl:mb-2 left-0.5"></h1>
+          }
+        />
       </div>
     </div>
   );

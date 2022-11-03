@@ -5,8 +5,8 @@ const Footer = ({ route }) => {
   return (
     <>
       {route !== '/kontakt' || route !== "/" && <ContactBlock />}
-      <footer className="flex justify-center p-4 text-white">
-        <span className="mr-8">Vse pravice pridržane @ TimOptimum d.o.o.</span>
+      <footer className="flex bg-black justify-center p-4 text-white">
+        <span className="mr-8">Vse pravice pridržane @ Tehideja j.d.o.o.</span>
         <Link href="/politika-zasebnosti">Politika zasebnosti</Link>
       </footer>
     </>

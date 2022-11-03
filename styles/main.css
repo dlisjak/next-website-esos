@@ -168,6 +168,10 @@ h1.text-gradient.-tiger::before {
   width: 13.8rem;
 }
 
+h1.text-gradient.-tiger.-noUnderline::before {
+  width: 0;
+}
+
 .text-gradient.-bird {
   background: linear-gradient(to left, #11c700, #93ff89);
   background-clip: text;
