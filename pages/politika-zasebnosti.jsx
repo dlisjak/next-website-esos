@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
       </p>
       <h2>Upravljalec in pooblaščena oseba za varstvo podatkov</h2>
       <p>
-        Naziv podjetja: TEHIDEJA j.d.o.o. <br />
+        Naziv podjetja: Cyber Invest d.o.o. <br />
         Kontakt (email): gdpr@esos.si (Samo za težave povezane s GDPR)
       </p>
       <h2>Namen obdelave in podlage za obdelavo podatkov</h2>
