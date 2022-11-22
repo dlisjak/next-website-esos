@@ -8,6 +8,8 @@ import { useForm } from 'react-hook-form';
 import Header from '../components/Header';
 import SectionContainer from '../components/SectionContainer';
 
+import { event } from "../utils/ga";
+
 import HAND_FLOWERS from '../public/images/headers/1920/HAND_FLOWERS.jpeg';
 import KONTAKT from '../public/images/kontakt/KONTAKT.jpeg';
 
@@ -40,6 +42,7 @@ const Kontakt = () => {
     if (res.data.status === 'mail_sent') {
       // success
       setIsFormSuccessful(true);
+      event("conversion", { "send_to": process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_CONVERSION_ID })
     } else {
       // error
       setIsFormSuccessful(false);
