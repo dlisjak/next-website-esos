@@ -6,7 +6,7 @@ const Footer = ({ route }) => {
     <>
       {route !== '/kontakt' || route !== "/" && <ContactBlock />}
       <footer className="flex bg-black justify-center p-4 text-white">
-        <span className="mr-8">Vse pravice pridržane @ Cyber Invest d.o.o.</span>
+        <span className="mr-8">Vse pravice pridržane @ Tim Optimum d.o.o.</span>
         <Link href="/politika-zasebnosti">Politika zasebnosti</Link>
       </footer>
     </>
